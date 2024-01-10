@@ -1,0 +1,21 @@
+.aboutus__wrapper {
+  height: 600px;
+  background-color: rgb(247, 242, 228);
+  position: relative;
+}
+
+.aboutus__header {
+  margin: 0;
+  padding: 40px 0 0 0;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.aboutus__image {
+  position: absolute;
+  right: 100px;
+  width: 300px;
+  height: 450px;
+}
