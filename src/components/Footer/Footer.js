@@ -13,9 +13,7 @@ function Footer() {
 
   return (
     <div className='footer section section_size_narrow section_screen_narrow'>
-      <p className='footer__heading'>
-        Okoshko
-      </p>
+      <p className='footer__heading'></p>
       <div className='footer__content'>
         <p className='footer__copyright footer__content-item'>© 2024</p>
         <nav className='footer__platforms'>
@@ -23,7 +21,19 @@ function Footer() {
             <button className="lang__button" onClick={() => changeLanguage("en")}>EN</button>
             <button className="lang__button" onClick={() => changeLanguage("ru")}>RU</button>
           </div>
-          <li className="footer__icon-link">
+          <div className='footer__masters-block'>
+            <p className='footer__text'>Для мастеров:</p>
+            <Link target='_blank' to="/telegram">
+              <img alt='telegram' src={iconTG2} className="footer__link" />
+            </Link>
+          </div>
+          <div className='footer__clients-block'>
+            <p className='footer__text'>Для клиентов:</p>
+            <Link target='_blank' to="/telegram">
+              <img alt='telegram' src={iconTG2} className="footer__link" />
+            </Link>
+          </div>
+          {/* <li className="footer__icon-link">
             <Link target='_blank' to="/instagram">
               <img alt='instagram' src={iconIG} className="footer__link" />
             </Link>
@@ -32,7 +42,7 @@ function Footer() {
             <Link target='_blank' to="/telegram">
               <img alt='telegram' src={iconTG2} className="footer__link" />
             </Link>
-          </li>
+          </li> */}
         </nav>
       </div>
     </div>
