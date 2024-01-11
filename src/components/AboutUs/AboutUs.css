@@ -1,6 +1,12 @@
 .aboutus__wrapper {
   height: 600px;
-  background-color: rgb(247, 242, 228);
+  background: linear-gradient(
+    rgb(248, 205, 206),
+    rgb(231, 186, 205),
+    rgb(213, 167, 205),
+    rgb(195, 148, 203),
+    rgb(177, 130, 202)
+  );
   position: relative;
 }
 
