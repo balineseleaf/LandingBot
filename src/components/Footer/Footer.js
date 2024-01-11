@@ -12,39 +12,33 @@ function Footer() {
   };
 
   return (
-    <div className='footer section section_size_narrow section_screen_narrow'>
-      <p className='footer__heading'></p>
-      <div className='footer__content'>
-        <p className='footer__copyright footer__content-item'>© 2024</p>
-        <nav className='footer__platforms'>
-          <div className="footer__langbox">
-            <button className="lang__button" onClick={() => changeLanguage("en")}>EN</button>
-            <button className="lang__button" onClick={() => changeLanguage("ru")}>RU</button>
-          </div>
-          <div className='footer__masters-block'>
-            <p className='footer__text'>Для мастеров:</p>
-            <Link target='_blank' to="/telegram">
-              <img alt='telegram' src={iconTG2} className="footer__link" />
-            </Link>
-          </div>
-          <div className='footer__clients-block'>
-            <p className='footer__text'>Для клиентов:</p>
-            <Link target='_blank' to="/telegram">
-              <img alt='telegram' src={iconTG2} className="footer__link" />
-            </Link>
-          </div>
-          {/* <li className="footer__icon-link">
-            <Link target='_blank' to="/instagram">
-              <img alt='instagram' src={iconIG} className="footer__link" />
-            </Link>
-          </li>
-          <li className="footer__icon-link">
-            <Link target='_blank' to="/telegram">
-              <img alt='telegram' src={iconTG2} className="footer__link" />
-            </Link>
-          </li> */}
-        </nav>
+    <div className='footer'>
+      <div className='footer__wrapper'>
+        <p className='footer__heading'></p>
+        <div className='footer__content'>
+          <p className='footer__copyright footer__content-item'>© 2024</p>
+          <nav className='footer__platforms'>
+            <div className="footer__langbox">
+              <button className="footer__lang-button_eng" onClick={() => changeLanguage("en")}></button>
+              <button className="footer__lang-button_ru" onClick={() => changeLanguage("ru")}></button>
+            </div>
+            <div className='footer__masters-block'>
+              <p className='footer__text'>Для мастеров:</p>
+              <Link target='_blank' to="/telegram">
+                <img alt='telegram' src={iconTG2} className="footer__link" />
+              </Link>
+            </div>
+            <div className='footer__clients-block'>
+              <p className='footer__text'>Для клиентов:</p>
+              <Link target='_blank' to="/telegram">
+                <img alt='telegram' src={iconTG2} className="footer__link" />
+              </Link>
+            </div>
+          </nav>
+        </div>
       </div>
+
+
     </div>
   );
 }

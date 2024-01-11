@@ -6,7 +6,7 @@ const Main = () => {
   const [scrolled, setScrolled] = useState(false);
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const animatedTexts = [" маникюр", " педикюр", " шугаринг", " стрижку"];
-  const sentence = "С помощью нас вы легко можете записаться на ";
+  const sentence = "С помощью нашего приложения вы с легкостью сможете записаться на ";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,22 +27,25 @@ const Main = () => {
       setCurrentTextIndex((currentIndex) => (currentIndex + 1) % animatedTexts.length);
     };
 
-    const intervalId = setInterval(showNextText, 2000);
+    const intervalId = setInterval(showNextText, 1000);
 
     return () => clearInterval(intervalId);
   }, [animatedTexts]);
 
   return (
-    <div className={`main__wrapper ${scrolled ? 'scrolled' : ''}`}>
-      <div className="text-container">
-        {animatedTexts.map((text, index) => (
-          <span key={index} className={`animated-text ${currentTextIndex === index ? 'visible' : ''}`}>
-            {sentence} {text}
-          </span>
-        ))}
+    <div className="main">
+      <div className={`main__wrapper ${scrolled ? 'scrolled' : ''}`}>
+        <div className="text-container">
+          {animatedTexts.map((text, index) => (
+            <span key={index} className={`animated-text ${currentTextIndex === index ? 'visible' : ''}`}>
+              {sentence} {text}
+            </span>
+          ))}
+        </div>
+        <img className={`main__image ${scrolled ? 'scrolled' : ''}`} src={iphone} alt="iPhone" />
       </div>
-      <img className={`main__image ${scrolled ? 'scrolled' : ''}`} src={iphone} alt="iPhone" />
     </div>
+
   );
 }
 

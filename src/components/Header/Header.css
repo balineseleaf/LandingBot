@@ -1,8 +1,4 @@
 .header {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   background: linear-gradient(
     rgb(248, 205, 206),
     rgb(231, 186, 205),
@@ -10,7 +6,15 @@
     rgb(195, 148, 203),
     rgb(177, 130, 202)
   );
-  height: 120px;
+  height: 100px;
+}
+
+.header__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header__link {
@@ -18,8 +22,8 @@
   text-decoration: none;
   transition: 0.4s ease-out;
   opacity: 1;
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 43px;
 }
 
 .header__link:hover {
@@ -33,7 +37,7 @@
   height: 75px;
 }
 
-.header__lang-link {
+.header__links {
   text-decoration: none;
   color: white;
   display: inline;
@@ -43,7 +47,7 @@
   padding-right: 18px;
 }
 
-.header__lang-link:last-of-type {
+.header__links:last-of-type {
   padding-right: 0;
 }
 
@@ -53,18 +57,63 @@
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin-top: 46px;
+  margin-top: 30px;
   margin-right: 48px;
 }
 
 .langbox {
-  margin-right: 25px;
-  padding-top: 10px;
+  display: flex;
+  width: 100px;
+  flex-direction: row;
 }
 
-.lang__button {
+.lang__button_eng {
+  padding: 0;
+  margin: 3px 0;
   cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../images/engIcon.png);
+  border: 0;
+  background-size: 38px;
 }
+
+.lang__button_ru {
+  border: 0;
+  padding: 0;
+  margin: 3px 0;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../images/russianFlag2.png);
+  background-position: -4px -11px;
+  background-size: 61px;
+  margin-left: 5px;
+}
+
+/* .lang__button-eng {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+}
+
+.lang__button-russia {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+} */
 
 .header__block {
   display: flex;

@@ -9,6 +9,11 @@
   height: 210px;
 }
 
+.footer__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 .footer__heading {
   margin: 0;
   padding: 30px 0 20px;
@@ -24,7 +29,7 @@
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
 }
 
 .footer__content-item {
@@ -55,7 +60,38 @@
 }
 
 .footer__langbox {
-  margin-right: 25px;
+  display: flex;
+  padding-top: 42px;
+  width: 100px;
+  flex-direction: row;
+}
+
+.footer__lang-button_eng {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../images/engIcon.png);
+  border: 0;
+  background-size: 38px;
+}
+
+.footer__lang-button_ru {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 10px;
+  width: 38px;
+  height: 38px;
+  background-image: url(../../images/russianFlag2.png);
+  background-position: -4px -11px;
+  background-size: 61px;
+  margin-left: 5px;
 }
 
 .lang__button {

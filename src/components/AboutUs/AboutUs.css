@@ -1,5 +1,5 @@
-.aboutus__wrapper {
-  height: 600px;
+.aboutus {
+  height: 650px;
   background: linear-gradient(
     rgb(248, 205, 206),
     rgb(231, 186, 205),
@@ -7,7 +7,11 @@
     rgb(195, 148, 203),
     rgb(177, 130, 202)
   );
-  position: relative;
+}
+
+.aboutus__wrapper {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .aboutus__header {
