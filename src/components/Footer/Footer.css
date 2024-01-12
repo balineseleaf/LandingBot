@@ -60,8 +60,8 @@
 }
 
 .footer__langbox {
+  margin-bottom: 17px;
   display: flex;
-  padding-top: 42px;
   width: 100px;
   flex-direction: row;
 }
@@ -123,6 +123,26 @@
 
 .footer__link:hover {
   opacity: 0.7;
+}
+
+.footer__info-block {
+  margin-right: 15px;
+}
+
+.footer__info-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: black;
+}
+
+.footer__info-item {
+  padding-bottom: 10px;
+}
+
+.footer__info-link {
+  color: black;
+  text-decoration: none;
 }
 
 /* max-width: 550px {

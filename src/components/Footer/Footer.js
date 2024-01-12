@@ -18,6 +18,18 @@ function Footer() {
         <div className='footer__content'>
           <p className='footer__copyright footer__content-item'>© 2024</p>
           <nav className='footer__platforms'>
+            <div className='footer__info-block'>
+              <ul className='footer__info-items'>
+                <li className='footer__info-item'>
+                  {/* <p className='footer__text'>База знаний</p> */}
+                  <Link className="footer__info-link" target='_blank' to="/knowledgebase">База знаний</Link>
+                </li>
+                <li className='footer__info-item'>
+                  {/* <p className='footer__text'>О Компании</p> */}
+                  <Link className="footer__info-link" target='_blank' to="/aboutCompany">О Компании</Link>
+                </li>
+              </ul>
+            </div>
             <div className="footer__langbox">
               <button className="footer__lang-button_eng" onClick={() => changeLanguage("en")}></button>
               <button className="footer__lang-button_ru" onClick={() => changeLanguage("ru")}></button>
