@@ -1,10 +1,15 @@
 .footer {
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgb(248, 205, 206),
     rgb(231, 186, 205),
     rgb(213, 167, 205),
     rgb(195, 148, 203),
     rgb(177, 130, 202)
+  ); */
+  background: linear-gradient(
+    90deg,
+    rgb(234, 196, 238),
+    rgb(234, 234, 234) 61%
   );
   height: 210px;
 }
@@ -40,12 +45,8 @@
   line-height: 1.2;
   text-decoration: none;
   color: black;
-  transition: 0.4s ease-out;
-}
-
-.footer__content-item:hover {
-  opacity: 0.7;
-  transform: scale(1.15);
+  bottom: 8px;
+  position: relative;
 }
 
 .footer__platforms {

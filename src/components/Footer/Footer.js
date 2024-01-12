@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 import { useTranslation } from 'react-i18next';
 import iconTG2 from '../../images/iconTG.svg';
-import iconIG from '../../images/iconIG.svg';
+import book from '../../images/book.png';
 
 function Footer() {
   const { t, i18n } = useTranslation();
@@ -36,13 +36,19 @@ function Footer() {
             </div>
             <div className='footer__masters-block'>
               <p className='footer__text'>Для мастеров:</p>
-              <Link className="footer__socials-link" target='_blank' to="/telegram">
+              <Link className="footer__socials-link" target='_blank' to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23">
+                <img alt='telegram' src={book} className="footer__link" />
+              </Link>
+              <Link className="footer__socials-link" target='_blank' to="https://t.me/maniProMaster_bot">
                 <img alt='telegram' src={iconTG2} className="footer__link" />
               </Link>
             </div>
             <div className='footer__clients-block'>
               <p className='footer__text'>Для клиентов:</p>
-              <Link className="footer__socials-link" target='_blank' to="/telegram">
+              <Link className="footer__socials-link" target='_blank' to="https://telegra.ph/Telegram-bot-dlya-zapisi-k-byuti-masteru-09-19">
+                <img alt='telegram' src={book} className="footer__link" />
+              </Link>
+              <Link className="footer__socials-link" target='_blank' to="https://t.me/maniPro_bot">
                 <img alt='telegram' src={iconTG2} className="footer__link" />
               </Link>
             </div>

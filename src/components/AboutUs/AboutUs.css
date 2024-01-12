@@ -1,17 +1,29 @@
 .aboutus {
   height: 650px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgb(248, 205, 206),
     rgb(231, 186, 205),
     rgb(213, 167, 205),
     rgb(195, 148, 203),
     rgb(177, 130, 202)
+  ); */
+  background: linear-gradient(
+    90deg,
+    rgb(181, 246, 223),
+    rgb(234, 234, 234) 61%
   );
+  /* background-image: url(../../images/bigImage.jpg);
+  background-position: center;
+  background-size: cover;  */
 }
 
 .aboutus__wrapper {
   width: 1000px;
   margin: 0 auto;
+  height: 650px;
+  background-image: url(../../images/bigImage.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .aboutus__header {
