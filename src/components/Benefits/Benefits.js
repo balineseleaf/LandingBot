@@ -36,6 +36,11 @@ const Benefits = () => {
             <p className="cards__description">Текст</p>
           </div>
           <div className="cards__item">
+            <img className="cards__image" src={image4} alt="Картинка с вопросами" />
+            <h3 className="cards__title">Вопросы</h3>
+            <p className="cards__description">Текст</p>
+          </div>
+          <div className="cards__item">
             <img className="cards__image" src={image5} alt="Стопка книг" />
             <h3 className="cards__title">Иллюзия компетентности</h3>
             <p className="cards__description">Текст</p>

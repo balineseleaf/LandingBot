@@ -11,7 +11,7 @@ const Main = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setScrolled(scrollY > 150); // Измените значение, чтобы задать порог прокрутки
+      setScrolled(scrollY > 10); // Измените значение, чтобы задать порог прокрутки
     };
 
     window.addEventListener('scroll', handleScroll);

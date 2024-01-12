@@ -36,13 +36,13 @@ function Footer() {
             </div>
             <div className='footer__masters-block'>
               <p className='footer__text'>Для мастеров:</p>
-              <Link target='_blank' to="/telegram">
+              <Link className="footer__socials-link" target='_blank' to="/telegram">
                 <img alt='telegram' src={iconTG2} className="footer__link" />
               </Link>
             </div>
             <div className='footer__clients-block'>
               <p className='footer__text'>Для клиентов:</p>
-              <Link target='_blank' to="/telegram">
+              <Link className="footer__socials-link" target='_blank' to="/telegram">
                 <img alt='telegram' src={iconTG2} className="footer__link" />
               </Link>
             </div>

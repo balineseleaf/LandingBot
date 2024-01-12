@@ -40,10 +40,12 @@
   line-height: 1.2;
   text-decoration: none;
   color: black;
+  transition: 0.4s ease-out;
 }
 
 .footer__content-item:hover {
   opacity: 0.7;
+  transform: scale(1.15);
 }
 
 .footer__platforms {
@@ -77,6 +79,10 @@
   background-image: url(../../images/engIcon.png);
   border: 0;
   background-size: 38px;
+  transition: 0.3s ease-out;
+}
+.footer__lang-button_eng:hover {
+  transform: scale(1.15);
 }
 
 .footer__lang-button_ru {
@@ -92,6 +98,11 @@
   background-position: -4px -11px;
   background-size: 61px;
   margin-left: 5px;
+  transition: 0.3s ease-out;
+}
+
+.footer__lang-button_ru:hover {
+  transform: scale(1.15);
 }
 
 .lang__button {
@@ -123,6 +134,7 @@
 
 .footer__link:hover {
   opacity: 0.7;
+  transform: scale(1.15);
 }
 
 .footer__info-block {

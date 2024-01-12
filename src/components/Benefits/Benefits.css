@@ -36,7 +36,7 @@
 }
 
 .cards {
-  width: 920px;
+  /* width: 920px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -60,7 +60,7 @@
 
 .cards__image {
   border-radius: 50%;
-  padding: 60px 40px 43px 40px;
+  padding: 40px 40px 40px 40px;
   width: 160px;
   height: 160px;
 }
