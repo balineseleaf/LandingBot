@@ -6,6 +6,7 @@
   );
   height: 650px;
 }
+
 .main__wrapper {
   width: 1000px;
   margin: 0 auto;
@@ -55,4 +56,23 @@
 
 .visible {
   opacity: 1;
+}
+
+.main__button {
+  position: relative;
+  top: 100px;
+  left: 200px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #11be93;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+.main__button:hover {
+  background-color: rgb(45, 221, 159);
 }
