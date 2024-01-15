@@ -1,0 +1,54 @@
+.greeting {
+  background: linear-gradient(
+    90deg,
+    rgb(181, 246, 223),
+    rgb(234, 234, 234) 61%
+  );
+  height: 350px;
+}
+
+.greeting__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+}
+
+.greeting__header {
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-align: center;
+  color: #11be93;
+  width: 500px;
+}
+
+/* Добавленные стили для анимированного текста */
+.greeting__container {
+  position: relative;
+  display: block;
+  width: 850px;
+}
+
+.greeting__text-container {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.greeting__animated-text {
+  width: 500px;
+  margin: 0 auto;
+  opacity: 0;
+  font-size: 27px;
+  font-weight: 600;
+  position: absolute;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.greeting__animated-text-visible {
+  opacity: 1;
+}

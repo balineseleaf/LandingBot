@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import image1 from '../../images/cards-attention.png';
 import image2 from '../../images/cards-competence.png';
 import image3 from '../../images/cards-interliving.png';
@@ -41,9 +40,9 @@ const Benefits = () => {
             <p className="cards__description">Текст</p>
           </div>
           <div className="cards__item">
-            <img className="cards__image" src={image5} alt="Стопка книг" />
-            <h3 className="cards__title">Иллюзия компетентности</h3>
-            <p className="cards__description">Текст</p>
+            <img className="cards__image cards__image_last" src={image5} alt="Стопка книг" />
+            {/* <h3 className="cards__title">Иллюзия компетентности</h3>
+            <p className="cards__description">Текст</p> */}
           </div>
         </div>
       </div>

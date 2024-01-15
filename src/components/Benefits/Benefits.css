@@ -1,3 +1,14 @@
+@keyframes pulse {
+  from {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+  to {
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+  }
+}
+
 .benefits {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -59,11 +70,16 @@
 }
 
 .cards__image {
-  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite alternate;
+  /* border-radius: 50%; */
   padding: 40px 40px 40px 40px;
   width: 160px;
   height: 160px;
 }
+
+/* .cards__image:hover {
+  transform: scale(1.07);
+} */
 
 .cards__title {
   margin: 0;
@@ -80,4 +96,68 @@
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
+}
+
+@keyframes movee {
+  0% {
+    left: 600px;
+    top: 700px;
+    transform: rotate(0deg);
+  }
+  10% {
+    left: 630px;
+    top: 700px;
+    transform: rotate(60deg);
+  }
+  20% {
+    left: 660px;
+    top: 700px;
+    transform: rotate(120deg);
+  }
+  30% {
+    left: 630px;
+    top: 700px;
+    transform: rotate(180deg);
+  }
+  40% {
+    left: 600px;
+    top: 700px;
+    transform: rotate(240deg);
+  }
+  50% {
+    left: 570px;
+    top: 700px;
+    transform: rotate(300deg);
+  }
+  60% {
+    left: 540px;
+    top: 700px;
+    transform: rotate(360deg);
+  }
+  70% {
+    left: 570px;
+    top: 700px;
+    transform: rotate(420deg);
+  }
+  80% {
+    left: 600px;
+    top: 700px;
+    transform: rotate(480deg);
+  }
+  90% {
+    left: 630px;
+    top: 700px;
+    transform: rotate(520deg);
+  }
+  100% {
+    left: 600px;
+    top: 700px;
+    transform: rotate(580deg);
+  }
+}
+
+.cards__image_last {
+  border-radius: 50%;
+  position: absolute;
+  animation: movee 6 s ease-in-out infinite alternate;
 }
