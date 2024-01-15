@@ -41,8 +41,8 @@ function App() {
       <Greeting />
       <Main />
       <AboutUs />
-      {/* <Rates /> */}
-      <Benefits />
+      <Rates />
+      {/* <Benefits /> */}
       <Animation />
       <Footer />
     </div>

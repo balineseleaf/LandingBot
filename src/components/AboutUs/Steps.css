@@ -1,5 +1,5 @@
 .steps {
-  height: 690px;
+  height: 780px;
   /* background: linear-gradient(
     rgb(248, 205, 206),
     rgb(231, 186, 205),
@@ -35,7 +35,7 @@
   width: 700px;
 }
 .steps__container {
-  margin-top: 85px;
+  margin-top: 65px;
   position: relative;
 }
 
@@ -50,6 +50,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center; /* Center content horizontally and vertically */
   position: absolute;
   width: 180px;
 }
@@ -59,41 +60,55 @@
 }
 
 .second {
-  top: 112px;
+  top: 116px;
   right: 177px;
 }
 .third {
-  top: 224px;
-  right: 355px;
+  top: 233px;
+  right: 356px;
 }
 
 .fourth {
-  top: 336px;
-  left: 287px;
+  top: 351px;
+  left: 286px;
 }
 
 .steps__text {
-  padding: 10px 0 0 0;
+  padding: 8px 15px; /* Adjust padding as needed */
   margin: 0;
   text-align: center;
   border: 3px solid black;
   font-size: 18px;
   border-radius: 10px;
   height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+}
+
+.steps__text_first {
+  padding: 7px 10px;
 }
 
 .steps__circle {
   margin-top: 10px;
   border: 3px solid black;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
+  position: relative;
 }
 
 .steps__number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   margin: 0;
   padding: 0;
-  margin: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  transform: translate(-50%, -50%); /* Center the number */
+  text-align: center; /* Center horizontally */
 }
 
 .steps__text-fourth {

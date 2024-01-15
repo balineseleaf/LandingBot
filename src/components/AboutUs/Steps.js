@@ -12,7 +12,7 @@ const Steps = () => {
           клиенты начнут записываться!</h2>
         <div className="steps__container">
           <div className="steps__block first">
-            <p className='steps__text'>Нажмите накнопку "Запрос на подтверждение".</p>
+            <p className='steps__text steps__text_first'>Нажмите накнопку "Запрос на подтверждение".</p>
             <div className="steps__circle"><p className='steps__number'>4</p></div>
           </div>
           <div className="steps__block second">
