@@ -40,10 +40,12 @@
 }
 
 .steps__image {
-  position: absolute;
   right: 100px;
   width: 300px;
-  height: 450px;
+  height: 320px;
+  position: relative;
+  left: 363px;
+  top: -5px;
 }
 
 .steps__block {
@@ -115,10 +117,4 @@
 
 .steps__text-fourth {
   font-size: 16px;
-}
-
-.steps__image {
-  position: relative;
-  left: 363px;
-  top: -105px;
 }

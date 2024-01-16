@@ -5,6 +5,7 @@
     rgb(234, 234, 234) 61%
   );
   height: 350px;
+  padding-top: 55px;
 }
 
 .greeting__wrapper {

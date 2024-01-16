@@ -3,7 +3,8 @@
   display: flex;
   min-height: 680px;
   justify-content: center;
-  background: linear-gradient(90deg, rgb(234, 196, 238), rgb(234, 196, 238));
+  background: rgb(247, 228, 249);
+  /* background: linear-gradient(90deg, rgb(234, 196, 238), rgb(234, 196, 238)); */
 }
 
 .rates__wrapper {

@@ -10,14 +10,34 @@ import icon14 from "../../images/icon14.png";
 import icon15 from "../../images/icon15.png";
 import icon16 from "../../images/icon16.png";
 import icon17 from "../../images/icon17.png";
+import screenOnPhone from "../../images/screenOnPhone.png";
+import screenOnPhone2 from "../../images/screenOnPhone2.png";
 
 const Main = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [backgroundImage, setBackgroundImage] = useState(screenOnPhone);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollY = window.scrollY;
+  //     setScrolled(scrollY > 510); // Измените значение, чтобы задать порог прокрутки
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setScrolled(scrollY > 550); // Измените значение, чтобы задать порог прокрутки
+      setScrolled(scrollY > 480);
+      // Измените фоновое изображение в зависимости от позиции прокрутки
+      if (scrollY > 480) {
+        setBackgroundImage(screenOnPhone2);
+      } else {
+        setBackgroundImage(screenOnPhone);
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -25,12 +45,15 @@ const Main = () => {
     };
   }, []);
 
-
   return (
     <div className="main">
       <div className={`main__wrapper ${scrolled ? "scrolled" : ""}`}>
         <h2 className="main__header">Весь функционал находится в вашем кармане</h2>
-        <img className={`main__image ${scrolled ? "scrolled" : ""}`} src={iphone} alt="iPhone" />
+        <img
+          className={`main__image ${scrolled ? "scrolled" : ""}`}
+          src={iphone}
+          alt="iPhone"
+          style={{ backgroundImage: `url(${backgroundImage})` }} />
         <div className="main__container">
           <div className="main__container_inner">
             <div className="main__item">

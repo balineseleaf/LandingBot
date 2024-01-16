@@ -1,10 +1,14 @@
 .header {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgb(234, 196, 238),
     rgb(234, 234, 234) 61%
-  );
+  ); */
+  background: rgb(247, 228, 249);
   height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 21;
 }
 
 .header__wrapper {
