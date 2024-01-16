@@ -1,16 +1,4 @@
 .footer {
-  /* background: linear-gradient(
-    rgb(248, 205, 206),
-    rgb(231, 186, 205),
-    rgb(213, 167, 205),
-    rgb(195, 148, 203),
-    rgb(177, 130, 202)
-  ); */
-  /* background: linear-gradient(
-    90deg,
-    rgb(234, 196, 238),
-    rgb(234, 234, 234) 61%
-  ); */
   background: linear-gradient(90deg, rgb(234, 196, 238), rgb(234, 196, 238));
   height: 210px;
 }
