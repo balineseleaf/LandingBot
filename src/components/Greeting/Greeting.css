@@ -27,6 +27,7 @@
 
 /* Добавленные стили для анимированного текста */
 .greeting__container {
+  margin: 0 auto;
   position: relative;
   display: block;
   width: 850px;
@@ -39,7 +40,34 @@
   font-weight: 500;
 }
 
-.greeting__animated-text {
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+.text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 25s steps(20) forwards,
+    blinking-cursor 0.9s step-end infinite;
+  border-right: 2px solid #000;
+}
+
+/* .greeting__animated-text {
   width: 500px;
   margin: 0 auto;
   opacity: 0;
@@ -51,4 +79,11 @@
 
 .greeting__animated-text-visible {
   opacity: 1;
+} */
+
+.greeting__text {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
 }

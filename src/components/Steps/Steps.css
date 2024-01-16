@@ -114,3 +114,9 @@
 .steps__text-fourth {
   font-size: 16px;
 }
+
+.steps__image {
+  position: relative;
+  left: 363px;
+  top: -105px;
+}

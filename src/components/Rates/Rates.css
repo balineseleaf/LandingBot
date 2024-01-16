@@ -1,7 +1,7 @@
 .rates {
   align-items: center;
   display: flex;
-  min-height: 60vh;
+  min-height: 680px;
   justify-content: center;
   background: linear-gradient(90deg, rgb(234, 196, 238), rgb(234, 196, 238));
 }
@@ -13,7 +13,6 @@
 
 .rates__header {
   margin: 0;
-  margin-top: 50px;
   padding: 0;
   text-align: center;
   color: white;
@@ -40,7 +39,7 @@
   box-shadow: 2px 30px 30px rgba(0, 0, 0, 0.5);
 }
 
-.card-background {
+.card-background_first {
   position: absolute;
   right: 0;
   left: 0;
@@ -53,8 +52,42 @@
   transform: scale(1) translateZ(0);
   transition: filter 200ms linear, transform 200ms linear;
   filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  background-image: url(https://images.unsplash.com/photo-1553808373-92b0bcc3af65?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80);
+  background-image: url(../../images/rate1.jpg);
+  opacity: 0.7;
 }
+.card-background_second {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  background-image: url(../../images/rate2.jpg);
+  opacity: 0.7;
+}
+.card-background_third {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  background-image: url(../../images/rate3.jpg);
+  opacity: 0.7;
+}
+
 .card-content {
   display: flex;
   flex-direction: column;
@@ -65,6 +98,8 @@
 }
 
 .card-heading {
+  margin: 0;
+  padding: 0;
   color: #fff;
   font-size: 1.9rem;
   text-align: center;
@@ -72,9 +107,10 @@
 }
 
 .card-price {
+  padding: 0;
+  margin: 45px 0;
   position: absolute;
-  left: 60px;
-  top: 240px;
+  top: 280px;
   color: #fff;
   font-size: 1.5rem;
   line-height: 1.4;
@@ -101,4 +137,19 @@
 .card-grid:hover > .card:not(:hover),
 .card-content:not(:hover) .card-background {
   filter: brightness(0.8) saturate(1) contrast(1.2) blur(10px);
+}
+
+.card__list {
+  margin: 30px;
+  padding: 0;
+  z-index: 2;
+}
+
+.card__item {
+  margin: 0;
+  font-size: 21px;
+  padding: 5px 0 0 0;
+  color: white;
+  text-decoration: none;
+  z-index: 2;
 }

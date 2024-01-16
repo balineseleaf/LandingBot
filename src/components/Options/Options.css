@@ -1,0 +1,138 @@
+.options {
+  background: linear-gradient(
+    90deg,
+    rgb(181, 246, 223),
+    rgb(234, 234, 234) 61%
+  );
+  height: 750px;
+}
+
+.options__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.options__main-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  height: 550px;
+}
+
+.options__header {
+  margin: 0;
+  padding: 40px 0 0 0;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.33;
+  text-align: center;
+  color: #11be93;
+}
+
+.options__container-left {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.options__container-right {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.options__container-inner {
+  /* border: 1px solid white; */
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.left-container {
+  border: 2px solid white;
+  width: 300px;
+  height: 505px;
+}
+
+.options__container-little {
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.third-container {
+  margin-left: 15px;
+}
+
+.options__container-inner-row {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.right-container {
+  border: 2px solid white;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+}
+
+.options__caption {
+  margin: 0;
+  color: black;
+  padding: 15px 0 0 0;
+  font-size: 21px;
+  text-align: center;
+}
+
+.options__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  font-size: 19px;
+  color: black;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.options__caption_wide {
+  padding-top: 10px;
+  width: 410px;
+  font-size: 19px;
+  text-align: center;
+  padding-left: 30px;
+}
+
+.options__text_wide {
+  width: 410px;
+  font-size: 18px;
+  text-align: center;
+  padding-left: 37px;
+}
+
+.options__caption_first {
+  width: 250px;
+}
+
+.options__text_first {
+  width: 250px;
+}
+
+.options__caption_second {
+  padding-top: 20px;
+}
+
+.options__caption_third {
+  padding-top: 20px;
+}
+
+.options__text_second {
+  padding-bottom: 20px;
+}
+
+.options__text_third {
+  padding-bottom: 20px;
+}
