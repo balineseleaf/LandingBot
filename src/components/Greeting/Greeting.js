@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 
 const Greeting = () => {
   const textRef = useRef(null);
-  const words = [' ШУГАРИНГ', ' ПЕДИКЮР', ' РЕСНИЧКИ'];
+  const words = ['ШУГАРИНГ', 'ПЕДИКЮР', 'РЕСНИЧКИ', 'МАНИКЮР', 'СТРИЖКА'];
 
   let currentWordIndex = 0;
   let currentCharIndex = 0;
@@ -16,7 +16,7 @@ const Greeting = () => {
       if (currentCharIndex < words[currentWordIndex].length) {
         textElement.innerHTML += words[currentWordIndex].charAt(currentCharIndex);
         currentCharIndex++;
-        setTimeout(type, 100);
+        setTimeout(type, 140);
       } else {
         setTimeout(erase, 1000);
       }
@@ -26,10 +26,10 @@ const Greeting = () => {
       if (currentCharIndex > 0) {
         textElement.innerHTML = words[currentWordIndex].substring(0, currentCharIndex - 1);
         currentCharIndex--;
-        setTimeout(erase, 50);
+        setTimeout(erase, 140);
       } else {
         currentWordIndex = (currentWordIndex + 1) % words.length;
-        setTimeout(type, 500);
+        setTimeout(type, 1600);
       }
     }
 

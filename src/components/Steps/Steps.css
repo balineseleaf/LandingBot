@@ -84,6 +84,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center text vertically */
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5); /* Добавляем тень снизу */
 }
 
 .steps__text_first {
@@ -97,6 +98,7 @@
   width: 48px;
   height: 48px;
   position: relative;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Добавляем тень снизу */
 }
 
 .steps__number {
