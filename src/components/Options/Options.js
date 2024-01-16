@@ -1,8 +1,9 @@
 import "./Options.css";
+import clipIcon from "../../images/clipsIcon.png";
 
 const Options = () => {
   return (
-    <div className="options">
+    <section className="options">
       <div className="options__wrapper">
         <h1 className="options__header">okoshko упростит вам жизнь следующими опциями</h1>
         <div className="options__main-container">
@@ -36,6 +37,7 @@ const Options = () => {
               </div>
             </div>
             <div className="options__container-inner-row right-container">
+              <img src={clipIcon} alt="скрепка" className="options__clip" />
               <p className="options__caption options__caption_wide">Круглосуточная поддержка и сопровождение</p>
               <p className="options__text options__text_wide">Мы всегда готовы оказать вам поддержку на каждом этапе сотрудничества. Наша команда гарантирует не только помощь с начальными шагами, но и непрерывную связь на протяжении всего сотрудничества.</p>
             </div>
@@ -43,7 +45,7 @@ const Options = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
 

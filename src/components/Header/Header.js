@@ -14,7 +14,7 @@ const Header = () => {
     i18n.changeLanguage(language);
   };
   return (
-    <div className="header">
+    <section className="header">
       <div className="header__wrapper">
         <div className="header__block">
           <img className="header__logo" src={mainIcon} alt="Logo" />
@@ -37,7 +37,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -12,6 +12,7 @@ import icon16 from "../../images/icon16.png";
 import icon17 from "../../images/icon17.png";
 import screenOnPhone from "../../images/screenOnPhone.png";
 import screenOnPhone2 from "../../images/screenOnPhone2.png";
+import clipIcon from "../../images/clipsIcon.png";
 
 const Main = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -31,9 +32,12 @@ const Main = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setScrolled(scrollY > 480);
-      // Измените фоновое изображение в зависимости от позиции прокрутки
-      if (scrollY > 480) {
+      //setScrolled(scrollY > 450);
+      const isScrolled = scrollY > 550;
+      setScrolled(isScrolled);
+
+      //if (scrollY > 1080) {
+      if (isScrolled) {
         setBackgroundImage(screenOnPhone2);
       } else {
         setBackgroundImage(screenOnPhone);
@@ -46,7 +50,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="main">
+    <section className="main">
       <div className={`main__wrapper ${scrolled ? "scrolled" : ""}`}>
         <h2 className="main__header">Весь функционал находится в вашем кармане</h2>
         <img
@@ -56,6 +60,7 @@ const Main = () => {
           style={{ backgroundImage: `url(${backgroundImage})` }} />
         <div className="main__container">
           <div className="main__container_inner">
+            <img src={clipIcon} alt="скрепка" className="main__clip" />
             <div className="main__item">
               <img className="main__icon" src={icon10} alt="иконка1" />
               <p className="main__text">Онлайн запись</p>
@@ -98,9 +103,8 @@ const Main = () => {
             </div>
           </div>
         </div>
-
       </div>
-    </div>
+    </section>
 
   );
 }

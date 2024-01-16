@@ -7,7 +7,7 @@ const Steps = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="steps">
+    <section className="steps">
       <div className="steps__wrapper">
         <h2 className="steps__header">Всего НЕСКОЛЬКО ШАГОВ и
           клиенты начнут записываться!</h2>
@@ -32,7 +32,7 @@ const Steps = () => {
           {/* <p className="a">Автоматизируйте рутинную работу и забудьте о проблемах ведения ежедневника</p> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

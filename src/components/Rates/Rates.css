@@ -16,9 +16,8 @@
   margin: 0;
   padding: 0;
   text-align: center;
-  color: white;
+  color: #11be93;
   font-size: 33px;
-  font-weight: 500;
 }
 
 .card-grid {
@@ -38,7 +37,7 @@
 }
 
 .card:hover {
-  box-shadow: 2px 30px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card-background_first {

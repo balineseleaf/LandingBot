@@ -1,29 +1,30 @@
 .greeting {
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgb(181, 246, 223),
     rgb(234, 234, 234) 61%
-  );
-  height: 350px;
+  ); */
+  background-color: rgb(38, 38, 153);
+  height: 650px;
   padding-top: 55px;
 }
 
 .greeting__wrapper {
   width: 1000px;
   margin: 0 auto;
-  height: 600px;
+  height: 650px;
   position: relative;
 }
 
 .greeting__header {
   margin: 0 auto;
-  padding: 40px 0 0 0;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 1.33;
+  padding: 70px 0 0 0;
+  font-size: 43px;
   text-align: center;
-  color: #11be93;
+  /* color: #11be93; */
+  color: white;
   width: 500px;
+  z-index: 4;
 }
 
 @keyframes typing {
@@ -58,6 +59,7 @@
   text-align: center;
   font-size: 29px;
   font-weight: 500;
+  z-index: 3;
 }
 
 .text {
@@ -85,6 +87,35 @@
 .greeting__text {
   margin: 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
+  color: white;
+}
+
+.greeting__image_second {
+  position: absolute;
+  top: 132px;
+  right: -49px;
+  width: 260px;
+  height: 260px;
+  background: url('../../images/iconSelection8.png') center/cover;
+  transition: transform 0.5s ease;
+  /* transform: rotateX(12deg); */
+  transform: rotateZ(22deg);
+  color: white;
+  z-index: 1;
+}
+
+.greeting__image_first {
+  position: absolute;
+  top: -243px;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  background: url('../../images/iconSelection5.png') center/cover;
+  transition: transform 0.5s ease;
+  transform: rotateX(12deg);
+  transform: rotateZ(21deg);
+  color: white;
+  z-index: 1;
 }

@@ -18,7 +18,7 @@ const Greeting = () => {
         currentCharIndex++;
         setTimeout(type, 140);
       } else {
-        setTimeout(erase, 1000);
+        setTimeout(erase, 900);
       }
     }
 
@@ -29,7 +29,7 @@ const Greeting = () => {
         setTimeout(erase, 140);
       } else {
         currentWordIndex = (currentWordIndex + 1) % words.length;
-        setTimeout(type, 1600);
+        setTimeout(type, 1500);
       }
     }
 
@@ -40,19 +40,21 @@ const Greeting = () => {
   }, [words]);
 
   return (
-    <div className="greeting">
+    <section className="greeting">
       <div className="greeting__wrapper">
         <h1 className="greeting__header">
           Бесплатная платформа для <br /> мастеров красоты
         </h1>
         <div className="greeting__container">
+          <div className="greeting__image_first"></div>
+          <div className="greeting__image_second"></div>
           <div className="greeting__text-container">
             <p className="greeting__text">Ваши клиенты записываются к вам на <br></br><span ref={textRef} className="text"></span> <br></br> пока вы занимаетесь своими
               делами</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

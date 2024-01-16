@@ -9,7 +9,7 @@ import './Benefits.css';
 
 const Benefits = () => {
   return (
-    <div className="benefits">
+    <section className="benefits">
       <div className='benefits__wrapper'>
         <h2 className="section-title">Наши преимущества</h2>
         <p className="section-subtitle">Что вы получаете, запуская нашего бота</p>
@@ -46,7 +46,7 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
   );
 }

@@ -2,7 +2,7 @@ import "./Rates.css"
 
 const Rates = () => {
   return (
-    <div className="rates">
+    <section className="rates">
       <div className="rates__wrapper">
         <h2 className="rates__header">Тарифы для частных мастеров</h2>
         <div className="card-grid">
@@ -53,7 +53,7 @@ const Rates = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

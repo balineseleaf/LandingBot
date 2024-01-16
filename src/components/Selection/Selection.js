@@ -13,12 +13,9 @@ import iconSelection8 from '../../images/iconSelection8.png';
 import iconSelection9 from '../../images/iconSelection9.png';
 import iconSelection10 from '../../images/iconSelection10.png';
 
-
-
-
 const Selection = () => {
   return (
-    <div className="selection">
+    <section className="selection">
       <div className="selection__wrapper">
 
         <img className='selection__icon selection__icon-first' src={iconSelection1} alt="иконка1" />
@@ -46,7 +43,7 @@ const Selection = () => {
           <img className='selection__image' src={phone} alt="половинка телефон" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

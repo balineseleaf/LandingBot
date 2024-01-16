@@ -77,7 +77,7 @@
 }
 
 /* Добавленные стили для анимированного текста */
-.text-container {
+/* .text-container {
   display: block;
   text-align: center;
   font-size: 29px;
@@ -96,7 +96,7 @@
 
 .visible {
   opacity: 1;
-}
+} */
 
 .main__button {
   position: relative;
@@ -116,4 +116,12 @@
 
 .main__button:hover {
   background-color: rgb(45, 221, 159);
+}
+
+.main__clip {
+  position: absolute;
+  top: 201px;
+  right: 529px;
+  width: 50px;
+  height: 50px;
 }

@@ -12,7 +12,7 @@ function Footer() {
   };
 
   return (
-    <div className="footer">
+    <section className="footer">
       <div className="footer__wrapper">
         <p className="footer__heading"></p>
         <div className="footer__content">
@@ -55,9 +55,7 @@ function Footer() {
           </nav>
         </div>
       </div>
-
-
-    </div>
+    </section>
   );
 }
 
