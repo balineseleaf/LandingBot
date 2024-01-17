@@ -54,7 +54,7 @@
   transition: filter 200ms linear, transform 200ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
   background-image: url(../../images/rate1.jpg);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .card-background_second {
   position: absolute;
@@ -70,8 +70,9 @@
   transition: filter 200ms linear, transform 200ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
   background-image: url(../../images/rate2.jpg);
-  opacity: 0.8;
+  opacity: 0.5;
 }
+
 .card-background_third {
   position: absolute;
   right: 0;
@@ -86,7 +87,7 @@
   transition: filter 200ms linear, transform 200ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
   background-image: url(../../images/rate3.jpg);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .card-content {
@@ -107,9 +108,9 @@
   z-index: 2;
 }
 
-.card-price {
+.card__price {
   padding: 0;
-  margin: 45px 0;
+  margin-top: 37px;
   position: absolute;
   top: 280px;
   color: #fff;
@@ -119,12 +120,16 @@
   text-align: center;
 }
 
+.card__price-additional {
+  margin-top: 75px;
+}
+
 .card-bottom-text {
   position: absolute;
   left: 60px;
   top: 370px;
   color: #fff;
-  font-size: 26px;
+  font-size: 27px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;

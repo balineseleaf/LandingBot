@@ -15,7 +15,7 @@ const Rates = () => {
                 <li className="card__item">Уведомления</li>
                 <li className="card__item">Генерация ссылок</li>
               </ul>
-              <p className="card-price">Бесплатно на весь период</p>
+              <p className="card__price">Бесплатно на весь период</p>
               <p className="card-bottom-text">Подробнее</p>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Rates = () => {
                 <li className="card__item">Велком мессадж</li>
                 <li className="card__item">Аналитика</li>
               </ul>
-              <p className="card-price">300р / месяц</p>
+              <p className="card__price card__price-additional">300р / месяц</p>
               <p className="card-bottom-text">Подробнее</p>
             </div>
           </div>
@@ -47,7 +47,7 @@ const Rates = () => {
                 <li className="card__item">Велком мессадж</li>
                 <li className="card__item">Аналитика</li>
               </ul>
-              <p className="card-price">2% с каждой записи</p>
+              <p className="card__price card__price-additional">2% с каждой записи</p>
               <p className="card-bottom-text">Подробнее</p>
             </div>
           </div>

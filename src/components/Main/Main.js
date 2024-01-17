@@ -33,7 +33,7 @@ const Main = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       //setScrolled(scrollY > 450);
-      const isScrolled = scrollY > 550;
+      const isScrolled = scrollY > 530;
       setScrolled(isScrolled);
 
       //if (scrollY > 1080) {

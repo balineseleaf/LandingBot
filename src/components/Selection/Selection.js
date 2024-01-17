@@ -17,7 +17,6 @@ const Selection = () => {
   return (
     <section className="selection">
       <div className="selection__wrapper">
-
         <img className='selection__icon selection__icon-first' src={iconSelection1} alt="иконка1" />
         <img className='selection__icon selection__icon-second' src={iconSelection2} alt="иконка2" />
         <img className='selection__icon selection__icon-third' src={iconSelection3} alt="иконка3" />
@@ -29,18 +28,18 @@ const Selection = () => {
         <img className='selection__icon selection__icon-ninth' src={iconSelection9} alt="иконка9" />
         <img className='selection__icon selection__icon-tenth' src={iconSelection10} alt="иконка10" />
         <div className='selection__container'>
-          <p className='selection__text'>okoshko <br></br>для мастеров</p>
+          <p className='selection__text'><span className='selection__text_bold'>Okoshko</span> <br></br>для мастеров</p>
           <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="selection__button">
             Попробовать бесплатно
           </Link>
           <img className='selection__image' src={phone} alt="половинка телефон" />
         </div>
         <div className='selection__container'>
-          <p className="selection__text">okoshko <br></br>для клиентов</p>
+          <p className="selection__text"><span className='selection__text_bold'>Okoshko</span><br></br>для клиентов</p>
           <Link to="https://telegra.ph/Telegram-bot-dlya-zapisi-k-byuti-masteru-09-19" className="selection__button">
             Попробовать бесплатно
           </Link>
-          <img className='selection__image' src={phone} alt="половинка телефон" />
+          <img className='selection__image selection__image-right' src={phone} alt="половинка телефон" />
         </div>
       </div>
     </section>

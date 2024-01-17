@@ -46,7 +46,7 @@ const Greeting = () => {
           Бесплатная платформа для <br /> мастеров красоты
         </h1>
         <div className="greeting__container">
-          <div className="greeting__image_first"></div>
+          {/* <div className="greeting__image_first"></div> */}
           <div className="greeting__image_second"></div>
           <div className="greeting__text-container">
             <p className="greeting__text">Ваши клиенты записываются к вам на <br></br><span ref={textRef} className="text"></span> <br></br> пока вы занимаетесь своими

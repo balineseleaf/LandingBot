@@ -5,7 +5,7 @@ const Options = () => {
   return (
     <section className="options">
       <div className="options__wrapper">
-        <h1 className="options__header">okoshko упростит вам жизнь следующими опциями</h1>
+        <h1 className="options__header">Okoshko упростит вам жизнь следующими опциями</h1>
         <div className="options__main-container">
           <div className="options__container-left">
             <div className="options__container-inner left-container">

@@ -5,14 +5,14 @@
     rgb(234, 234, 234) 61%
   ); */
   background-color: rgb(38, 38, 153);
-  height: 650px;
+  height: 640px;
   padding-top: 55px;
 }
 
 .greeting__wrapper {
   width: 1000px;
   margin: 0 auto;
-  height: 650px;
+  height: 640px;
   position: relative;
 }
 
@@ -67,7 +67,7 @@
   overflow: hidden;
   animation: typing 20s steps(300) forwards,
     blinking-cursor 0.9s step-end infinite;
-  border-right: 2px solid #000;
+  border-right: 2px solid #fff;
 }
 
 /* .greeting__animated-text {
@@ -101,7 +101,7 @@
   background: url('../../images/iconSelection8.png') center/cover;
   transition: transform 0.5s ease;
   /* transform: rotateX(12deg); */
-  transform: rotateZ(22deg);
+  transform: rotateZ(19deg);
   color: white;
   z-index: 1;
 }

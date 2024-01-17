@@ -54,10 +54,19 @@
 
 .selection__image {
   margin-top: 60px;
-  width: 300px;
-  height: 450px;
+  width: 320px;
+  height: 462px;
   z-index: 3;
+  background-image: url(../../images/screenOnPhone.png);
+  background-repeat: no-repeat;
+  background-size: 200px 414px;
+  background-position: 60px 12px;
 }
+
+.selection__image-right {
+  background-image: url(../../images/screenOnPhone2.png);
+}
+
 .selection__icon {
   position: absolute;
   width: 50px;
@@ -70,12 +79,14 @@
   width: 50px;
   height: 50px;
 }
+
 .selection__icon-second {
   top: 150px;
   right: 525px;
   width: 54px;
   height: 54px;
 }
+
 .selection__icon-third {
   top: 182px;
   right: 437px;
@@ -83,6 +94,7 @@
   height: 56px;
   transform: rotate(-15deg);
 }
+
 .selection__icon-fourth {
   top: 108px;
   right: 463px;
@@ -90,10 +102,12 @@
   height: 52px;
   transform: rotate(-10deg);
 }
+
 .selection__icon-fifth {
   top: 270px;
   right: 420px;
 }
+
 .selection__icon-sixth {
   top: 228px;
   right: 523px;
@@ -101,11 +115,13 @@
   height: 78px;
   transform: rotate(15deg);
 }
+
 .selection__icon-seventh {
   top: 318px;
   right: 486px;
   transform: rotate(-11deg);
 }
+
 .selection__icon-eighth {
   top: 360px;
   right: 408px;
@@ -113,6 +129,7 @@
   height: 78px;
   transform: rotate(-45deg);
 }
+
 .selection__icon-ninth {
   top: 420px;
   right: 508px;
@@ -120,10 +137,15 @@
   height: 85px;
   transform: rotate(98deg);
 }
+
 .selection__icon-tenth {
   top: 350px;
   right: 548px;
   width: 72px;
   height: 72px;
   transform: rotate(14deg);
+}
+
+.selection__text_bold {
+  font-weight: bold;
 }
