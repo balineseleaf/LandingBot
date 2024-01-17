@@ -6,6 +6,7 @@
   ); */
   /* background-color: rgb(115, 99, 188); */
   background: rgb(247, 228, 249);
+  /* background: #ef798a; */
   height: 640px;
   padding-top: 55px;
 }
@@ -23,7 +24,7 @@
   font-size: 43px;
   text-align: center;
   /* color: #11be93; */
-  color: #11be93;
+  color: white;
   width: 500px;
   z-index: 4;
 }
@@ -66,7 +67,7 @@
 .text {
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 20s steps(300) forwards,
+  animation: typing 10s steps(30) forwards,
     blinking-cursor 0.9s step-end infinite;
   border-right: 2px solid #fff;
 }

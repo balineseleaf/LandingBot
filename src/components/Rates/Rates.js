@@ -1,22 +1,25 @@
-import "./Rates.css"
+import "./Rates.css";
+import { useTranslation } from "react-i18next";
 
 const Rates = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="rates">
       <div className="rates__wrapper">
-        <h2 className="rates__header">Тарифы для частных мастеров</h2>
+        <h2 className="rates__header">{t("Rates1")}</h2>
         <div className="card-grid">
           <div className="card">
             <div className="card-background_first" ></div>
             <div className="card-content">
               <p className="card-heading">Free</p>
               <ul className="card__list">
-                <li className="card__item">Онлайн запись</li>
-                <li className="card__item">Уведомления</li>
-                <li className="card__item">Генерация ссылок</li>
+                <li className="card__item">{t("Rates2")}</li>
+                <li className="card__item">{t("Rates3")}</li>
+                <li className="card__item">{t("Rates4")}</li>
               </ul>
-              <p className="card__price">Бесплатно на весь период</p>
-              <p className="card-bottom-text">Подробнее</p>
+              <p className="card__price">{t("Rates8")}</p>
+              <p className="card-bottom-text">{t("Rates7")}</p>
             </div>
           </div>
 
@@ -25,14 +28,14 @@ const Rates = () => {
             <div className="card-content">
               <p className="card-heading">Pro</p>
               <ul className="card__list">
-                <li className="card__item">Онлайн запись</li>
-                <li className="card__item">Уведомления</li>
-                <li className="card__item">Генерация ссылок</li>
-                <li className="card__item">Велком мессадж</li>
-                <li className="card__item">Аналитика</li>
+                <li className="card__item">{t("Rates2")}</li>
+                <li className="card__item">{t("Rates3")}</li>
+                <li className="card__item">{t("Rates4")}</li>
+                <li className="card__item">{t("Rates5")}</li>
+                <li className="card__item">{t("Rates6")}</li>
               </ul>
-              <p className="card__price card__price-additional">300р / месяц</p>
-              <p className="card-bottom-text">Подробнее</p>
+              <p className="card__price card__price-additional">{t("Rates9")}</p>
+              <p className="card-bottom-text">{t("Rates7")}</p>
             </div>
           </div>
 
@@ -41,14 +44,14 @@ const Rates = () => {
             <div className="card-content">
               <p className="card-heading">Lite Start</p>
               <ul className="card__list">
-                <li className="card__item">Онлайн запись</li>
-                <li className="card__item">Уведомления</li>
-                <li className="card__item">Генерация ссылок</li>
-                <li className="card__item">Велком мессадж</li>
-                <li className="card__item">Аналитика</li>
+                <li className="card__item">{t("Rates2")}</li>
+                <li className="card__item">{t("Rates3")}</li>
+                <li className="card__item">{t("Rates4")}</li>
+                <li className="card__item">{t("Rates5")}</li>
+                <li className="card__item">{t("Rates6")}</li>
               </ul>
-              <p className="card__price card__price-additional">2% с каждой записи</p>
-              <p className="card-bottom-text">Подробнее</p>
+              <p className="card__price card__price-additional">{t("Rates10")}</p>
+              <p className="card-bottom-text">{t("Rates7")}</p>
             </div>
           </div>
         </div>

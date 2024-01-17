@@ -1,9 +1,11 @@
 import "./Greeting.css";
 import React, { useEffect, useRef } from "react";
 import checkIcon from '../../images/checkIcon5.png';
+import { useTranslation } from "react-i18next";
 
 
 const Greeting = () => {
+  const { t } = useTranslation();
   const textRef = useRef(null);
   const words = ['ШУГАРИНГ', 'ПЕДИКЮР', 'РЕСНИЧКИ', 'МАНИКЮР', 'СТРИЖКУ'];
 
@@ -44,7 +46,7 @@ const Greeting = () => {
     <section className="greeting">
       <div className="greeting__wrapper">
         <h1 className="greeting__header">
-          Бесплатная платформа для <br /> мастеров красоты
+          {t("Greeting1")} <br /> {t("Greeting2")}
         </h1>
         <div className="greeting__container">
           {/* <div className="greeting__image_first" src={handWithPhone} alt="рука с телефоном"></div> */}
