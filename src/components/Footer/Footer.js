@@ -21,12 +21,13 @@ function Footer() {
             <div className="footer__info-block">
               <ul className="footer__info-items">
                 <li className="footer__info-item">
-                  {/* <p className="footer__text">База знаний</p> */}
                   <Link className="footer__info-link" target="_blank" to="/knowledgebase">База знаний</Link>
                 </li>
                 <li className="footer__info-item">
-                  {/* <p className="footer__text">О Компании</p> */}
                   <Link className="footer__info-link" target="_blank" to="/aboutCompany">О Компании</Link>
+                </li>
+                <li className="footer__info-item">
+                  <Link className="footer__info-link" target="_blank" to="/partners">Партнерам</Link>
                 </li>
               </ul>
             </div>

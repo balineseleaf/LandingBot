@@ -12,6 +12,7 @@ import iconSelection7 from '../../images/iconSelection7.png';
 import iconSelection8 from '../../images/iconSelection8.png';
 import iconSelection9 from '../../images/iconSelection9.png';
 import iconSelection10 from '../../images/iconSelection10.png';
+import iconSelection11 from '../../images/cloudsIcon.png';
 
 const Selection = () => {
   return (
@@ -27,6 +28,7 @@ const Selection = () => {
         <img className='selection__icon selection__icon-eighth' src={iconSelection8} alt="иконка8" />
         <img className='selection__icon selection__icon-ninth' src={iconSelection9} alt="иконка9" />
         <img className='selection__icon selection__icon-tenth' src={iconSelection10} alt="иконка10" />
+        <img className='selection__icon selection__icon-eleventh' src={iconSelection11} alt="иконка11" />
         <div className='selection__container'>
           <p className='selection__text'><span className='selection__text_bold'>Okoshko</span> <br></br>для мастеров</p>
           <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="selection__button">

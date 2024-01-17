@@ -1,10 +1,11 @@
 import "./Greeting.css";
 import React, { useEffect, useRef } from "react";
+import checkIcon from '../../images/checkIcon5.png';
 
 
 const Greeting = () => {
   const textRef = useRef(null);
-  const words = ['ШУГАРИНГ', 'ПЕДИКЮР', 'РЕСНИЧКИ', 'МАНИКЮР', 'СТРИЖКА'];
+  const words = ['ШУГАРИНГ', 'ПЕДИКЮР', 'РЕСНИЧКИ', 'МАНИКЮР', 'СТРИЖКУ'];
 
   let currentWordIndex = 0;
   let currentCharIndex = 0;
@@ -46,8 +47,9 @@ const Greeting = () => {
           Бесплатная платформа для <br /> мастеров красоты
         </h1>
         <div className="greeting__container">
-          {/* <div className="greeting__image_first"></div> */}
+          {/* <div className="greeting__image_first" src={handWithPhone} alt="рука с телефоном"></div> */}
           <div className="greeting__image_second"></div>
+          <img className="greeting__image_third" src={checkIcon} alt="галочка" />
           <div className="greeting__text-container">
             <p className="greeting__text">Ваши клиенты записываются к вам на <br></br><span ref={textRef} className="text"></span> <br></br> пока вы занимаетесь своими
               делами</p>

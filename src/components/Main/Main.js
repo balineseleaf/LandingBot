@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Main.css";
 import iphone from "../../images/iphone.svg";
+//import phoneIcon from "../../images/PhoneIcon.svg";
 import icon10 from "../../images/icon10.png";
 import icon11 from "../../images/icon11.png";
 import icon12 from "../../images/icon12.png";
@@ -33,7 +34,7 @@ const Main = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       //setScrolled(scrollY > 450);
-      const isScrolled = scrollY > 530;
+      const isScrolled = scrollY > 800;
       setScrolled(isScrolled);
 
       //if (scrollY > 1080) {

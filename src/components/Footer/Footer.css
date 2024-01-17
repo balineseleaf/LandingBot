@@ -1,6 +1,7 @@
 .footer {
-  background: rgb(247, 228, 249);
+  /* background: rgb(247, 228, 249); */
   height: 210px;
+  background: rgb(234, 234, 234) 61%;
   box-shadow: 30px 30px rgba(238, 209, 243, 0.5); /* Добавляем тень снизу */
 }
 
@@ -11,17 +12,17 @@
 
 .footer__heading {
   margin: 0;
-  padding: 30px 0 20px;
+  padding: 0;
   color: #8b8b8b;
   text-align: center;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.2;
-  border-bottom: 1px solid #424242;
+  border-bottom: 3px solid #424242;
 }
 
 .footer__content {
-  padding: 20px 0;
+  padding: 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -53,7 +54,7 @@
 }
 
 .footer__langbox {
-  margin-bottom: 17px;
+  margin-top: 45px;
   display: flex;
   width: 100px;
   flex-direction: row;
@@ -130,6 +131,7 @@
 
 .footer__info-block {
   margin-right: 15px;
+  margin-top: 12px;
 }
 
 .footer__info-items {
@@ -148,29 +150,10 @@
   text-decoration: none;
 }
 
-/* max-width: 550px {
-.footer__heading {
-padding-bottom: 21px;
-font-size: 12px;
+.footer__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 18px;
 }
-
-.footer__platforms {
-flex-direction: column;
-gap: 12px
-}
-
-.footer__content {
-flex-direction: column-reverse;
-padding-top: 30px;
-gap: 30px;
-}
-
-.footer__content-item {
-font-size: 12px;
-text-align: center;
-}
-
-.footer__copyright {
-color: #8B8B8B;
-}
-} */
