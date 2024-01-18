@@ -130,8 +130,13 @@
 }
 
 .footer__info-block {
-  margin-right: 15px;
+  min-width: 125px;
+  text-align: start;
   margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
 }
 
 .footer__info-items {
@@ -151,9 +156,18 @@
 }
 
 .footer__text {
+  display: block;
   margin: 0;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 5px;
   margin-bottom: 18px;
+  min-width: 110px;
+}
+
+.footer__masters-block {
+  min-width: 110px;
+}
+.footer__clients-block {
+  min-width: 110px;
 }

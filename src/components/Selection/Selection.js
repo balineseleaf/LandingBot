@@ -13,8 +13,10 @@ import iconSelection8 from '../../images/iconSelection8.png';
 import iconSelection9 from '../../images/iconSelection9.png';
 import iconSelection10 from '../../images/iconSelection10.png';
 import iconSelection11 from '../../images/cloudsIcon.png';
+import { useTranslation } from "react-i18next";
 
 const Selection = () => {
+  const { t } = useTranslation();
   return (
     <section className="selection">
       <div className="selection__wrapper">
@@ -30,16 +32,16 @@ const Selection = () => {
         <img className='selection__icon selection__icon-tenth' src={iconSelection10} alt="иконка10" />
         <img className='selection__icon selection__icon-eleventh' src={iconSelection11} alt="иконка11" />
         <div className='selection__container'>
-          <p className='selection__text'><span className='selection__text_bold'>Okoshko</span> <br></br>для мастеров</p>
+          <p className='selection__text'><span className='selection__text_bold'>Okoshko</span> <br></br>{t("Selection1")}</p>
           <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="selection__button">
-            Попробовать бесплатно
+            {t("Main10")}
           </Link>
           <img className='selection__image' src={phone} alt="половинка телефон" />
         </div>
         <div className='selection__container'>
-          <p className="selection__text"><span className='selection__text_bold'>Okoshko</span><br></br>для клиентов</p>
+          <p className="selection__text"><span className='selection__text_bold'>Okoshko</span><br></br>{t("Selection2")}</p>
           <Link to="https://telegra.ph/Telegram-bot-dlya-zapisi-k-byuti-masteru-09-19" className="selection__button">
-            Попробовать бесплатно
+            {t("Main10")}
           </Link>
           <img className='selection__image selection__image-right' src={phone} alt="половинка телефон" />
         </div>

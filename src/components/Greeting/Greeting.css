@@ -20,13 +20,15 @@
 
 .greeting__header {
   margin: 0 auto;
+  -webkit-text-stroke: 1px #11be93;
   padding: 70px 0 0 0;
-  font-size: 43px;
+  font-size: 47px;
   text-align: center;
   /* color: #11be93; */
   color: white;
   width: 500px;
   z-index: 4;
+  min-height: 154px;
 }
 
 @keyframes typing {
@@ -82,8 +84,8 @@
 
 .greeting__image_second {
   position: absolute;
-  top: 132px;
-  right: -49px;
+  top: 111px;
+  right: -71px;
   width: 260px;
   height: 260px;
   background: url('../../images/iconSelection8.png') center/cover;
@@ -112,8 +114,8 @@
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 248px;
-  right: 88px;
+  top: 228px;
+  right: 68px;
   z-index: 3;
   transform: rotateY(21deg);
 }

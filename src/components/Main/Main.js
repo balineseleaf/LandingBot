@@ -16,9 +16,10 @@ import clipIcon from "../../images/clipsIcon.png";
 import { useTranslation } from "react-i18next";
 
 const Main = () => {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [backgroundImage, setBackgroundImage] = useState(screenOnPhone);
-  const { t } = useTranslation();
+
   // useEffect(() => {
   //   const handleScroll = () => {
   //     const scrollY = window.scrollY;
@@ -96,11 +97,9 @@ const Main = () => {
               <img className="main__icon" src={icon17} alt="иконка8" />
               <p className="main__text">{t("Main9")}</p>
             </div>
-            <div>
-              <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="main__button">
-                {t("Main10")}
-              </Link>
-            </div>
+            <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="main__button">
+              {t("Main10")}
+            </Link>
           </div>
         </div>
       </div>

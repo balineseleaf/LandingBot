@@ -21,13 +21,13 @@ function Footer() {
             <div className="footer__info-block">
               <ul className="footer__info-items">
                 <li className="footer__info-item">
-                  <Link className="footer__info-link" target="_blank" to="/knowledgebase">База знаний</Link>
+                  <Link className="footer__info-link" target="_blank" to="/knowledgebase">{t("Footer1")}</Link>
                 </li>
                 <li className="footer__info-item">
-                  <Link className="footer__info-link" target="_blank" to="/aboutCompany">О Компании</Link>
+                  <Link className="footer__info-link" target="_blank" to="/aboutCompany">{t("Footer2")}</Link>
                 </li>
                 <li className="footer__info-item">
-                  <Link className="footer__info-link" target="_blank" to="/partners">Партнерам</Link>
+                  <Link className="footer__info-link" target="_blank" to="/partners">{t("Footer3")}</Link>
                 </li>
               </ul>
             </div>
@@ -36,7 +36,7 @@ function Footer() {
               <button className="footer__lang-button_ru" onClick={() => changeLanguage("ru")}></button>
             </div>
             <div className="footer__masters-block">
-              <p className="footer__text">Для мастеров:</p>
+              <p className="footer__text">{t("Footer4")}</p>
               <Link className="footer__socials-link" target="_blank" to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23">
                 <img alt="telegram" src={book} className="footer__link" />
               </Link>
@@ -45,7 +45,7 @@ function Footer() {
               </Link>
             </div>
             <div className="footer__clients-block">
-              <p className="footer__text">Для клиентов:</p>
+              <p className="footer__text">{t("Footer5")}</p>
               <Link className="footer__socials-link" target="_blank" to="https://telegra.ph/Telegram-bot-dlya-zapisi-k-byuti-masteru-09-19">
                 <img alt="telegram" src={book} className="footer__link" />
               </Link>

@@ -9,6 +9,7 @@
   position: fixed;
   width: 100%;
   z-index: 21;
+  top: 0;
 }
 
 .header__wrapper {

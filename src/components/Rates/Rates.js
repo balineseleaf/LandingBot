@@ -18,11 +18,10 @@ const Rates = () => {
                 <li className="card__item">{t("Rates3")}</li>
                 <li className="card__item">{t("Rates4")}</li>
               </ul>
-              <p className="card__price">{t("Rates8")}</p>
+              <p className="card__price card__price-additional">{t("Rates8")}</p>
               <p className="card-bottom-text">{t("Rates7")}</p>
             </div>
           </div>
-
           <div className="card">
             <div className="card-background_second" ></div>
             <div className="card-content">
@@ -38,7 +37,6 @@ const Rates = () => {
               <p className="card-bottom-text">{t("Rates7")}</p>
             </div>
           </div>
-
           <div className="card">
             <div className="card-background_third"></div>
             <div className="card-content">

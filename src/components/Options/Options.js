@@ -1,49 +1,50 @@
 import "./Options.css";
 import clipIcon from "../../images/clipsIcon.png";
+import { useTranslation } from "react-i18next";
 
 const Options = () => {
+  const { t } = useTranslation();
   return (
     <section className="options">
       <div className="options__wrapper">
-        <h1 className="options__header">Okoshko упростит вам жизнь следующими опциями</h1>
+        <h1 className="options__header">{t("Options1")}</h1>
         <div className="options__main-container">
           <div className="options__container-left">
             <div className="options__container-inner left-container">
-              <p className="options__caption options__caption_first">Привлекайте новых клиентов 24/7</p>
-              <p className="options__text options__text_first">Все что необходимо это заполнить расписание и добавить все ваши услуги. Приложение будет автоматический подбирать вам  клиентов, вам остается лишь качественно выполнять услуги</p>
+              <p className="options__caption options__caption_first">{t("Options2")}</p>
+              <p className="options__text options__text_first">{t("Options6")}</p>
             </div>
             <div className="options__container-inner">
               <div className="options__container-little">
-                <p className="options__caption options__caption_second">Автоматические уведомления</p>
-                <p className="options__text options__text_second">Нет необходимости вручную рассылать клиентам напоминания</p>
+                <p className="options__caption options__caption_second">{t("Options3")}</p>
+                <p className="options__text options__text_second">{t("Options7")}</p>
               </div>
-              <div className="options__container-little">
-                <p className="options__caption options__caption_third">Велком мессадж</p>
-                <p className="options__text options__text_third">Если не хотите публиковать свой адрес, добавьте его в велком мессадж, который будет приходить за сутки дозаписи вашему клиенту</p>
+              <div className="options__container-little fourth-container">
+                <p className="options__caption options__caption_third">{t("Options4")}</p>
+                <p className="options__text options__text_third">{t("Options8")}</p>
               </div>
             </div>
           </div>
           <div className="options__container-right">
             <div className="options__container-inner-row">
               <div className="options__container-little">
-                <p className="options__caption">Генерируйте ссылку  или QR для ваших  клиентов</p>
-                <p className="options__text">Вы можете распечатать qr код  или выложить ссылку в соц сетях для привлечения новых  клиентов
-                </p>
+
+
+                <p className="options__caption">{t("Options9")}</p>
+                <p className="options__text">{t("Options10")}</p>
               </div>
               <div className="options__container-little third-container">
-                <p className="options__caption">Аналитика клиентов
-                </p>
-                <p className="options__text">Держите под контролем своих клиентов, делайте им рассылки со скидками или специальными  предложениями</p>
+                <p className="options__caption">{t("Options5")}</p>
+                <p className="options__text">{t("Options11")}</p>
               </div>
             </div>
             <div className="options__container-inner-row right-container">
               <img src={clipIcon} alt="скрепка" className="options__clip" />
-              <p className="options__caption options__caption_wide">Круглосуточная поддержка и сопровождение</p>
-              <p className="options__text options__text_wide">Мы всегда готовы оказать вам поддержку на каждом этапе сотрудничества. Наша команда гарантирует не только помощь с начальными шагами, но и непрерывную связь на протяжении всего сотрудничества.</p>
+              <p className="options__caption options__caption_wide">{t("Options12")}</p>
+              <p className="options__text options__text_wide">{t("Options13")}</p>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
