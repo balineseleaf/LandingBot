@@ -14,7 +14,6 @@
 .greeting__wrapper {
   width: 1000px;
   margin: 0 auto;
-  height: 640px;
   position: relative;
 }
 
@@ -29,25 +28,6 @@
   width: 500px;
   z-index: 4;
   min-height: 154px;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blinking-cursor {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #000;
-  }
 }
 
 /* Добавленные стили для анимированного текста */
@@ -69,9 +49,6 @@
 .text {
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 10s steps(30) forwards,
-    blinking-cursor 0.9s step-end infinite;
-  border-right: 2px solid #fff;
 }
 
 .greeting__text {
@@ -82,10 +59,18 @@
   color: #11be93;
 }
 
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 .greeting__image_second {
   position: absolute;
   top: 111px;
-  right: -71px;
+  right: -37px;
   width: 260px;
   height: 260px;
   background: url('../../images/iconSelection8.png') center/cover;
@@ -115,7 +100,50 @@
   width: 50px;
   height: 50px;
   top: 228px;
-  right: 68px;
+  right: 100px;
   z-index: 3;
   transform: rotateY(21deg);
+}
+
+@media (max-width: 1000px) {
+  .greeting {
+    width: 100%;
+  }
+  .greeting__wrapper {
+    width: 90%;
+  }
+  .greeting__container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .greeting {
+    height: 500px;
+  }
+  .greeting__image_second {
+    display: none;
+  }
+  .greeting__image_third {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .greeting {
+    height: 600px;
+  }
+  .greeting__header {
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
+  .greeting__container {
+    width: 100%;
+  }
+  .greeting__image_second {
+    display: none;
+  }
+  .greeting__image_third {
+    display: none;
+  }
 }

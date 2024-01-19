@@ -19,8 +19,8 @@ function App() {
       <Rates />
       <Options />
       <Selection />
-      <Footer />
-    </div>
+      {/* <Footer /> */}
+    </div >
   );
 }
 

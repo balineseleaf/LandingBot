@@ -9,7 +9,6 @@
 }
 
 .rates__wrapper {
-  /* width: 1000px; */
   margin: 0 auto;
 }
 
@@ -23,7 +22,7 @@
 
 .card-grid {
   margin-top: 50px;
-  display: inline-flex;
+  display: flex;
   grid-column-gap: 40px;
 }
 
@@ -161,4 +160,37 @@
   color: white;
   text-decoration: none;
   z-index: 2;
+}
+
+@media (max-width: 1000px) {
+  .rates {
+    width: 100%;
+  }
+  .rates__wrapper {
+    width: 90%;
+  }
+  .rates__header {
+    padding-top: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .rates__header {
+    padding: 50px 0 0 0;
+    width: 100%;
+  }
 }

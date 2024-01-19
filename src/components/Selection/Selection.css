@@ -1,6 +1,5 @@
 .selection {
   background: rgb(234, 234, 234) 61%;
-  height: 500px;
 }
 
 .selection__wrapper {
@@ -9,7 +8,6 @@
   flex-direction: row;
   width: 1000px;
   margin: 0 auto;
-  height: 500px;
   justify-content: space-between;
 }
 .selection__container {
@@ -150,4 +148,35 @@
 
 .selection__text_bold {
   font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .selection {
+    width: 100%;
+  }
+  .selection__wrapper {
+    width: 90%;
+  }
+  .selection__icon {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .selection__wrapper {
+    flex-direction: column;
+  }
+  .selection__image {
+    margin: 0 auto;
+  }
+  .selection__button {
+    width: 70%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .selection__button {
+    font-size: 17px;
+  }
 }

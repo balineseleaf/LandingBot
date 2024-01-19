@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
-import iconTG2 from "../../images/iconTG.svg";
-import book from "../../images/book.png";
+import book from "../../images/colourbook.png";
+import telegram from "../../images/telegram.png";
 
 function Footer() {
   const { t, i18n } = useTranslation();
@@ -41,7 +41,7 @@ function Footer() {
                 <img alt="telegram" src={book} className="footer__link" />
               </Link>
               <Link className="footer__socials-link" target="_blank" to="https://t.me/maniProMaster_bot">
-                <img alt="telegram" src={iconTG2} className="footer__link" />
+                <img alt="telegram" src={telegram} className="footer__link" />
               </Link>
             </div>
             <div className="footer__clients-block">
@@ -50,7 +50,7 @@ function Footer() {
                 <img alt="telegram" src={book} className="footer__link" />
               </Link>
               <Link className="footer__socials-link" target="_blank" to="https://t.me/maniPro_bot">
-                <img alt="telegram" src={iconTG2} className="footer__link" />
+                <img alt="telegram" src={telegram} className="footer__link" />
               </Link>
             </div>
           </nav>

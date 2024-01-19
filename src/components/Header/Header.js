@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import iconIG from "../../images/iconIG.svg";
-import iconTG2 from "../../images/iconTG.svg";
+import telegram from "../../images/telegram.png";
+import insta from "../../images/insta.png";
 import mainIcon from "../../images/mainIcon.png";
 import { useTranslation } from "react-i18next";
 import "./Header.css";
@@ -12,6 +12,7 @@ const Header = () => {
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
+
   };
   return (
     <section className="header">
@@ -27,12 +28,12 @@ const Header = () => {
           </div>
           <li className="header__links">
             <Link target="_blank" to="https://www.instagram.com/okoshko.pro?igsh=aG1lZjB6OW5tZzVx">
-              <img alt="instagram" src={iconIG} className="header__link" />
+              <img alt="instagram" src={insta} className="header__link" />
             </Link>
           </li>
           <li className="header__links">
             <Link target="_blank" to="https://t.me/maniProMaster_bot">
-              <img alt="telegram" src={iconTG2} className="header__link" />
+              <img alt="telegram" src={telegram} className="header__link" />
             </Link>
           </li>
         </ul>
