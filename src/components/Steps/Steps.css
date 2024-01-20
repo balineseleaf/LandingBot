@@ -181,5 +181,14 @@
 @media (max-width: 500px) {
   .steps {
     padding-top: 10px;
+    height: 1360px;
+  }
+  .steps__header {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .steps__header {
+    padding-top: 50px;
   }
 }

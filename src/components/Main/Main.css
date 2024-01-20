@@ -166,6 +166,9 @@
   .main {
     height: 980px;
   }
+  .main__wrapper {
+    width: 95%;
+  }
   .main__header {
     padding: 50px 0 0 0;
     width: 100%;
@@ -184,5 +187,35 @@
     width: 80%;
     font-size: 17px;
     min-width: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    height: 1100px;
+  }
+  .main__container {
+    width: 100%;
+  }
+  .main__item {
+    width: 85%;
+    min-width: 200px;
+    min-height: 75px;
+  }
+  .main__text {
+    font-size: 19px;
+  }
+  .main__text-long {
+    font-size: 16px;
+  }
+  .main__button {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .main__button {
+    font-size: 18px;
   }
 }

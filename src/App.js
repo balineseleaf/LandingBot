@@ -19,7 +19,7 @@ function App() {
       <Rates />
       <Options />
       <Selection />
-      {/* <Footer /> */}
+      <Footer />
     </div >
   );
 }

@@ -188,3 +188,19 @@
     margin-left: 3px;
   }
 }
+
+@media (max-width: 410px) {
+  .header {
+    height: 140px;
+  }
+  .header__wrapper {
+    flex-direction: column;
+  }
+  .header__text {
+    font-size: 39px;
+  }
+  .header__lang-links {
+    padding-right: 0px;
+    margin-top: 10px;
+  }
+}

@@ -10,6 +10,7 @@
   margin: 0 auto;
   justify-content: space-between;
 }
+
 .selection__container {
   display: flex;
   flex-direction: column;
@@ -177,6 +178,20 @@
 
 @media (max-width: 420px) {
   .selection__button {
-    font-size: 17px;
+    width: 80%;
+    font-size: 20px;
+  }
+  .selection__text {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 350px) {
+  .selection__button {
+    width: 80%;
+    font-size: 18px;
+  }
+  .selection__text {
+    font-size: 27px;
   }
 }

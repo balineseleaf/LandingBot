@@ -3,6 +3,7 @@
   height: 210px;
   background: rgb(234, 234, 234) 61%;
   box-shadow: 30px 30px rgba(238, 209, 243, 0.5); /* Добавляем тень снизу */
+  height: 600px;
 }
 
 .footer__wrapper {
@@ -174,9 +175,64 @@
   min-width: 110px;
 }
 
-/* @media screen and (min-width: 320px) and (max-width: 450px) {
-  .footer__content {
-    justify-content: center;
-    width: 300px;
+@media (max-width: 1000px) {
+  .footer {
+    width: 100%;
   }
-} */
+  .footer__wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer {
+    height: 480px;
+  }
+  .footer__content {
+    width: 90%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer__platforms {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer__langbox {
+    display: none;
+  }
+
+  .footer__info-item {
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+
+  .footer__text {
+    font-size: 21px;
+    margin-right: 15px;
+  }
+
+  .footer__masters-block {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+  }
+
+  .footer__clients-block {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    height: 490px;
+  }
+}
