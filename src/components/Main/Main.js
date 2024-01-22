@@ -49,8 +49,8 @@ const Main = () => {
         <div className="main__container">
           <h2 className="main__header">{t("Main0")}<br />{t("Main1")}</h2>
           <div className="main__container_inner">
-            <img src={clipIcon} alt="скрепка" className="main__clip" />
-            <div className="main__item">
+            <div className="main__item main__item-first">
+              <img src={clipIcon} alt="скрепка" className="main__clip" />
               <img className="main__icon" src={icon10} alt="иконка1" />
               <p className="main__text">{t("Main2")}</p>
             </div>

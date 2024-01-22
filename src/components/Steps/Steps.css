@@ -1,21 +1,6 @@
 .steps {
-  /* background: linear-gradient(
-    rgb(248, 205, 206),
-    rgb(231, 186, 205),
-    rgb(213, 167, 205),
-    rgb(195, 148, 203),
-    rgb(177, 130, 202)
-  ); */
-  /* background: linear-gradient(
-    90deg,
-    rgb(181, 246, 223),
-    rgb(234, 234, 234) 61%
-  ); */
-  /* background: rgb(234, 234, 234) 61%; */
   background: #f8f8f8;
-  /* background-image: url(../../images/bigImage.jpg);
-  background-position: center;
-  background-size: cover;  */
+  /* background-image: url(../../images/bigImage.jpg);*/
   padding-bottom: 200px;
 }
 
@@ -61,16 +46,10 @@
   height: 320px;
   position: relative;
   left: 92px;
-  top: -14px;
+  top: -26px;
 }
 
 .steps__block {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 180px; */
   position: relative;
   top: 300px;
   width: 185px;

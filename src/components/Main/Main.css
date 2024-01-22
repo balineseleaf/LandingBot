@@ -70,6 +70,10 @@
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5); /* Добавляем тень снизу */
 }
 
+.main__item-first {
+  position: relative;
+}
+
 .main__icon {
   width: 30px;
   height: 30px;
@@ -109,8 +113,8 @@
 
 .main__clip {
   position: absolute;
-  top: 270px;
-  right: 344px;
+  top: -34px;
+  right: 235px;
   width: 60px;
   height: 50px;
 }
