@@ -4,14 +4,14 @@ import logoO from '../../images/logoO.png';
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Typed from 'typed.js';
-// import { useLanguage } from "../../utils/context.js";
 
 const Greeting = () => {
   const { t, i18n } = useTranslation();
 
   const elRu = useRef(null);
   const elEn = useRef(null);
-  const [isVisible, setIsVisible] = useState(i18n.language == "ru");
+  // const [isVisible, setIsVisible] = useState(i18n.language == "ru");
+  const isVisible = i18n.language === "ru";
   const [currentDay, setCurrentDay] = useState(new Date().getDate());
 
 
@@ -33,7 +33,7 @@ const Greeting = () => {
       typedEn.destroy();
     };
 
-  }, [i18n.language]);
+  }, []);
 
 
   return (
@@ -51,6 +51,7 @@ const Greeting = () => {
         </h1>
         <div className="greeting__container">
           <div className="greeting__text-container">
+
             <h2 id="ru" className={`greeting__text ${isVisible ? 'visible' : 'hidden'}`}>
               {t("Greeting3")} < br /><span ref={elRu} className="text"></span><br /> {t("Greeting4")}
             </h2>
