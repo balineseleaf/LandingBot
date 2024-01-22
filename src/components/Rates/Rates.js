@@ -1,5 +1,6 @@
 import "./Rates.css";
 import { useTranslation } from "react-i18next";
+import logoO from '../../images/logoO.png';
 
 const Rates = () => {
   const { t } = useTranslation();

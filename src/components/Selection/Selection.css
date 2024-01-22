@@ -1,5 +1,6 @@
 .selection {
-  background: rgb(234, 234, 234) 61%;
+  /* background: rgb(234, 234, 234) 61%; */
+  background: #f8f8f8;
 }
 
 .selection__wrapper {
@@ -13,47 +14,75 @@
 
 .selection__container {
   display: flex;
+  position: relative;
   flex-direction: column;
-  margin-top: 50px;
-  height: 450px;
+  height: 280px;
+  width: 500px;
   overflow: hidden;
 }
 
 .selection__button {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 50px;
   display: inline-block;
-  padding: 15px 20px;
-  font-size: 21px;
+  font-size: 23px;
+  font-weight: 600;
   text-align: center;
   text-decoration: none;
-  background-color: #11be93;
-  color: #fff;
-  transition: background-color 0.5s ease;
+  color: #f8f8f8;
+  transition: transform 0.5s ease;
   border-radius: 20px;
 }
 
 .selection__button:hover {
-  background-color: rgb(45, 221, 159);
+  /* background-color: #fadadd; */
+  transform: scale(1.06);
 }
 
 .selection__text {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  padding-top: 10px;
   text-align: center;
-  font-size: 25px;
-  color: #11be93;
+  font-size: 30px;
+  font-weight: 300;
+  color: #f8f8f8;
 }
 
 .selection__image {
-  margin-top: 60px;
-  width: 320px;
-  height: 462px;
-  z-index: 3;
   background-image: url(../../images/screenOnPhone.png);
+  width: 205px;
+  z-index: 2;
   background-repeat: no-repeat;
-  background-size: 200px 414px;
-  background-position: 60px 12px;
+  background-size: 191px 412px;
+  background-position: 8px 10px;
+  /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.selection__square-block-left {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 186px;
+  left: 204px;
+  width: 265px;
+  background-color: #ff83dc;
+  top: 100px;
+  border-top-right-radius: 30px;
+  box-shadow: 10px 10px 2px 1px rgba(255, 96, 207);
+}
+
+.selection__square-block-right {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 186px;
+  left: 204px;
+  width: 265px;
+  background-color: #ff83dc;
+  top: 100px;
+  border-top-right-radius: 30px;
+  box-shadow: 10px 10px 2px 1px rgba(255, 96, 207);
 }
 
 .selection__image-right {
@@ -124,11 +153,11 @@
 }
 
 .selection__icon-ninth {
-  top: 420px;
+  top: 426px;
   right: 508px;
   width: 85px;
   height: 85px;
-  transform: rotate(98deg);
+  transform: rotate(28deg);
 }
 
 .selection__icon-tenth {
@@ -140,11 +169,11 @@
 }
 
 .selection__icon-eleventh {
-  top: 443px;
+  top: 441px;
   right: 407px;
-  width: 85px;
+  width: 70px;
   height: 88px;
-  transform: rotateX(54deg);
+  transform: rotateX(55deg);
 }
 
 .selection__text_bold {

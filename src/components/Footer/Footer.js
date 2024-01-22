@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
-import book from "../../images/colourbook.png";
-import telegram from "../../images/telegram.png";
+import book from "../../images/blackBookIcon.png";
+import telegram from "../../images/iconTgNew.png";
 
 function Footer() {
   const { t, i18n } = useTranslation();

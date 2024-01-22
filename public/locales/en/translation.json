@@ -1,5 +1,6 @@
 {
-  "Main1": "All functionality is in your pocket",
+  "Main0": "All functionality is ",
+  "Main1": "in your pocket",
   "Main2": "Online registration",
   "Main3": "Notifications",
   "Main4": "Convenient calendar",
@@ -36,6 +37,7 @@
   "Options1": "Okoshko will make your life easier with the following options",
   "Selection1": "for masters",
   "Selection2": "for clients",
+  "Selection3": "Continue",
   "Footer1": "Knowledge base",
   "Footer2": "About company",
   "Footer3": "For partners",

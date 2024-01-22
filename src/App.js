@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useContext, useState } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -10,6 +10,9 @@ import Options from "./components/Options/Options";
 import Selection from "./components/Selection/Selection";
 
 function App() {
+
+
+
   return (
     <div className="page">
       <Header />

@@ -4,8 +4,10 @@
     rgb(181, 246, 223),
     rgb(234, 234, 234) 61%
   ); */
-  background: rgb(234, 234, 234) 61%;
+  /* background: rgb(234, 234, 234) 61%; */
+  background: #f8f8f8;
   height: 750px;
+  padding-bottom: 100px;
 }
 
 .options__wrapper {
@@ -23,11 +25,13 @@
 }
 
 .options__header {
+  text-transform: uppercase;
   margin: 0;
   padding: 40px 0 0 0;
   font-size: 33px;
   text-align: center;
-  color: #11be93;
+  font-weight: 600;
+  color: #1c1c1c;
 }
 
 .options__container-left {
@@ -75,7 +79,7 @@
 }
 
 .fourth-container {
-  min-height: 291px;
+  min-height: 298px;
 }
 
 .options__container-inner-row {
@@ -100,10 +104,10 @@
   padding-left: 5px;
   padding-right: 5px;
   margin: 0 auto;
-  color: black;
+  color: #1c1c1c;
   padding-top: 15px;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -111,7 +115,8 @@
   margin: 0 auto;
   padding-top: 20px;
   font-size: 19px;
-  color: black;
+  font-weight: 300;
+  color: #1c1c1c;
   text-align: center;
   padding-bottom: 20px;
   padding-left: 5px;
@@ -362,7 +367,7 @@
 
 @media (max-width: 416px) {
   .options {
-    height: 1690px;
+    height: 1610px;
   }
   .right-container {
     height: 295px;
@@ -370,6 +375,11 @@
 
   .left-container {
     height: 295px;
+  }
+}
+@media (min-width: 366px) and (max-width: 416px) {
+  .options {
+    height: 1650px;
   }
 }
 

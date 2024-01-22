@@ -4,8 +4,9 @@
     rgb(181, 246, 223),
     rgb(234, 234, 234) 61%
   ); */
-  background: rgb(234, 234, 234) 61%;
-  height: 690px;
+  /* background: rgb(234, 234, 234) 61%; */
+  background: #f8f8f8;
+  padding-bottom: 200px;
 }
 
 .main__wrapper {
@@ -16,47 +17,52 @@
 
 .main__header {
   margin: 0;
-  padding: 45px 0 0 45px;
-  font-size: 37px;
-  font-weight: 700;
-  line-height: 1.33;
-  text-align: center;
-  color: #11be93;
+  padding: 0;
+  text-transform: uppercase;
+  padding-left: 382px;
+  width: 560px;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: left;
+  color: #1c1c1c;
 }
 
 .main__image {
-  margin-top: 94px;
+  background-image: url(../../images/screenOnPhone.png);
+  margin-top: 156px;
   position: absolute;
-  top: 100px;
-  width: 314px;
-  height: 450px;
+  top: 144px;
+  width: 401px;
+  height: 590px;
   transition: top 0.6s ease-in-out;
   z-index: 2;
-  /* background-image: url(../../images/screenOnPhone.png); */
+
   background-repeat: no-repeat;
-  background-size: 200px 414px;
-  background-position: 58px 11px;
+  background-size: 267px 569px;
+  background-position: 68px 13px;
 }
 
 .main__container {
-  margin-top: 150px;
+  padding-top: 100px;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  align-items: end;
 }
 
 .main__container_inner {
-  margin-left: 15px;
+  padding-top: 25px;
+  padding-right: 115px;
 }
 
 .main__wrapper.scrolled .main__image {
-  top: 780px;
+  top: 1250px;
 }
 
 .main__item {
   min-width: 285px;
   margin-top: 10px;
   border-radius: 20px;
-  border: 1px solid black;
+  border: 1px solid #1c1c1c;
   padding: 0 15px;
   display: flex;
   flex-direction: row;
@@ -71,8 +77,8 @@
 
 .main__text {
   padding-left: 10px;
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .main__text-long {
@@ -82,29 +88,30 @@
 
 .main__button {
   display: block;
-  position: relative;
-  min-width: 330px;
+  margin-top: 20px;
+  width: 305px;
   top: 37px;
   right: 177px;
   padding: 15px 26px;
   font-size: 21px;
+  font-weight: 300;
   text-align: center;
   text-decoration: none;
-  background-color: #11be93;
+  background-color: #ff83dc;
   color: #fff;
   transition: background-color 0.5s ease;
   border-radius: 20px;
 }
 
 .main__button:hover {
-  background-color: rgb(45, 221, 159);
+  background-color: #ff60cf;
 }
 
 .main__clip {
   position: absolute;
-  top: 213px;
-  right: 529px;
-  width: 50px;
+  top: 270px;
+  right: 344px;
+  width: 60px;
   height: 50px;
 }
 
@@ -115,6 +122,7 @@
   }
   .main__wrapper {
     width: 90%;
+    margin: 0 auto;
   }
   .main__container {
     width: 50%;
@@ -125,7 +133,6 @@
   .main__header {
     padding: 50px 0 0 0;
     width: 100%;
-    margin: 0 auto;
   }
   .main__clip {
     display: none;
@@ -167,10 +174,12 @@
     height: 980px;
   }
   .main__wrapper {
-    width: 95%;
+    width: 100%;
+    margin: 0;
   }
   .main__header {
     padding: 50px 0 0 0;
+    font-size: 35px;
     width: 100%;
   }
   .main__container {

@@ -4,7 +4,8 @@
     rgb(234, 196, 238),
     rgb(234, 234, 234) 61%
   ); */
-  background: rgb(247, 228, 249);
+  /* background: rgb(247, 228, 249); */
+  background: #f8f8f8;
   height: 75px;
   position: fixed;
   width: 100%;
@@ -14,7 +15,7 @@
 
 .header__wrapper {
   width: 1000px;
-  margin: 0 auto;
+  margin: 15px auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -37,15 +38,16 @@
 }
 
 .header__logo {
-  padding-right: 15px;
-  width: 74px;
-  height: 74px;
+  margin-bottom: 10px;
+  width: 45px;
+  height: 45px;
+  transform: rotateZ(10deg);
 }
 
 .header__links {
   padding: 0;
+  padding-left: 10px;
   margin: 0;
-  margin-left: 3px;
   text-decoration: none;
   color: white;
   display: inline;
@@ -71,7 +73,7 @@
 
 .langbox {
   display: flex;
-  width: 80px;
+  width: 90px;
   flex-direction: row;
 }
 
@@ -80,7 +82,7 @@
   margin: 3px 0;
   cursor: pointer;
   border-radius: 50%;
-  padding: 10px;
+  padding-left: 10px;
   width: 38px;
   height: 38px;
   background-image: url(../../images/engIcon.png);
@@ -102,10 +104,11 @@
   padding: 10px;
   width: 38px;
   height: 38px;
+  padding-left: 10px;
   background-image: url(../../images/russianFlag2.png);
   background-position: -4px -11px;
   background-size: 61px;
-  margin-left: 5px;
+  margin-left: 10px;
   transition: 0.3s ease-out;
 }
 
@@ -122,8 +125,9 @@
 .header__text {
   margin: 0;
   padding: 0;
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 600;
+  color: #1c1c1c;
 }
 
 /* @media (max-width: 10px) {
@@ -178,7 +182,7 @@
     display: none;
   }
   .header__wrapper {
-    padding-top: 17px;
+    padding-top: 15px;
   }
   .header__link:hover {
     opacity: 0.7;
@@ -191,7 +195,7 @@
 
 @media (max-width: 410px) {
   .header {
-    height: 140px;
+    height: 128px;
   }
   .header__wrapper {
     flex-direction: column;

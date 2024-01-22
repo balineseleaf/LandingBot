@@ -1,5 +1,4 @@
 .steps {
-  height: 780px;
   /* background: linear-gradient(
     rgb(248, 205, 206),
     rgb(231, 186, 205),
@@ -12,10 +11,12 @@
     rgb(181, 246, 223),
     rgb(234, 234, 234) 61%
   ); */
-  background: rgb(234, 234, 234) 61%;
+  /* background: rgb(234, 234, 234) 61%; */
+  background: #f8f8f8;
   /* background-image: url(../../images/bigImage.jpg);
   background-position: center;
   background-size: cover;  */
+  padding-bottom: 200px;
 }
 
 .steps__wrapper {
@@ -27,34 +28,63 @@
 
 .steps__header {
   margin: 0 auto;
-  padding: 40px 0 0 0;
-  font-size: 33px;
-  text-align: center;
-  width: 700px;
-  color: #11be93;
+  text-transform: uppercase;
+  /* padding: 40px 0 0 0; */
+  font-size: 43px;
+  text-align: left;
+  width: 570px;
+  margin-left: 430px;
+  color: #1c1c1c;
+}
+
+.steps__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-left: 430px;
+  margin-top: 30px;
+  font-size: 22px;
+  width: 570px;
+  font-weight: 300;
+  text-align: left;
+  color: #1c1c1c;
 }
 
 .steps__container {
-  margin-top: 65px;
+  margin-top: 205px;
   position: relative;
+  width: 735px;
+  margin-left: 265px;
 }
 
 .steps__image {
-  right: 100px;
   width: 300px;
   height: 320px;
   position: relative;
-  left: 363px;
-  top: -5px;
+  left: 92px;
+  top: -14px;
 }
 
 .steps__block {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content horizontally and vertically */
+  justify-content: center;
   position: absolute;
-  width: 180px;
+  width: 180px; */
+  position: relative;
+  top: 300px;
+  width: 185px;
+  height: 155px;
+}
+
+.steps__block .steps__block {
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 100%;
+  margin-top: 40px;
+  margin-right: 10px;
+  position: absolute;
 }
 
 .first {
@@ -81,10 +111,10 @@
   padding: 8px 15px; /* Adjust padding as needed */
   margin: 0;
   text-align: center;
-  border: 3px solid black;
+  border: 3px solid #1c1c1c;
   font-size: 18px;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: 300;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -94,11 +124,13 @@
 
 .steps__text_first {
   padding: 7px 10px;
+  font-size: 17px;
 }
 
 .steps__circle {
+  margin: 0 auto;
   margin-top: 10px;
-  border: 3px solid black;
+  border: 3px solid #1c1c1c;
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -113,7 +145,8 @@
   margin: 0;
   padding: 0;
   font-size: 33px;
-  font-weight: bold;
+  font-weight: 600;
+  color: #1c1c1c;
   transform: translate(-50%, -50%); /* Center the number */
   text-align: center; /* Center horizontally */
 }

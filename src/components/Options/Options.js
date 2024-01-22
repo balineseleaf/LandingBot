@@ -1,5 +1,5 @@
 import "./Options.css";
-import clipIcon from "../../images/clipsIcon.png";
+import clipIcon from "../../images/clipIcon2.png";
 import { useTranslation } from "react-i18next";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
