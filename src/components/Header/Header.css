@@ -167,9 +167,6 @@
 }
 
 @media (max-width: 500px) {
-  .header__logo {
-    display: none;
-  }
   .header__wrapper {
     padding-top: 15px;
   }

@@ -9,15 +9,6 @@
   margin: 0 auto;
 }
 
-/* .options__main-container {
-  display: flex;
-  width: 1000px;
-  flex-direction: row;
-  padding-top: 50px;
-  height: 500px;
-  justify-content: space-between;
-} */
-
 .swiper__header {
   text-transform: uppercase;
   margin: 0;
@@ -35,15 +26,24 @@
 }
 
 :root {
-  --swiper-navigation-size: 60px;
+  --swiper-navigation-size: 45px;
 }
+
 :root {
-  --swiper-theme-color: #ff83dc;
+  --swiper-theme-color: #ff43a4;
 }
 
-.swiper-wrapper {
+.swiper-button-next {
+  transition: transform 0.4s ease;
 }
 
+.swiper-button-next:hover {
+  transform: scale(1.2);
+}
+
+.swiper-button-next {
+  color: #1c1c1c;
+}
 .swiper-slide {
   /* background: url(../../images/geometric-paper-texture.jpg); */
   display: flex;
@@ -62,7 +62,7 @@
 .swiper__caption {
   padding: 0;
   margin: 0 auto;
-  color: #ff60cf;
+  color: #ff43a4;
   font-size: 50px;
   font-weight: 600;
   text-align: center;
@@ -74,16 +74,16 @@
   padding-top: 50px;
   font-size: 29px;
   font-weight: 300;
-  color: #ff83dc;
+  color: #ff43a4;
   text-align: center;
 }
 
 .swiper-button-next {
-  color: #ff83dc;
+  color: #ff43a4;
 }
 
 .swiper-button-prev {
-  color: #ff83dc;
+  color: #ff43a4;
 }
 
 .swiper__letter {

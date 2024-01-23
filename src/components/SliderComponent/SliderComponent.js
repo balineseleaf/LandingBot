@@ -1,27 +1,27 @@
 import "./SliderComponent.css";
-import clipIcon from "../../images/clipIcon2.png";
 import { useTranslation } from "react-i18next";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
 
 
 const SliderComponent = () => {
   const { t } = useTranslation();
+
   return (
     <section className="slider">
       <div className="slider__wrapper">
         <h1 className="swiper__header"><span className="swiper__letter"><span className="swiper__first-letter">O</span>koshko</span>{t("Options1")}</h1>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
-          effect="fade"
-          spaceBetween={50}
+          modules={[Navigation, Pagination, A11y, Autoplay]}
           slidesPerView={1}
           navigation
+          // loop={true}
+          autoplay={{ delay: 4000 }}
           pagination={{ clickable: true }}
         >
           <SwiperSlide>
@@ -62,7 +62,7 @@ const SliderComponent = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </section>
+    </section >
 
 
 

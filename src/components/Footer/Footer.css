@@ -65,6 +65,8 @@
   position: absolute;
   padding: 0;
   margin: 0;
+  margin-left: 50px;
+  margin-top: 5px;
   border-radius: 50%;
   width: 43px;
   background-color: #1c1c1c;
@@ -117,8 +119,8 @@
   text-decoration: none;
   transition: 0.4s ease-out;
   opacity: 1;
-  width: 40px;
-  height: 40px;
+  width: 43px;
+  height: 43px;
   padding-left: 5px;
 }
 
@@ -130,10 +132,9 @@
 .footer__info-block {
   min-width: 125px;
   text-align: start;
-  margin-top: 12px;
+  margin-top: 38px;
   display: flex;
   flex-direction: column;
-  align-content: stretch;
   justify-content: center;
 }
 
@@ -142,6 +143,9 @@
   padding: 0;
   list-style: none;
   color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .footer__info-item {

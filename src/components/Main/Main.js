@@ -41,7 +41,6 @@ const Main = () => {
           <h2 className="main__header">{t("Main0")}  {t("Main1")}</h2>
           <div className="main__container_inner">
             <div className="main__item main__item-first">
-              <img className="header__logo" src={logoO} alt="Logo" />
               <p className="main__text main__text-first">{t("Main2")}</p>
             </div>
             <div className="main__item">
