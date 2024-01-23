@@ -1,0 +1,129 @@
+.slider {
+  background: #f8f8f8;
+  height: 750px;
+  padding-bottom: 180px;
+}
+
+.slider__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* .options__main-container {
+  display: flex;
+  width: 1000px;
+  flex-direction: row;
+  padding-top: 50px;
+  height: 500px;
+  justify-content: space-between;
+} */
+
+.swiper__header {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 40px 0 0 0;
+  font-size: 33px;
+  text-align: center;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.swiper {
+  height: 600px;
+  border-radius: 40px;
+  width: 900px;
+}
+
+:root {
+  --swiper-navigation-size: 60px;
+}
+:root {
+  --swiper-theme-color: #ff83dc;
+}
+
+.swiper-wrapper {
+}
+
+.swiper-slide {
+  /* background: url(../../images/geometric-paper-texture.jpg); */
+  display: flex;
+  background-color: #f8f8f8;
+  /* background: url(../../images/6452995.jpg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper__container {
+  width: 600px;
+}
+
+.swiper__caption {
+  padding: 0;
+  margin: 0 auto;
+  color: #ff60cf;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.swiper__text {
+  padding: 0;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-size: 29px;
+  font-weight: 300;
+  color: #ff83dc;
+  text-align: center;
+}
+
+.swiper-button-next {
+  color: #ff83dc;
+}
+
+.swiper-button-prev {
+  color: #ff83dc;
+}
+
+.swiper__letter {
+  text-transform: none;
+  font-size: 40px;
+}
+
+.swiper__letter span {
+  color: #ff83dc;
+}
+
+@media (max-width: 1000px) {
+  .options {
+    width: 100%;
+    height: 1190px;
+  }
+  .options__wrapper {
+    width: 90%;
+  }
+
+  .options__caption {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .options {
+    height: 1420px;
+  }
+  .options__caption {
+    width: 90%;
+  }
+
+  .options__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 440px) {
+  .options {
+    height: 1520px;
+  }
+}

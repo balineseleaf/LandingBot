@@ -46,7 +46,6 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  text-align: right;
   color: #1c1c1c;
 }
 
@@ -56,47 +55,43 @@
 }
 
 .footer__langbox {
-  margin-top: 45px;
   display: flex;
+  position: relative;
   width: 100px;
   flex-direction: row;
 }
 
 .footer__lang-button_eng {
+  position: absolute;
   padding: 0;
   margin: 0;
-  cursor: pointer;
   border-radius: 50%;
-  padding: 10px;
-  width: 38px;
-  height: 38px;
-  background-image: url(../../images/engIcon.png);
-  border: 0;
-  background-size: 38px;
+  width: 43px;
+  background-color: #1c1c1c;
+  height: 43px;
+  color: #f8f8f8;
+  font-size: 21px;
   transition: 0.3s ease-out;
 }
 .footer__lang-button_eng:hover {
-  transform: scale(1.15);
+  cursor: pointer;
 }
 
 .footer__lang-button_ru {
-  border: 0;
   padding: 0;
   margin: 0;
-  cursor: pointer;
   border-radius: 50%;
-  padding: 10px;
-  width: 38px;
-  height: 38px;
-  background-image: url(../../images/russianFlag2.png);
-  background-position: -4px -11px;
-  background-size: 61px;
-  margin-left: 5px;
+  width: 43px;
+  font-size: 21px;
+  color: #f8f8f8;
+  background-color: #1c1c1c;
+  height: 43px;
+  position: absolute;
   transition: 0.3s ease-out;
 }
 
 .footer__lang-button_ru:hover {
-  transform: scale(1.15);
+  cursor: pointer;
 }
 
 .lang__button {
@@ -173,11 +168,11 @@
 }
 
 .footer__masters-block {
-  min-width: 110px;
+  width: 150px;
 }
 
 .footer__clients-block {
-  min-width: 110px;
+  width: 150px;
 }
 
 @media (max-width: 1000px) {

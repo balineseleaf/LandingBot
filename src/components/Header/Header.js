@@ -23,8 +23,12 @@ const Header = () => {
         </div>
         <ul className="header__lang-links">
           <div className="langbox">
-            <button className="lang__button_eng" onClick={() => handleChangeLanguage("en")}></button>
-            <button className="lang__button_ru" onClick={() => handleChangeLanguage("ru")}></button>
+            {i18n.language === "ru" && (
+              <button className="lang__button_eng" onClick={() => handleChangeLanguage("en")}>EN</button>
+            )}
+            {i18n.language === "en" && (
+              <button className="lang__button_ru" onClick={() => handleChangeLanguage("ru")}>RU</button>
+            )}
           </div>
           <li className="header__links">
             <Link target="_blank" to="https://www.instagram.com/okoshko.pro?igsh=aG1lZjB6OW5tZzVx">

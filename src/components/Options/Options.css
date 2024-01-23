@@ -163,6 +163,18 @@
   padding-bottom: 34px;
 } */
 
+.options__first-letter {
+}
+
+.options__letter {
+  text-transform: none;
+  font-size: 40px;
+}
+
+.options__letter span {
+  color: #ff83dc;
+}
+
 .options__clip {
   position: absolute;
   top: -33px;
@@ -179,7 +191,7 @@
 }
 
 .swiper-slide {
-  background-color: aquamarine;
+  background-color: #606060;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -114,6 +114,7 @@
   width: 48px;
   height: 48px;
   position: relative;
+  background-color: rgba(255, 131, 220, 0.6);
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Добавляем тень снизу */
 }
 

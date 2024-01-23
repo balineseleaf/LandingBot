@@ -15,24 +15,8 @@ const Options = () => {
   return (
     <section className="options">
       <div className="options__wrapper">
-        <h1 className="options__header">{t("Options1")}</h1>
+        <h1 className="options__header"><span className="options__letter"><span className="options__first-letter">O</span>koshko</span>{t("Options1")}</h1>
         <div className="options__main-container">
-          {/* <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
-            effect="fade"
-            spaceBetween={50}
-            slidesPerView={3}
-            navigation
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-          >
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-          </Swiper> */}
           <div className="options__container-left">
             <div className="options__container-inner left-container">
               <p className="options__caption options__caption_first">{t("Options2")}</p>

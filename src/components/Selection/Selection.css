@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   width: 1000px;
+  height: 750px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -15,165 +16,84 @@
 .selection__container {
   display: flex;
   position: relative;
-  flex-direction: column;
-  height: 280px;
   width: 500px;
-  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.selection__card-left {
+  position: absolute;
+  width: 461px;
+  left: 212px;
+  top: 40px;
+  height: 250px;
+  z-index: 3;
+  border-radius: 50px;
+  background-color: #303030;
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
+}
+
+.selection__card-right {
+  width: 450px;
+  position: absolute;
+  right: 212px;
+  top: 342px;
+  height: 250px;
+  z-index: 3;
+  border-radius: 50px;
+  background-color: #303030;
+  filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
+}
+
+.selection__container-left {
+  justify-content: flex-start;
 }
 
 .selection__button {
   margin: 0 auto;
-  margin-top: 50px;
-  display: inline-block;
-  font-size: 23px;
+  margin-top: 60px;
+  padding: 8px;
+  display: block;
+  font-size: 24px;
+  width: 55%;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  color: #f8f8f8;
+  color: #303030;
   transition: transform 0.5s ease;
   border-radius: 20px;
+  background-color: #ff83dc;
+  transition: opacity 0.6s ease;
 }
 
 .selection__button:hover {
-  /* background-color: #fadadd; */
-  transform: scale(1.06);
+  opacity: 0.7;
 }
 
 .selection__text {
   margin: 0 auto;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 40px;
   text-align: center;
   font-size: 30px;
   font-weight: 300;
   color: #f8f8f8;
 }
 
+.selection__text_bold span {
+  color: #ff83dc;
+}
+
 .selection__image {
-  background-image: url(../../images/screenOnPhone.png);
-  width: 205px;
-  z-index: 2;
-  background-repeat: no-repeat;
-  background-size: 191px 412px;
-  background-position: 8px 10px;
-  /* box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5); */
-}
-
-.selection__square-block-left {
-  display: flex;
-  flex-direction: column;
+  width: 280px;
   position: absolute;
-  height: 186px;
-  left: 204px;
-  width: 265px;
-  background-color: #ff83dc;
-  top: 100px;
-  border-top-right-radius: 30px;
-  box-shadow: 10px 10px 2px 1px rgba(255, 96, 207);
-}
-
-.selection__square-block-right {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  height: 186px;
-  left: 204px;
-  width: 265px;
-  background-color: #ff83dc;
-  top: 100px;
-  border-top-right-radius: 30px;
-  box-shadow: 10px 10px 2px 1px rgba(255, 96, 207);
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
 }
 
 .selection__image-right {
-  background-image: url(../../images/screenOnPhone2.png);
+  z-index: 5;
 }
-
-.selection__icon {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-}
-
-.selection__icon-first {
-  top: 60px;
-  right: 500px;
-  width: 50px;
-  height: 50px;
-}
-
-.selection__icon-second {
-  top: 150px;
-  right: 525px;
-  width: 54px;
-  height: 54px;
-}
-
-.selection__icon-third {
-  top: 182px;
-  right: 437px;
-  width: 56px;
-  height: 56px;
-  transform: rotate(-15deg);
-}
-
-.selection__icon-fourth {
-  top: 108px;
-  right: 463px;
-  width: 52px;
-  height: 52px;
-  transform: rotate(-10deg);
-}
-
-.selection__icon-fifth {
-  top: 270px;
-  right: 420px;
-}
-
-.selection__icon-sixth {
-  top: 228px;
-  right: 523px;
-  width: 78px;
-  height: 78px;
-  transform: rotate(15deg);
-}
-
-.selection__icon-seventh {
-  top: 318px;
-  right: 486px;
-  transform: rotate(-11deg);
-}
-
-.selection__icon-eighth {
-  top: 360px;
-  right: 408px;
-  width: 78px;
-  height: 78px;
-  transform: rotate(-45deg);
-}
-
-.selection__icon-ninth {
-  top: 426px;
-  right: 508px;
-  width: 85px;
-  height: 85px;
-  transform: rotate(28deg);
-}
-
-.selection__icon-tenth {
-  top: 350px;
-  right: 548px;
-  width: 72px;
-  height: 72px;
-  transform: rotate(14deg);
-}
-
-.selection__icon-eleventh {
-  top: 441px;
-  right: 407px;
-  width: 70px;
-  height: 88px;
-  transform: rotateX(55deg);
+.selection__image-left {
+  z-index: 4;
 }
 
 .selection__text_bold {

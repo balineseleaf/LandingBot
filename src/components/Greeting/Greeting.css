@@ -1,9 +1,7 @@
 .greeting {
-  /* background: rgb(244 228 246); */
   background: #f8f8f8;
-  /* background: #ef798a; */
   padding-top: 200px;
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 
 .greeting__wrapper {
@@ -47,6 +45,8 @@
 
 .text {
   white-space: nowrap;
+  font-size: 29px;
+  font-weight: 600;
   overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
   margin: 0;
   position: absolute;
   padding: 0;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 300;
   text-align: left;
   color: #1c1c1c;
@@ -68,37 +68,24 @@
   visibility: hidden;
 }
 
-/* .greeting__image_second {
-  position: absolute;
-  top: 50px;
-  left: 280px;
-  width: 110px;
-  height: 110px;
-  background: url('../../images/calendar3.png') center/cover;
-  transform: rotate(10deg);
-  transition: transform 0.5s ease;
-  color: white;
-  z-index: 1;
-  animation: rockingAnimation 1.8s infinite alternate;
-} */
 .greeting__current-day {
   display: flex;
+  padding-top: 12px;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 40px;
   left: 293px;
-  border: 4px solid black;
   width: 110px;
-  font-size: 40px;
+  font-size: 49px;
   height: 110px;
-  color: black;
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.35));
+  color: #1c1c1c;
+  background: url(../../images/calendarSVG.svg) no-repeat;
   transform: rotate(10deg);
   transition: transform 0.5s ease;
   z-index: 1;
   animation: rockingAnimation 1.8s infinite alternate;
-  border-radius: 35%;
-  box-shadow: 2px 2px 2px 1px rgba(255, 96, 207);
 }
 
 @keyframes rockingAnimation {
@@ -124,17 +111,6 @@
   z-index: 1;
 }
 
-/* .greeting__image_third {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 96px;
-  left: 379px;
-  z-index: 3;
-  transform: rotateY(21deg);
-  animation: rockingAnimation2 2s infinite alternate;
-} */
-
 .greeting__button {
   display: block;
   position: relative;
@@ -148,12 +124,12 @@
   text-decoration: none;
   background-color: #ff83dc;
   color: #fff;
-  transition: background-color 0.5s ease;
+  transition: opacity 0.6s ease;
   border-radius: 20px;
 }
 
 .greeting__button:hover {
-  background-color: #ff60cf;
+  opacity: 0.7;
 }
 
 @keyframes rockingAnimation2 {

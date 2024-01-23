@@ -10,7 +10,7 @@ const Steps = () => {
     <section className="steps">
       <div className="steps__wrapper">
         <h2 className="steps__header">{t("Steps1")}</h2>
-        <h3 className="steps__paragraph">Автоматизируйте рутинную работу и забудьте о проблемах ведения ежедневника</h3>
+        <h3 className="steps__paragraph">{t("Steps6")}</h3>
         <div className="steps__container">
           <img className="steps__image" src={stepman} alt="stepman" />
           <div className="steps__block first">

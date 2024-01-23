@@ -1,10 +1,4 @@
 .header {
-  /* background: linear-gradient(
-    90deg,
-    rgb(234, 196, 238),
-    rgb(234, 234, 234) 61%
-  ); */
-  /* background: rgb(247, 228, 249); */
   background: #f8f8f8;
   height: 75px;
   position: fixed;
@@ -64,56 +58,51 @@
 .header__lang-links {
   margin: 0;
   padding: 0;
-  padding-right: 17px;
+  /* padding-right: 17px; */
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  /* margin-right: 48px; */
 }
 
 .langbox {
   display: flex;
-  width: 90px;
+  width: 44px;
   flex-direction: row;
+  position: relative;
 }
 
 .lang__button_eng {
   padding: 0;
-  margin: 3px 0;
-  cursor: pointer;
+  margin: 0;
   border-radius: 50%;
-  padding-left: 10px;
-  width: 38px;
-  height: 38px;
-  background-image: url(../../images/engIcon.png);
-  border: 0;
-  background-size: 38px;
+  width: 43px;
+  background-color: #1c1c1c;
+  height: 43px;
+  color: #f8f8f8;
+  position: absolute;
+  font-size: 21px;
+  transition: 0.3s ease-out;
+}
+
+.lang__button_ru {
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  width: 43px;
+  font-size: 21px;
+  color: #f8f8f8;
+  background-color: #1c1c1c;
+  height: 43px;
+  position: absolute;
   transition: 0.3s ease-out;
 }
 
 .lang__button_eng:hover {
-  transform: scale(1.15);
-}
-
-.lang__button_ru {
-  border: 0;
-  padding: 0;
-  margin: 3px 0;
   cursor: pointer;
-  border-radius: 50%;
-  padding: 10px;
-  width: 38px;
-  height: 38px;
-  padding-left: 10px;
-  background-image: url(../../images/russianFlag2.png);
-  background-position: -4px -11px;
-  background-size: 61px;
-  margin-left: 10px;
-  transition: 0.3s ease-out;
 }
 
 .lang__button_ru:hover {
-  transform: scale(1.15);
+  cursor: pointer;
 }
 
 .header__block {

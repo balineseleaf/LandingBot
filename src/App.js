@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Greeting from "./components/Greeting/Greeting";
 import Options from "./components/Options/Options";
 import Selection from "./components/Selection/Selection";
+import SliderComponent from "./components/SliderComponent/SliderComponent";
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
       <Main />
       <Steps />
       <Rates />
-      <Options />
+      {/* <Options /> */}
+      <SliderComponent />
       <Selection />
       <Footer />
     </div >
