@@ -21,7 +21,6 @@ function App() {
       <Main />
       <Steps />
       <Rates />
-      {/* <Options /> */}
       <SliderComponent />
       <Selection />
       <Footer />

@@ -120,8 +120,7 @@
   position: absolute;
   top: 280px;
   color: #fff;
-  font-size: 1.5rem;
-  line-height: 1.4;
+  font-size: 23px;
   width: 100%;
   text-align: center;
 }
@@ -186,6 +185,19 @@
     padding-top: 50px;
     width: 100%;
   }
+  .card-heading {
+    font-size: 40px;
+  }
+  .card__item {
+    font-size: 21px;
+  }
+  .card-price {
+    font-size: 19px;
+  }
+  .card-bottom-text {
+    left: 50px;
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -199,11 +211,27 @@
   .card {
     margin-bottom: 30px;
   }
+  .rates {
+    padding-bottom: 140px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-bottom-text {
+    left: 70px;
+    font-size: 25px;
+  }
+  .rates {
+    padding-bottom: 130px;
+  }
 }
 
 @media (max-width: 500px) {
   .rates__header {
     padding: 50px 0 0 0;
     width: 100%;
+  }
+  .rates {
+    padding-bottom: 110px;
   }
 }

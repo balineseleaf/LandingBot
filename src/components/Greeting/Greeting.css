@@ -159,28 +159,50 @@
   .greeting__container {
     width: 90%;
   }
+  .greeting__text-container {
+    margin-left: 415px;
+  }
+  .greeting__button {
+    margin-left: 591px;
+    top: 165px;
+  }
 }
 
 @media (max-width: 850px) {
+  .greeting {
+    padding-bottom: 150px;
+  }
   .greeting__header {
     font-size: 39px;
-    margin-left: 354px;
+    margin-left: 415px;
   }
+
   .greeting__text {
-    font-size: 24px;
+    font-size: 19px;
   }
+  .text {
+    font-size: 25px;
+  }
+
   .greeting__text-container {
-    width: 60%;
-    margin-left: 300px;
+    width: 56%;
+    margin-left: 314px;
   }
+
   .greeting__image_logo {
     width: 330px;
   }
+
   .greeting__image_second {
     top: 50px;
     left: 270px;
     width: 90px;
     height: 90px;
+  }
+
+  .greeting__button {
+    margin-left: 490px;
+    top: 110px;
   }
 }
 
@@ -189,70 +211,58 @@
     height: 500px;
   }
 
+  .greeting__image_block {
+    height: 320px;
+  }
+
   .greeting__image_third {
     display: none;
   }
 
+  .greeting__button {
+    margin-left: 300px;
+    top: 100px;
+  }
+
   .greeting__header {
     font-size: 33px;
-    margin-left: 327px;
+    text-align: left;
+    width: 100%;
+    margin-left: 67px;
   }
 
   .greeting__text {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   .greeting__text-container {
-    width: 62%;
-    margin-left: 270px;
-    margin-top: 20px;
-  }
-
-  .greeting__image_logo {
-    width: 330px;
+    width: 100%;
+    margin-left: 37px;
+    margin-top: 11px;
   }
 
   .greeting__image_logo {
     width: 290px;
+    margin-left: 157px;
   }
 
-  .greeting__image_second {
-    top: 50px;
-    left: 237px;
-    width: 75px;
-    height: 75px;
+  .greeting__current-day {
+    left: 376px;
   }
 }
 
-@media (max-width: 650px) {
-  .greeting__text-container {
-    width: 62%;
-    margin-left: 240px;
-    margin-top: 20px;
+@media (max-width: 550px) {
+  .greeting__current-day {
+    padding-top: 2px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    left: 293px;
+    width: 82px;
+    font-size: 42px;
+    height: 110px;
   }
-}
-
-@media (max-width: 600px) {
-  .greeting__header {
-    margin-left: 290px;
-  }
-
-  .greeting__image_logo {
-    width: 240px;
-  }
-
-  .greeting__image_second {
-    left: 35%;
-  }
-
-  .greeting__text-container {
-    width: 69%;
-    margin-left: 195px;
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 500px) {
   .greeting__image_logo {
     display: block;
     position: relative;
@@ -260,22 +270,25 @@
     top: 65px;
   }
   .greeting {
-    height: 600px;
+    height: 520px;
   }
+
   .greeting__wrapper {
     margin: 0 auto;
   }
+
   .greeting__header {
     margin: 0 auto;
     padding-top: 65px;
     width: 90%;
-    font-size: 36px;
+    font-size: 38px;
   }
 
   .greeting__text-container {
-    width: 100%;
-    margin: 20px auto 0;
+    width: 95%;
+    margin: 20px 25px 0px;
   }
+
   .greeting__text {
     margin: 0 auto;
     width: 90%;
@@ -285,43 +298,73 @@
   .greeting__container {
     width: 100%;
   }
+
   .greeting__image_block {
     position: relative;
   }
 
-  .greeting__image_second {
-    position: absolute;
-    left: 65%;
-  }
-
-  .greeting__image_third {
-    display: none;
+  .greeting__button {
+    margin-left: 260px;
+    top: 100px;
   }
 }
 
 @media (max-width: 450px) {
+  .greeting {
+    padding-top: 150px;
+  }
   .greeting__image_logo {
-    width: 230px;
+    width: 250px;
     margin: 0 auto;
   }
   .greeting__header {
-    padding-top: 80px;
-    font-size: 27px;
+    padding-top: 19px;
+    font-size: 39px;
+  }
+  .greeting__current-day {
+    padding-top: 0px;
+    top: 26px;
+    left: 273px;
+    width: 80px;
+    font-size: 41px;
+    height: 110px;
+  }
+  .greeting__button {
+    margin-left: 214px;
+    top: 150px;
   }
 }
 
 @media (max-width: 400px) {
-  .greeting {
-    padding-top: 120px;
+  .greeting__current-day {
+    left: 230px;
   }
-  .greeting__text {
-    font-size: 25px;
+  .greeting {
+    padding-top: 175px;
   }
   .greeting__header {
-    padding-top: 80px;
-    font-size: 26px;
+    padding-top: 42px;
+    font-size: 35px;
+    margin-left: 27px;
   }
   .greeting__text {
+    font-size: 16px;
+  }
+  .text {
     font-size: 21px;
+  }
+  .greeting__text-container {
+    margin: 12px 28px 0px;
+  }
+
+  .greeting__image_block {
+    margin-top: 20px;
+  }
+
+  .greeting__button {
+    width: 77%;
+    margin-left: 193px;
+    font-size: 20px;
+    top: 110px;
   }
 }

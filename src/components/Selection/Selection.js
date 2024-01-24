@@ -19,7 +19,7 @@ const Selection = () => {
             </Link>
           </div>
         </div>
-        <div className='selection__container'>
+        <div className='selection__container selection__container-right'>
           <img className='selection__image selection__image-right' src={phoneRight} alt="телефон" />
           <div className="selection__card-right">
             <p className='selection__text'><span className='selection__text_bold'><span>O</span>koshko</span> <br></br>{t("Selection1")}</p>

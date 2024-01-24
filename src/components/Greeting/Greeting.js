@@ -38,7 +38,7 @@ const Greeting = () => {
     <section className="greeting">
       <div className="greeting__wrapper">
         <div className="greeting__image_block">
-          <img className="greeting__image_logo" src={logoO} alt="логотип" />
+          <img className="greeting__image_logo" src={logoO} alt="логотип" ></img>
           <div className="greeting__current-day">
             {currentDay}
           </div>

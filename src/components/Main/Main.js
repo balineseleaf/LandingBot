@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Main.css";
-import logoO from '../../images/logoO.png';
 import iphone from '../../images/IphoneNew3.svg';
 import screenOnPhone from "../../images/screenOnPhone.png";
 import screenOnPhone2 from "../../images/screenOnPhone2.png";
@@ -62,7 +61,7 @@ const Main = () => {
               <p className="main__text">{t("Main8")}</p>
             </div>
             <div className="main__item">
-              <p className="main__text">{t("Main9")}</p>
+              <p className="main__text main__text-long">{t("Main9")}</p>
             </div>
             <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="main__button">
               {t("Main10")}

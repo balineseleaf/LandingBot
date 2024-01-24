@@ -2,7 +2,6 @@
   /* background: rgb(247, 228, 249); */
   height: 210px;
   background: #f8f8f8;
-  box-shadow: 30px 30px rgba(238, 209, 243, 0.5); /* Добавляем тень снизу */
   height: 200px;
 }
 
@@ -221,12 +220,14 @@
   .footer__masters-block {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 21px;
   }
 
   .footer__clients-block {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 21px;
   }
 
