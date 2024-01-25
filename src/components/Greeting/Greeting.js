@@ -16,14 +16,14 @@ const Greeting = () => {
 
   useEffect(() => {
     const typedRu = new Typed(elRu.current, {
-      strings: ["МАНИКЮР", "ШУГАРИНГ", "ПЕДИКЮР", "СТРИЖКУ"],
-      typeSpeed: 90,
+      strings: ["МАНИКЮР", "ПЕДИКЮР", "ШУГАРИНГ", "СТРИЖКУ", "БРОВКИ", "РЕСНИЧКИ"],
+      typeSpeed: 120,
       loop: true,
     });
 
     const typedEn = new Typed(elEn.current, {
-      strings: ["MANICURE", "SUGARING", "PEDICURE", "HAIRCUT"],
-      typeSpeed: 90,
+      strings: ["MANICURE", "PEDICURE", "SUGARING", "HAIRCUT", "BROWS", "EYELASHES"],
+      typeSpeed: 120,
       loop: true,
     });
 

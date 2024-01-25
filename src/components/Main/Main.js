@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Main.css";
-import iphone from '../../images/IphoneNew3.svg';
-import screenOnPhone from "../../images/screenOnPhone.png";
-import screenOnPhone2 from "../../images/screenOnPhone2.png";
+import iphone from '../../images/IphoneGoodIcon.png';
+// import screenOnPhone from "../../images/screenOnPhone.png";
+// import screenOnPhone2 from "../../images/screenOnPhone2.png";
 import { useTranslation } from "react-i18next";
 
 const Main = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
-  const [backgroundImage, setBackgroundImage] = useState(screenOnPhone);
+  // const [backgroundImage, setBackgroundImage] = useState();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,9 +17,9 @@ const Main = () => {
       const isScrolled = scrollY > 1510;
       setScrolled(isScrolled);
       if (isScrolled) {
-        setBackgroundImage(screenOnPhone2);
+        // setBackgroundImage(screenOnPhone2);
       } else {
-        setBackgroundImage(screenOnPhone);
+        // setBackgroundImage(screenOnPhone);
       }
     };
     window.addEventListener("scroll", handleScroll);
@@ -34,8 +34,7 @@ const Main = () => {
         <img
           className={`main__image ${scrolled ? "scrolled" : ""}`}
           src={iphone}
-          alt="iPhone"
-          style={{ backgroundImage: `url(${backgroundImage})` }} />
+          alt="iPhone" />
         <div className="main__container">
           <h2 className="main__header">{t("Main0")}  {t("Main1")}</h2>
           <div className="main__container_inner">

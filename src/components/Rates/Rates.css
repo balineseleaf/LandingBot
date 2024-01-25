@@ -50,7 +50,6 @@
   transform: scale(1) translateZ(0);
   transition: filter 100ms linear, transform 100ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
-  /* background-image: url(../../images/rate1.jpg); */
   background-color: #606060;
   opacity: 0.9;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
@@ -69,7 +68,6 @@
   transform: scale(1) translateZ(0);
   transition: filter 100ms linear, transform 100ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
-  /* background-image: url(../../images/rate2.jpg); */
   background-color: #484848;
   opacity: 0.9;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
@@ -88,7 +86,6 @@
   transform: scale(1) translateZ(0);
   transition: filter 100ms linear, transform 100ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
-  /* background-image: url(../../images/rate3.jpg); */
   background-color: #282828;
   opacity: 0.9;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
@@ -144,17 +141,17 @@
 }
 
 .card-bottom-text:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
 }
 
 .card:hover .card-background {
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.07) translateZ(0);
 }
 
-.card-grid:hover > .card:not(:hover),
+/* .card-grid:hover > .card:not(:hover),
 .card-content:not(:hover) .card-background {
-  filter: brightness(1) saturate(1) contrast(1.2) blur(5px);
-}
+  filter: brightness(1) saturate(1) contrast(1.2) blur(0.5px);
+} */
 
 .card__list {
   margin: 30px;
@@ -204,6 +201,7 @@
   .card-grid {
     margin: 50px auto 0;
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
   }

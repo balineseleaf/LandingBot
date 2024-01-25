@@ -25,14 +25,6 @@
   width: 900px;
 }
 
-:root {
-  --swiper-navigation-size: 45px;
-}
-
-:root {
-  --swiper-theme-color: #ff43a4;
-}
-
 .swiper-button-next {
   transition: transform 0.4s ease;
 }
@@ -44,11 +36,10 @@
 .swiper-button-next {
   color: #1c1c1c;
 }
+
 .swiper-slide {
-  /* background: url(../../images/geometric-paper-texture.jpg); */
   display: flex;
   background-color: #f8f8f8;
-  /* background: url(../../images/6452995.jpg); */
   background-size: contain;
   background-repeat: no-repeat;
   justify-content: center;
@@ -57,6 +48,9 @@
 
 .swiper__container {
   width: 600px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 30px;
 }
 
 .swiper__caption {
@@ -111,6 +105,7 @@
     width: 90%;
   }
 }
+
 @media (max-width: 850px) {
   .swiper__caption {
     font-size: 38px;
@@ -130,6 +125,7 @@
     height: 500px;
   }
 }
+
 @media (max-width: 650px) {
   .slider {
     height: 600px;
@@ -148,34 +144,40 @@
   .swiper {
     height: 450px;
   }
+  .swiper__container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 550px) {
   .swiper__caption {
-    font-size: 30px;
-  }
-  .swiper__text {
-    font-size: 20px;
-  }
-  .swiper {
-    height: 450px;
-  }
-  :root {
-    --swiper-navigation-size: 35px;
-  }
-}
-
-@media (max-width: 400px) {
-  .swiper__caption {
-    font-size: 25px;
+    font-size: 26px;
   }
   .swiper__text {
     font-size: 18px;
   }
   .swiper {
+    height: 430px;
+  }
+  .swiper__container {
+    margin-top: 130px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .swiper__caption {
+    font-size: 24px;
+  }
+  .swiper__text {
+    font-size: 16px;
+    padding-top: 40px;
+  }
+  .swiper {
     height: 400px;
   }
-  :root {
-    --swiper-navigation-size: 30px;
+  .swiper__container {
+    margin-top: 120px;
+    width: 100%;
   }
 }

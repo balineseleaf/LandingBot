@@ -103,7 +103,6 @@
   left: 10px;
   width: 200px;
   height: 200px;
-  background: url('../../images/iconSelection5.png') center/cover;
   transition: transform 0.5s ease;
   transform: rotateX(12deg);
   transform: rotateZ(21deg);
@@ -116,7 +115,7 @@
   position: relative;
   width: 250px;
   margin-left: 536px;
-  top: 100px;
+  top: 105px;
   right: 177px;
   padding: 15px 26px;
   font-size: 21px;
@@ -227,12 +226,13 @@
   .greeting__header {
     font-size: 33px;
     text-align: left;
-    width: 100%;
-    margin-left: 67px;
+    width: 90%;
+    margin-left: 100px;
   }
 
   .greeting__text {
     font-size: 21px;
+    margin-left: 37px;
   }
 
   .greeting__text-container {
@@ -243,7 +243,7 @@
 
   .greeting__image_logo {
     width: 290px;
-    margin-left: 157px;
+    margin-left: 130px;
   }
 
   .greeting__current-day {
@@ -287,6 +287,7 @@
   .greeting__text-container {
     width: 95%;
     margin: 20px 25px 0px;
+    height: 50px;
   }
 
   .greeting__text {
@@ -305,6 +306,13 @@
 
   .greeting__button {
     margin-left: 260px;
+    top: 100px;
+  }
+}
+
+@media (max-width: 510px) {
+  .greeting__button {
+    margin-left: 232px;
     top: 100px;
   }
 }
@@ -362,9 +370,9 @@
   }
 
   .greeting__button {
-    width: 77%;
+    width: 75%;
     margin-left: 193px;
     font-size: 20px;
-    top: 110px;
+    top: 82px;
   }
 }

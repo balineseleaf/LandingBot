@@ -2,20 +2,27 @@
 
 body {
   margin: 0;
-  /* min-width: 1280px; */
   font-family: 'OpenSans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
+  --swiper-navigation-size: 45px;
+  --swiper-theme-color: #ff43a4;
+}
+
+@media (max-width: 550px) {
+  body {
+    --swiper-navigation-size: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    --swiper-navigation-size: 30px;
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* @media (max-width: 500px) {
-  body {
-    min-width: 320px;
-  }
-} */

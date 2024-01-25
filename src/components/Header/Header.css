@@ -64,14 +64,20 @@
   list-style-type: none;
 }
 
-.langbox {
+/* .langbox {
   display: flex;
   width: 44px;
   flex-direction: row;
   position: relative;
+} */
+
+.langbox {
+  display: flex;
+  width: 90px;
+  flex-direction: row;
 }
 
-.lang__button_eng {
+/* .lang__button_eng {
   padding: 0;
   margin: 0;
   border-radius: 50%;
@@ -80,22 +86,82 @@
   height: 43px;
   color: #f8f8f8;
   position: absolute;
-  font-size: 21px;
+  font-size: 16px;
   transition: 0.3s ease-out;
+} */
+
+.lang__button_eng {
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  border: none;
+  height: 48px;
+  color: #7e7e80;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  transition: 0.3s ease-out;
+  border-right: 1px solid #7e7e80;
+}
+
+.lang__button_eng.active {
+  font-weight: 600;
+  color: #3a3a3a;
+  cursor: default;
 }
 
 .lang__button_ru {
   padding: 0;
   margin: 0;
+  width: 48px;
+  font-size: 16px;
+  color: #7e7e80;
+  border: none;
+  height: 48px;
+  background-color: #f8f8f8;
+  transition: 0.3s ease-out;
+}
+
+.lang__button_ru.active {
+  font-weight: 600;
+  color: #3a3a3a;
+  cursor: default;
+}
+
+.lang__button_ru:hover {
+  color: #ff83dc;
+}
+
+.lang__button_eng:hover {
+  color: #ff83dc;
+}
+
+.lang__button_eng.active:hover {
+  cursor: default;
+  color: #3a3a3a;
+}
+
+.lang__button_ru.active:hover {
+  cursor: default;
+  color: #3a3a3a;
+}
+
+/* .lang__button_eng::after {
+  content: '';
+  width: 1px;
+} */
+
+/* .lang__button_ru {
+  padding: 0;
+  margin: 0;
   border-radius: 50%;
   width: 43px;
-  font-size: 21px;
+  font-size: 16px;
   color: #f8f8f8;
   background-color: #1c1c1c;
   height: 43px;
   position: absolute;
   transition: 0.3s ease-out;
-}
+} */
 
 .lang__button_eng:hover {
   cursor: pointer;
@@ -142,15 +208,25 @@
 }
 
 @media (max-width: 500px) {
-  .header__wrapper {
-    /* padding-top: 15px; */
-  }
+  /* .header__wrapper {
+    padding-top: 15px;
+  } */
   .header__link:hover {
     opacity: 0.7;
     transform: scale(1.05);
   }
   .header__links {
-    margin-left: 3px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__wrapper {
+    flex-direction: column;
+  }
+  .header__lang-links {
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }
 
@@ -164,8 +240,8 @@
   .header__text {
     font-size: 39px;
   }
-  .header__lang-links {
-    padding-right: 0px;
-    margin-top: 10px;
+
+  .header__links:nth-child(2) {
+    padding-left: 0px;
   }
 }

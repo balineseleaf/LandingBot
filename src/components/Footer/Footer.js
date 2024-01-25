@@ -6,10 +6,10 @@ import book from "../../images/blackBookIcon.png";
 import telegram from "../../images/iconTgNew.png";
 
 function Footer() {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation();
+  // const changeLanguage = (language) => {
+  //   i18n.changeLanguage(language);
+  // };
 
   return (
     <section className="footer">
@@ -28,14 +28,14 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="footer__langbox">
+            {/* <div className="footer__langbox">
               {i18n.language === "ru" && (
                 <button className="footer__lang-button_eng" onClick={() => changeLanguage("en")}>EN</button>
               )}
               {i18n.language === "en" && (
                 <button className="footer__lang-button_ru" onClick={() => changeLanguage("ru")}>RU</button>
               )}
-            </div>
+            </div> */}
             <div className="footer__clients-block">
               <p className="footer__text">{t("Footer4")}</p>
               <Link className="footer__socials-link" target="_blank" to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23">

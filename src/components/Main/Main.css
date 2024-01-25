@@ -24,17 +24,18 @@
 }
 
 .main__image {
-  background-image: url(../../images/screenOnPhone.png);
+  /* background-image: url(../../images/screenOnPhone.png); */
   margin-top: 156px;
   position: absolute;
   top: 109px;
-  width: 401px;
-  height: 590px;
+  width: 330px;
+  height: 660px;
   transition: top 0.6s ease-in-out;
   z-index: 2;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: 267px 569px;
-  background-position: 68px 13px;
+  background-position: 68px 13px; */
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
 }
 
 .main__container {
@@ -50,7 +51,7 @@
 }
 
 .main__wrapper.scrolled .main__image {
-  top: 1250px;
+  top: 1200px;
 }
 
 .main__item {
@@ -97,7 +98,7 @@
   text-align: center;
   text-decoration: none;
   background-color: #ff83dc;
-  color: #fff;
+  color: #f8f8f8;
   transition: opacity 0.6s ease;
   border-radius: 20px;
   filter: drop-shadow(1px 5px 5px rgba(243, 95, 233, 0.7));
