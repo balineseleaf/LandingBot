@@ -1,7 +1,6 @@
 .main {
   background: #f8f8f8;
-
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 
 .main__wrapper {
@@ -9,108 +8,104 @@
   margin: 0 auto;
   position: relative;
 }
+.main__block {
+  height: 510px;
+  background-color: #82898f;
+  border-radius: 30px;
+  position: relative;
+}
 
 .main__header {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   text-transform: uppercase;
-  padding-left: 382px;
-  width: 560px;
+  padding-top: 80px;
   min-height: 167px;
   font-size: 48px;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   color: #1c1c1c;
 }
 
-.main__image {
-  /* background-image: url(../../images/screenOnPhone.png); */
-  margin-top: 156px;
-  position: absolute;
-  top: 109px;
-  width: 330px;
-  height: 660px;
-  transition: top 0.6s ease-in-out;
-  z-index: 2;
-  /* background-repeat: no-repeat;
-  background-size: 267px 569px;
-  background-position: 68px 13px; */
-  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
-}
-
 .main__container {
-  padding-top: 130px;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .main__container_inner {
+  display: flex;
+  flex-direction: column;
   padding-top: 25px;
-  padding-right: 115px;
+  width: 309px;
+  margin-left: 20px;
 }
 
-.main__wrapper.scrolled .main__image {
-  top: 1200px;
-}
+/* .main__wrapper.scrolled .main__image {
+  top: 950px;
+} */
 
 .main__item {
-  min-width: 285px;
-  margin-top: 10px;
+  width: 90%;
+  margin-top: 20px;
   border-radius: 20px;
-  border: 1px solid #1c1c1c;
-  padding: 0 15px;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5); /* Добавляем тень снизу */
+  padding-left: 10px;
+  padding-right: 5px;
+  text-align: start;
+  background: #dcdcdc;
+  filter: drop-shadow(0px 4px 4px rgba(14, 14, 14, 0.7));
 }
 
 .main__item-first {
   position: relative;
 }
 
-.main__icon {
-  width: 30px;
-  height: 30px;
-}
-
 .main__text {
-  padding-left: 10px;
-  font-size: 24px;
+  padding-left: 20px;
+  font-size: 22px;
   font-weight: 300;
 }
 
 .main__text-long {
-  font-size: 24px;
-  padding: 0px 10px;
+  font-size: 22px;
+  padding: 0px 15px;
 }
 
 .main__button {
+  margin: 0;
+  padding: 0;
   display: block;
-  margin-top: 20px;
-  width: 305px;
-  top: 37px;
-  right: 177px;
-  padding: 22px 26px;
-  font-size: 23px;
+  width: 244px;
+  padding: 22px 22px;
+  font-size: 21px;
   font-weight: 300;
   text-align: center;
   text-decoration: none;
   background-color: #ff83dc;
   color: #f8f8f8;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.8s ease;
   border-radius: 20px;
-  filter: drop-shadow(1px 5px 5px rgba(243, 95, 233, 0.7));
+  position: absolute;
+  right: 22px;
+  top: 402px;
+  /* filter: drop-shadow(1px 5px 5px rgba(243, 95, 233, 0.7)); */
 }
 
 .main__button:hover {
   opacity: 0.7;
 }
+
+.main__icon {
+  width: 40px;
+  height: 40px;
+}
+
 .main__clip {
   position: absolute;
   top: -34px;
-  right: 235px;
+  right: 50px;
   width: 60px;
   height: 50px;
 }

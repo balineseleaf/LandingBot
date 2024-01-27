@@ -8,6 +8,8 @@ import Footer from "./components/Footer/Footer";
 import Greeting from "./components/Greeting/Greeting";
 import Selection from "./components/Selection/Selection";
 import SliderComponent from "./components/SliderComponent/SliderComponent";
+import StartNow from "./components/StartNow/StartNow";
+import Support from "./components/Support/Support";
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
       <Greeting />
       <Main />
       <Steps />
-      <Rates />
+      <Support />
       <SliderComponent />
+      <Rates />
+      <StartNow />
       <Selection />
       <Footer />
     </div >

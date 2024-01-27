@@ -126,6 +126,7 @@
   transition: opacity 0.6s ease;
   border-radius: 20px;
   filter: drop-shadow(1px 5px 5px rgba(243, 95, 233, 0.7));
+  border: 1px solid #ff43a4;
 }
 
 .greeting__button:hover {

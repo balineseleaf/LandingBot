@@ -2,14 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
-import book from "../../images/blackBookIcon.png";
-import telegram from "../../images/iconTgNew.png";
+// import book from "../../images/blackBookIcon.png";
+import telegram from "../../images/footertg2.png";
+import insta from "../../images/insta26.png";
+import facebook from "../../images/facebook3.png";
 
 function Footer() {
   const { t } = useTranslation();
-  // const changeLanguage = (language) => {
-  //   i18n.changeLanguage(language);
-  // };
 
   return (
     <section className="footer">
@@ -28,6 +27,21 @@ function Footer() {
                 </li>
               </ul>
             </div>
+            <li className="header__links">
+              <Link target="_blank" to="https://www.instagram.com/okoshko.pro?igsh=aG1lZjB6OW5tZzVx">
+                <img alt="instagram" src={insta} className="header__link" />
+              </Link>
+            </li>
+            <li className="header__links">
+              <Link target="_blank" to="https://t.me/maniProMaster_bot">
+                <img alt="telegram" src={telegram} className="header__link" />
+              </Link>
+            </li>
+            <li className="header__links">
+              <Link target="_blank" to="https://t.me/maniProMaster_bot">
+                <img alt="facebook" src={facebook} className="header__link" />
+              </Link>
+            </li>
             {/* <div className="footer__langbox">
               {i18n.language === "ru" && (
                 <button className="footer__lang-button_eng" onClick={() => changeLanguage("en")}>EN</button>
@@ -36,7 +50,7 @@ function Footer() {
                 <button className="footer__lang-button_ru" onClick={() => changeLanguage("ru")}>RU</button>
               )}
             </div> */}
-            <div className="footer__clients-block">
+            {/* <div className="footer__clients-block">
               <p className="footer__text">{t("Footer4")}</p>
               <Link className="footer__socials-link" target="_blank" to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23">
                 <img alt="telegram" src={book} className="footer__link" />
@@ -53,7 +67,7 @@ function Footer() {
               <Link className="footer__socials-link" target="_blank" to="https://t.me/maniPro_bot">
                 <img alt="telegram" src={telegram} className="footer__link" />
               </Link>
-            </div>
+            </div> */}
           </nav>
         </div>
       </div>

@@ -1,0 +1,111 @@
+.support {
+  background-color: #f8f8f8;
+  padding-bottom: 150px;
+}
+
+.support__wrapper {
+  padding-bottom: 200px;
+  border-radius: 30px;
+  height: 250px;
+  /* background-color: #808080; */
+  background-color: #e3edef;
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.support__block {
+  position: relative;
+  width: 100%;
+  padding-left: 80px;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.support__header {
+  margin: 0;
+  padding: 0;
+  font-size: 31px;
+  text-align: left;
+  margin-left: 0px;
+  font-weight: 800;
+  padding-top: 10px;
+  color: black;
+  position: relative;
+  z-index: 3;
+}
+
+.support__inner-block {
+  position: absolute;
+  width: 170px;
+  display: flex;
+  margin-top: 50px;
+  border-radius: 30px;
+  height: 170px;
+  background-color: #e3edef;
+}
+
+.support__left-container {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  justify-content: space-between;
+}
+
+.support__right-container {
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.support__button {
+  display: block;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+
+.support__image {
+  width: 420px;
+  height: 400px;
+  position: absolute;
+  right: 88px;
+  top: 47px;
+  z-index: 2;
+}
+
+.support__button:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}
+
+.support__button_mail {
+  background-image: url('../../images/mailBlack.png');
+  background-size: contain;
+}
+
+.support__button_vk {
+  background-image: url('../../images/vkBlack.png');
+  background-size: contain;
+}
+.support__button_facebook {
+  background-image: url('../../images/facebookBlack.png');
+  background-size: contain;
+}
+.support__button_tg {
+  background-image: url('../../images/telegramBlack.png');
+  background-size: contain;
+}
+
+.support__text {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  text-align: left;
+  margin-left: 0px;
+  font-weight: 300;
+  padding-top: 10px;
+  color: black;
+}
