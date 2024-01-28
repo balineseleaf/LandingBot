@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import { useTranslation } from "react-i18next";
+import { ReactComponent as Instagram } from '../../images/instagramSVG.svg';
+import { ReactComponent as Telegram } from '../../images/telegramSVG.svg';
+import { ReactComponent as Facebook } from '../../images/facebookSVG.svg';
 // import book from "../../images/blackBookIcon.png";
 import telegram from "../../images/footertg2.png";
-import insta from "../../images/insta26.png";
-import facebook from "../../images/facebook3.png";
 
 function Footer() {
   const { t } = useTranslation();
@@ -15,8 +16,23 @@ function Footer() {
       <div className="footer__wrapper">
         <p className="footer__heading"></p>
         <div className="footer__content">
-          <p className="footer__copyright footer__content-item">© 2024</p>
+          <p className="footer__copyright footer__content-item">© 2024 Okoshko</p>
           <nav className="footer__platforms">
+            <div className="header__links">
+              <Link target="_blank" to="https://www.instagram.com/okoshko.pro?igsh=aG1lZjB6OW5tZzVx">
+                <Instagram width="50px" height="50px" className="footer__link-svg-instagram" />
+              </Link>
+            </div>
+            <div className="header__links">
+              <Link target="_blank" to="https://t.me/maniProMaster_bot" className="footer__link-svg-telegram">
+                <Telegram className="footer__link-svg-telegram" width="50px" height="50px" />
+              </Link>
+            </div>
+            <div className="header__links">
+              <Link target="_blank" to="https://t.me/maniProMaster_bot" className="footer__link-svg-facebook">
+                <Facebook className="footer__link-svg-facebook" width="50px" height="42px" />
+              </Link>
+            </div>
             <div className="footer__info-block">
               <ul className="footer__info-items">
                 <li className="footer__info-item">
@@ -27,21 +43,6 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <li className="header__links">
-              <Link target="_blank" to="https://www.instagram.com/okoshko.pro?igsh=aG1lZjB6OW5tZzVx">
-                <img alt="instagram" src={insta} className="header__link" />
-              </Link>
-            </li>
-            <li className="header__links">
-              <Link target="_blank" to="https://t.me/maniProMaster_bot">
-                <img alt="telegram" src={telegram} className="header__link" />
-              </Link>
-            </li>
-            <li className="header__links">
-              <Link target="_blank" to="https://t.me/maniProMaster_bot">
-                <img alt="facebook" src={facebook} className="header__link" />
-              </Link>
-            </li>
             {/* <div className="footer__langbox">
               {i18n.language === "ru" && (
                 <button className="footer__lang-button_eng" onClick={() => changeLanguage("en")}>EN</button>

@@ -39,6 +39,7 @@
 }
 
 .footer__platforms {
+  width: 380px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -86,6 +87,27 @@
 .footer__link:hover {
   opacity: 0.7;
   transform: scale(1.05);
+}
+
+.footer__link-svg-facebook svg {
+  background-color: transparent;
+  fill: #f8f8f8;
+}
+.footer__link-svg-facebook:hover svg {
+  fill: #0866ff;
+}
+
+.footer__link-svg-instagram svg {
+  background-color: transparent;
+  fill: #f8f8f8;
+}
+
+.footer__link-svg-instagram:hover * {
+  stroke: url(#instagram);
+}
+
+.footer__link-svg-telegram:hover svg path {
+  fill: #28a7e8;
 }
 
 .footer__info-block {
