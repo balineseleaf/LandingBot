@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import supportImage from '../../images/supportImage.jpeg'
+import supportImage from '../../images/nailsSVG.svg'
 import "./Support.css";
 
 const Support = () => {

@@ -1,7 +1,7 @@
 .greeting {
   background: #f8f8f8;
-  padding-top: 200px;
-  padding-bottom: 300px;
+  padding-top: 150px;
+  padding-bottom: 290px;
 }
 
 .greeting__wrapper {
@@ -126,7 +126,6 @@
   transition: opacity 0.6s ease;
   border-radius: 20px;
   filter: drop-shadow(1px 5px 5px rgba(243, 95, 233, 0.7));
-  border: 1px solid #ff43a4;
 }
 
 .greeting__button:hover {

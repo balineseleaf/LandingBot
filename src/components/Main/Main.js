@@ -39,6 +39,14 @@ const Main = () => {
       <div className="main__wrapper">
         <h2 className="main__header">{t("Main0")}  {t("Main1")}</h2>
         <div className="main__block">
+          <div className="main__clinch main__clinch_first">          <div className="main__clinch_little main__clinch_first-little"></div></div>
+          <div className="main__clinch main__clinch_second">          <div className="main__clinch_little main__clinch_second-little"></div></div>
+          <div className="main__clinch main__clinch_third">          <div className="main__clinch_little main__clinch_third-little"></div></div>
+          <div className="main__clinch main__clinch_fourth">          <div className="main__clinch_little main__clinch_fourth-little"></div></div>
+
+
+
+
           <div className="main__container">
             <div className="main__container_inner">
               <div className="main__item main__item-first">

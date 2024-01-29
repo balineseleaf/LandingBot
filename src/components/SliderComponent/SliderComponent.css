@@ -1,6 +1,6 @@
 .slider {
   background: #f8f8f8;
-  height: 750px;
+  height: 680px;
   padding-bottom: 180px;
 }
 
@@ -68,7 +68,8 @@
   padding-top: 50px;
   font-size: 29px;
   font-weight: 300;
-  color: #ff43a4;
+  /* color: #ff43a4; */
+  color: #282828;
   text-align: center;
 }
 

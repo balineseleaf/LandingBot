@@ -16,7 +16,6 @@
   margin: 0;
   padding: 0;
   color: #8b8b8b;
-  border-bottom: 3px solid #424242;
 }
 
 .footer__content {
@@ -89,25 +88,53 @@
   transform: scale(1.05);
 }
 
-.footer__link-svg-facebook svg {
-  background-color: transparent;
+/* .footer__link-svg-facebook svg {
   fill: #f8f8f8;
+  transition: fill 0.5s ease;
 }
 .footer__link-svg-facebook:hover svg {
   fill: #0866ff;
+}*/
+.footer__link-svg-instagram {
+  width: 40px;
+  height: 40px;
 }
 
-.footer__link-svg-instagram svg {
-  background-color: transparent;
-  fill: #f8f8f8;
+.footer__link-svg-instagram path {
+  transition: 0.2s ease-in-out;
+  filter: brightness(2) grayscale(1);
 }
 
-.footer__link-svg-instagram:hover * {
-  stroke: url(#instagram);
+.footer__link-svg-instagram:hover path {
+  transition: 0.2s ease-in-out;
+  filter: brightness(1) grayscale(0);
+}
+
+.footer__link-svg-facebook svg {
+  width: 50px;
+  height: 50px;
+  transition: 0.2s ease-in-out;
+  filter: brightness(2) grayscale(1);
+}
+
+.footer__link-svg-facebook:hover svg {
+  filter: brightness(1) grayscale(0);
+  transition: 0.2s ease-in-out;
+}
+
+.footer__link-svg-telegram {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__link-svg-telegram svg path {
+  transition: 0.2s ease-in-out;
+  filter: brightness(2) grayscale(1);
 }
 
 .footer__link-svg-telegram:hover svg path {
-  fill: #28a7e8;
+  filter: brightness(1) grayscale(0);
+  transition: 0.2s ease-in-out;
 }
 
 .footer__info-block {
