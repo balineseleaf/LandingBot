@@ -8,7 +8,7 @@
 }
 
 .footer__wrapper {
-  width: 1000px;
+  width: 1180px;
   margin: 0 auto;
 }
 
@@ -41,7 +41,7 @@
   width: 380px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   gap: 20px;
   color: #1c1c1c;
 }
@@ -187,7 +187,7 @@
   width: 150px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
   .footer {
     width: 100%;
   }

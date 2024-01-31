@@ -3,8 +3,8 @@
 }
 
 .startnow__wrapper {
-  padding-bottom: 200px;
-  width: 1000px;
+  padding-top: 200px;
+  width: 1180px;
   margin: 0 auto;
 }
 
@@ -15,8 +15,10 @@
   text-align: left;
   margin-left: 70px;
   font-weight: 600;
-  padding-top: 50px;
+  padding-top: 100px;
   color: #1c1c1c;
+  position: relative;
+  z-index: 3;
 }
 
 .startbow__paragraph {
@@ -33,9 +35,23 @@
 
 .startnow__block {
   margin: 0 auto;
-  height: 335px;
+  height: 450px;
   border-radius: 30px;
   background-color: #d0d0d0;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.stranow__block-inner {
+  position: absolute;
+  background-color: #eaecee;
+  width: 1500px;
+  height: 1500px;
+  z-index: 3;
+  top: 100px;
+  left: 410px;
+  transform: rotate(35deg);
 }
 
 .startnow__button {
@@ -59,4 +75,23 @@
 
 .startnow__button:hover {
   opacity: 0.7;
+}
+
+.startnow__image_smartphone {
+  position: absolute;
+  top: 62px;
+  right: -65px;
+  width: 450px;
+  height: 350px;
+  z-index: 6;
+}
+
+.startnow__image_hourglass {
+  position: absolute;
+  top: 182px;
+  right: 117px;
+  width: 394px;
+  height: 272px;
+  z-index: 7;
+  transform: rotate(-20deg);
 }

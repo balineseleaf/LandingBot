@@ -4,13 +4,13 @@
 }
 
 .main__wrapper {
-  width: 1000px;
+  width: 1180px;
   margin: 0 auto;
   position: relative;
 }
 .main__block {
   height: 550px;
-  background-color: #82898f;
+  /* background-color: #82898f; */
   border-radius: 30px;
   position: relative;
 }
@@ -37,25 +37,34 @@
   display: flex;
   flex-direction: column;
   padding-top: 32px;
-  width: 309px;
-  margin-left: 14px;
+  width: 100%;
 }
 
-/* .main__wrapper.scrolled .main__image {
-  top: 950px;
-} */
-
 .main__item {
-  width: 90%;
+  width: 370px;
+  margin: 0 auto;
   margin-top: 26px;
   border-radius: 20px;
+  height: 100px;
   display: flex;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
   text-align: start;
   background: #dcdcdc;
-  filter: drop-shadow(0px 4px 4px rgba(14, 14, 14, 0.7));
+  background: #d0d0d0;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.main__block-inner {
+  position: absolute;
+  background-color: #eaecee;
+  width: 257px;
+  height: 243px;
+  z-index: 3;
+  top: 16px;
+  left: 218px;
+  transform: rotate(35deg);
 }
 
 .main__item-first {
@@ -63,9 +72,10 @@
 }
 
 .main__text {
-  padding-left: 20px;
-  font-size: 21px;
+  padding-left: 25px;
+  font-size: 24px;
   font-weight: 300;
+  z-index: 5;
 }
 
 /* .main__text-long {
@@ -94,69 +104,20 @@
 }
 
 .main__icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
+  margin-left: 25px;
 }
 
-.main__clip {
+/* .main__clip {
   position: absolute;
   top: -34px;
   right: 50px;
   width: 60px;
   height: 50px;
-}
+} */
 
-.main__clinch {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #1c1c1c;
-}
-
-.main__clinch_little {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #82898f;
-}
-
-.main__clinch_first {
-  top: 15px;
-  left: 15px;
-}
-.main__clinch_second {
-  top: 15px;
-  right: 15px;
-}
-.main__clinch_third {
-  bottom: 15px;
-  left: 15px;
-}
-.main__clinch_fourth {
-  bottom: 15px;
-  right: 15px;
-}
-
-.main__clinch_first-little {
-  top: 7px;
-  left: 7px;
-}
-.main__clinch_second-little {
-  top: 7px;
-  right: 6px;
-}
-.main__clinch_third-little {
-  bottom: 6px;
-  left: 7px;
-}
-.main__clinch_fourth-little {
-  bottom: 6px;
-  right: 6px;
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
   .main {
     width: 100%;
     height: 880px;

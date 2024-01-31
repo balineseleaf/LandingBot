@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const Selection = () => {
   const { t } = useTranslation();
   return (
-    <section className="selection">
+    <section id="selection" className="selection">
       <div className="selection__wrapper">
         <div className='selection__container selection__container-left'>
           <img className='selection__image selection__image-left' src={phoneLeft} alt="телефон" />

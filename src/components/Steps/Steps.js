@@ -1,30 +1,27 @@
 import "./Steps.css"
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import arrow from '../../images/arrow.png'
+import arrow from '../../images/arrow2.svg'
 
 const Steps = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="steps">
+    <section id="steps" className="steps">
       <div className="steps__wrapper">
         <h2 className="steps__header">{t("Steps1")}</h2>
         <h3 className="steps__paragraph">{t("Steps6")}</h3>
         <div className="steps__container">
           <div className="steps__block first">
             <div className="steps__text steps__text_first">{t("Steps5")}</div>
-            <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="steps__button">
-              {t("Steps7")}
-            </Link>
+            <img className="steps__image" src={arrow} alt="стрелка" />
           </div>
           <div className="steps__block second">
             <div className="steps__text">{t("Steps4")}</div>
             <img className="steps__image" src={arrow} alt="стрелка" />
           </div>
-          <div className="steps__block third">
-            <div className="steps__text">{t("Steps3")}</div>
+          <div className="steps__block third ">
+            <div className="steps__text steps__text_first">{t("Steps3")}</div>
             <img className="steps__image" src={arrow} alt="стрелка" />
           </div>
           <div className="steps__block fourth">

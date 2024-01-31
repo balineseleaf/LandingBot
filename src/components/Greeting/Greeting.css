@@ -5,7 +5,7 @@
 }
 
 .greeting__wrapper {
-  width: 1000px;
+  width: 1180px;
   margin: 0 auto;
   position: relative;
 }
@@ -38,7 +38,7 @@
 
 .greeting__text-container {
   z-index: 3;
-  margin-left: 358px;
+  margin-left: 267px;
   margin-top: 30px;
   position: relative;
 }
@@ -114,9 +114,8 @@
   display: block;
   position: relative;
   width: 250px;
-  margin-left: 536px;
-  top: 105px;
-  right: 177px;
+  top: 125px;
+  left: 268px;
   padding: 15px 26px;
   font-size: 21px;
   text-align: center;
@@ -130,6 +129,7 @@
 
 .greeting__button:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 @keyframes rockingAnimation2 {
@@ -141,7 +141,7 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
   .greeting {
     width: 100%;
   }

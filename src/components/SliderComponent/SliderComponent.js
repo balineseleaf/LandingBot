@@ -20,7 +20,6 @@ const SliderComponent = () => {
           modules={[Navigation, Pagination, A11y, Autoplay]}
           slidesPerView={1}
           navigation
-          // loop={true}
           autoplay={{ delay: 4000 }}
           pagination={{ clickable: true }}
         >
@@ -34,12 +33,6 @@ const SliderComponent = () => {
             <div className="swiper__container">
               <p className="swiper__caption ">{t("Options3")}</p>
               <p className="swiper__text ">{t("Options7")}</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="swiper__container">
-              <p className="swiper__caption ">{t("Options4")}</p>
-              <p className="swiper__text ">{t("Options8")}</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>

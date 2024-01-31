@@ -5,7 +5,7 @@
 }
 
 .slider__wrapper {
-  width: 1000px;
+  width: 1180px;
   margin: 0 auto;
 }
 
@@ -90,7 +90,7 @@
   color: #ff83dc;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
   .slider {
     width: 100%;
   }

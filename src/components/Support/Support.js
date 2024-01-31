@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import supportImage from '../../images/nailsSVG.svg'
+import supportImage from '../../images/supportpic.svg'
 import "./Support.css";
 
 const Support = () => {
   return (
-    <section className="support">
+    <section id="support" className="support">
       <div className="support__wrapper">
         <div className="support__block">
           <h2 className="support__header">Обратитесь к нам в социальных сетях</h2>

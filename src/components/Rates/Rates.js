@@ -1,19 +1,20 @@
 import "./Rates.css";
 import { useTranslation } from "react-i18next";
-import logoO from '../../images/logoO.png';
 
 const Rates = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="rates">
+    <section id="rates" className="rates">
       <div className="rates__wrapper">
         <h2 className="rates__header">{t("Rates1")}</h2>
+        <p className="rates__paragraph">{t("Rates11")}</p>
         <div className="card-grid">
           <div className="card">
             <div className="card-background_first" ></div>
+            <div className="card__block-inner"></div>
             <div className="card-content">
-              <p className="card-heading">Free</p>
+              <p className="card-heading card-heading-first">Free</p>
               <ul className="card__list">
                 <li className="card__item">{t("Rates2")}</li>
                 <li className="card__item">{t("Rates3")}</li>
@@ -25,6 +26,7 @@ const Rates = () => {
           </div>
           <div className="card">
             <div className="card-background_second" ></div>
+            <div className="card__block-inner"></div>
             <div className="card-content">
               <p className="card-heading">Pro</p>
               <ul className="card__list">
@@ -40,6 +42,7 @@ const Rates = () => {
           </div>
           <div className="card">
             <div className="card-background_third"></div>
+            <div className="card__block-inner"></div>
             <div className="card-content">
               <p className="card-heading">Lite Start</p>
               <ul className="card__list">

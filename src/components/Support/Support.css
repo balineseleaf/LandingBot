@@ -1,6 +1,6 @@
 .support {
   background-color: #f8f8f8;
-  padding-bottom: 150px;
+  padding-top: 100px;
 }
 
 .support__wrapper {
@@ -9,7 +9,8 @@
   height: 250px;
   /* background-color: #808080; */
   background-color: #e3edef;
-  width: 1000px;
+  background-color: #dcdcdc;
+  width: 1180px;
   margin: 0 auto;
   position: relative;
 }
@@ -28,7 +29,7 @@
   font-size: 31px;
   text-align: left;
   margin-left: 0px;
-  font-weight: 800;
+  font-weight: 600;
   padding-top: 10px;
   color: black;
   position: relative;
@@ -42,7 +43,7 @@
   margin-top: 50px;
   border-radius: 30px;
   height: 170px;
-  background-color: #e3edef;
+  background-color: #dcdcdc;
 }
 
 .support__left-container {
@@ -68,11 +69,11 @@
 }
 
 .support__image {
-  width: 420px;
-  height: 400px;
+  width: 425px;
+  height: 425px;
   position: absolute;
-  right: 88px;
-  top: 47px;
+  right: 155px;
+  top: 55px;
   z-index: 2;
 }
 

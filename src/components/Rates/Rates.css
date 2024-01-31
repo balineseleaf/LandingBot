@@ -1,7 +1,7 @@
 .rates {
   align-items: center;
   display: flex;
-  padding-bottom: 200px;
+  padding-top: 120px;
   background: #f8f8f8;
 }
 
@@ -13,9 +13,20 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
   color: #1c1c1c;
-  font-size: 48px;
+  font-size: 44px;
+}
+
+.rates__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  font-size: 24px;
+  width: 570px;
+  font-weight: 300;
+  text-align: left;
+  color: #1c1c1c;
 }
 
 .card-grid {
@@ -26,16 +37,21 @@
 
 .card {
   position: relative;
-  width: 300px;
-  height: 450px;
+  width: 365px;
+  height: 570px;
   transition: 0.5s ease-in-out;
   border-radius: 20px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .card:hover {
-  box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.025);
 }
+
+/* .card:hover {
+  box-shadow: 2px 20px 20px rgba(0, 0, 0, 0.5);
+} */
 
 .card-background_first {
   position: absolute;
@@ -50,9 +66,9 @@
   transform: scale(1) translateZ(0);
   transition: filter 100ms linear, transform 100ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
-  background-color: #606060;
+  background-color: #474a51;
   opacity: 0.9;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
+  /* filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7)); */
 }
 
 .card-background_second {
@@ -68,9 +84,9 @@
   transform: scale(1) translateZ(0);
   transition: filter 100ms linear, transform 100ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
-  background-color: #484848;
+  background-color: #d5d5d5;
   opacity: 0.9;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
+  /* filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7)); */
 }
 
 .card-background_third {
@@ -86,28 +102,38 @@
   transform: scale(1) translateZ(0);
   transition: filter 100ms linear, transform 100ms linear;
   filter: brightness(0.8) saturate(1.2) contrast(0.85);
-  background-color: #282828;
+  background-color: #82898f;
   opacity: 0.9;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
+  /* filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7)); */
 }
 
 .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: 0;
-  top: 0;
   padding: 24px;
 }
 
 .card-heading {
   margin: 0;
+  margin-top: 15px;
   padding: 0;
-  color: #fff;
+  color: #1c1c1c;
   font-weight: 600;
   font-size: 42px;
   font-weight: 600;
   text-align: center;
+  z-index: 2;
+}
+/* .card-heading-first {
+  color: #ff83dc;
+} */
+
+.card__block-inner {
+  position: absolute;
+  background-color: #eaecee;
+  width: 100%;
+  height: 130px;
   z-index: 2;
 }
 
@@ -115,7 +141,7 @@
   padding: 0;
   margin-top: 37px;
   position: absolute;
-  top: 280px;
+  top: 380px;
   color: #fff;
   font-size: 23px;
   width: 100%;
@@ -127,25 +153,21 @@
 }
 
 .card-bottom-text {
+  margin: 20px auto;
   position: absolute;
-  left: 60px;
-  top: 370px;
-  color: #ff83dc;
+  top: 480px;
+  color: #1c1c1c;
   font-size: 27px;
-  font-weight: 300;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
-  cursor: pointer;
   opacity: 1;
-  transition: color 0.4s ease;
+  transition: 0.4s ease-in-out;
 }
 
 .card-bottom-text:hover {
   color: #f8f8f8;
-}
-
-.card:hover .card-background {
-  transform: scale(1.07) translateZ(0);
+  cursor: pointer;
 }
 
 /* .card-grid:hover > .card:not(:hover),
@@ -154,24 +176,26 @@
 } */
 
 .card__list {
-  margin: 30px;
+  margin: 0;
   padding: 0;
+  /* margin-left: 55px; */
+  margin-top: 100px;
   z-index: 2;
+  list-style: none;
 }
 
 .card__item {
   margin: 0;
-  font-size: 21px;
-  padding: 5px 0 0 0;
+  padding: 10px 0 0 0;
   color: white;
   padding-bottom: 5px;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 300;
   text-decoration: none;
   z-index: 2;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1180px) {
   .rates {
     width: 100%;
   }
