@@ -9,6 +9,10 @@ import analitics from '../../images/analitics.png';
 import qrcode from '../../images/qrcode.png';
 import clients from '../../images/clients.png';
 import automation from '../../images/automat.png';
+import history from '../../images/notebook.png';
+import mailing from '../../images/mailing.png';
+import language from '../../images/language.png';
+import bot from '../../images/bot.png';
 
 const Main = () => {
   const { t } = useTranslation();
@@ -86,23 +90,23 @@ const Main = () => {
             <div className="main__container_inner">
               <div className="main__item">
                 <div className="main__block-inner"></div>
-                {/* <img src={ } alt="иконка" className="main__icon"></img> */}
-                <p className="main__text">{t("Main6")}</p>
+                <img src={history} alt="иконка" className="main__icon"></img>
+                <p className="main__text">{t("Main11")}</p>
               </div>
               <div className="main__item">
                 <div className="main__block-inner"></div>
-                {/* <img src={ } alt="иконка" className="main__icon"></img> */}
-                <p className="main__text main__text-long">{t("Main7")}</p>
+                <img src={mailing} alt="иконка" className="main__icon"></img>
+                <p className="main__text main__text-long">{t("Main12")}</p>
               </div>
               <div className="main__item">
                 <div className="main__block-inner"></div>
-                {/* <img src={ } alt="иконка" className="main__icon"></img> */}
-                <p className="main__text">{t("Main8")}</p>
+                <img src={language} alt="иконка" className="main__icon"></img>
+                <p className="main__text">{t("Main13")}</p>
               </div>
               <div className="main__item">
                 <div className="main__block-inner"></div>
-                {/* <img src={ } alt="иконка" className="main__icon"></img> */}
-                <p className="main__text main__text-long">{t("Main9")}</p>
+                <img src={bot} alt="иконка" className="main__icon"></img>
+                <p className="main__text main__text-long">{t("Main14")}</p>
               </div>
             </div>
           </div>

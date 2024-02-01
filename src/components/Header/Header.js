@@ -11,9 +11,7 @@ const Header = () => {
     i18n.changeLanguage(language);
   };
 
-
   const marker = document.querySelector('.header__items');
-  console.log(marker);
   const item = document.querySelectorAll('.header__item');
   function indicator(e) {
     marker.style.left = e.offsetLeft + "px";
@@ -25,7 +23,6 @@ const Header = () => {
     })
   });
 
-
   return (
     <section className="header">
       <div className="header__wrapper">
@@ -35,18 +32,12 @@ const Header = () => {
         </div>
         <nav id="navbar" className="header__navbar">
           <div id="marker" className="header__items"></div>
-          <Link className="header__item" to="main" spy={true} smooth={true} offset={-75} duration={500}>{t("Header1")}</Link>
-
-          <Link className="header__item" to="steps" spy={true} smooth={true} offset={-75} duration={500}>{t("Header2")}</Link>
-
-          <Link className="header__item" to="support" spy={true} smooth={true} offset={-75} duration={500}>{t("Header3")}</Link>
-
-          <Link className="header__item" to="options" spy={true} smooth={true} offset={-75} duration={500}>{t("Header4")}</Link>
-
-          <Link className="header__item" to="rates" spy={false} smooth={true} offset={-75} duration={500}>{t("Header5")}</Link>
-
-          <Link className="header__item" to="selection" spy={true} smooth={true} offset={-75} duration={500}>{t("Header6")}</Link>
-
+          <Link className="header__item" to="main" spy={true} smooth={true} offset={-82} duration={500}>{t("Header1")}</Link>
+          <Link className="header__item" to="steps" spy={true} smooth={true} offset={-82} duration={500}>{t("Header2")}</Link>
+          <Link className="header__item" to="support" spy={true} smooth={true} offset={-82} duration={500}>{t("Header3")}</Link>
+          <Link className="header__item" to="options" spy={true} smooth={true} offset={-82} duration={500}>{t("Header4")}</Link>
+          <Link className="header__item" to="rates" spy={true} smooth={true} offset={-82} duration={500}>{t("Header5")}</Link>
+          <Link className="header__item" to="selection" spy={true} smooth={true} offset={-82} duration={500}>{t("Header6")}</Link>
         </nav>
         <ul className="header__lang-links">
           <div className="langbox">

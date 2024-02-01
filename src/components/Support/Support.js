@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom";
-import supportImage from '../../images/supportpic.svg'
+import social from '../../images/social.svg';
+import { useTranslation } from "react-i18next";
 import "./Support.css";
 
 const Support = () => {
+  const { t } = useTranslation();
   return (
     <section id="support" className="support">
       <div className="support__wrapper">
         <div className="support__block">
-          <h2 className="support__header">Обратитесь к нам в социальных сетях</h2>
-          <p className="support__text">Быстро. Легко. Удобно.</p>
+          <h2 className="support__header">{t("Support1")}</h2>
+          <p className="support__text">{t("Support2")}</p>
           <div className="support__inner-block">
             <div className="support__left-container">
               <Link to="" className="support__button support__button_tg">
@@ -23,7 +25,7 @@ const Support = () => {
               </Link>
             </div>
           </div>
-          <img src={supportImage} alt="картинка саппорт" className="support__image" />
+          <img src={social} alt="картинка саппорт" className="support__image" />
         </div>
         {/* <img src={support} alt="саппорт" className="support__image"></img> */}
       </div>

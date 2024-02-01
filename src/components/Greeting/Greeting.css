@@ -15,6 +15,7 @@
   transform: rotateZ(10deg);
   width: 400px;
   top: 100px;
+  opacity: 0.85;
 }
 
 .greeting__header {

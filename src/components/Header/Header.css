@@ -1,6 +1,6 @@
 .header {
   background: #f8f8f8;
-  height: 75px;
+  height: 82px;
   position: fixed;
   width: 100%;
   z-index: 21;
@@ -40,10 +40,15 @@
   position: relative;
   margin: 0 20px;
   color: #1c1c1c;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 300;
   list-style: none;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.header__item:hover {
+  transform: scale(1.03);
 }
 
 .header__items {
@@ -92,31 +97,11 @@
   list-style-type: none;
 }
 
-/* .langbox {
-  display: flex;
-  width: 44px;
-  flex-direction: row;
-  position: relative;
-} */
-
 .langbox {
   display: flex;
   width: 90px;
   flex-direction: row;
 }
-
-/* .lang__button_eng {
-  padding: 0;
-  margin: 0;
-  border-radius: 50%;
-  width: 43px;
-  background-color: #1c1c1c;
-  height: 43px;
-  color: #f8f8f8;
-  position: absolute;
-  font-size: 16px;
-  transition: 0.3s ease-out;
-} */
 
 .lang__button_eng {
   padding: 0;
@@ -172,24 +157,6 @@
   cursor: default;
   color: #3a3a3a;
 }
-
-/* .lang__button_eng::after {
-  content: '';
-  width: 1px;
-} */
-
-/* .lang__button_ru {
-  padding: 0;
-  margin: 0;
-  border-radius: 50%;
-  width: 43px;
-  font-size: 16px;
-  color: #f8f8f8;
-  background-color: #1c1c1c;
-  height: 43px;
-  position: absolute;
-  transition: 0.3s ease-out;
-} */
 
 .lang__button_eng:hover {
   cursor: pointer;
