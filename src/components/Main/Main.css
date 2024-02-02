@@ -8,29 +8,29 @@
   margin: 0 auto;
   position: relative;
 }
-.main__block {
-  height: 550px;
-  /* background-color: #82898f; */
-  border-radius: 30px;
-  position: relative;
-}
 
 .main__header {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  padding-left: 13px;
   text-transform: uppercase;
   padding-top: 80px;
   min-height: 110px;
-  font-size: 48px;
+  font-size: 43px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   color: #1c1c1c;
+  width: 50%;
 }
 
 .main__container {
   display: flex;
+  height: 550px;
   flex-direction: row;
   justify-content: center;
+  border-radius: 30px;
+  position: relative;
+  flex-wrap: wrap;
 }
 
 .main__container_inner {
@@ -65,6 +65,14 @@
   top: 16px;
   left: 218px;
   transform: rotate(35deg);
+  pointer-events: none;
+  user-select: none;
+  transition: 0.5s ease-in-out;
+}
+
+.main__item:hover .main__block-inner {
+  transform: translateX(100%) rotate(35deg);
+  transition: 0.5s ease-in-out;
 }
 
 .main__item-first {
@@ -78,11 +86,6 @@
   z-index: 5;
 }
 
-/* .main__text-long {
-  font-size: 22px;
-  padding: 0px 15px;
-} */
-
 .main__button {
   margin: 26px auto;
   padding: 0;
@@ -95,76 +98,56 @@
   text-decoration: none;
   background-color: #ff83dc;
   color: #f8f8f8;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.4s ease-in-out;
   border-radius: 20px;
 }
 
 .main__button:hover {
   opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .main__icon {
   width: 45px;
   height: 45px;
   margin-left: 25px;
+  pointer-events: none;
+  user-select: none;
 }
-
-/* .main__clip {
-  position: absolute;
-  top: -34px;
-  right: 50px;
-  width: 60px;
-  height: 50px;
-} */
 
 @media (max-width: 1180px) {
   .main {
-    width: 100%;
-    height: 880px;
   }
   .main__wrapper {
     width: 90%;
     margin: 0 auto;
   }
+
   .main__container {
-    width: 60%;
-    margin-left: 375px;
-    flex-direction: column;
   }
+
   .main__header {
     padding: 50px 0 0 0;
     width: 100%;
-  }
-  .main__clip {
-    display: none;
-  }
-  .main__item {
-    width: 90%;
-  }
-  .main__wrapper.scrolled .main__image {
-    top: 1350px;
   }
 }
 
 @media (max-width: 850px) {
   .main {
-    height: 1150px;
+    height: 1680px;
+    padding-bottom: 0;
   }
   .main__header {
     font-size: 40px;
-  }
-  .main__container {
-    width: 49%;
-  }
-  .main__container_inner {
-    padding-top: 25px;
-    padding-right: 0px;
+    text-align: center;
   }
 }
 
 @media (max-width: 700px) {
   .main {
-    height: 950px;
+    padding-top: 70px;
+    height: 1780px;
   }
   .main__image {
     display: none;
@@ -173,24 +156,13 @@
     text-align: center;
   }
   .main__container {
-    margin: 0px auto;
-    width: 90%;
-  }
-
-  .main__container_inner {
-    margin: 0 auto;
-  }
-  .main__button {
-    margin: 0 auto;
-    width: 80%;
-    font-size: 22px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 500px) {
   .main {
-    height: 980px;
+    padding-top: 90px;
   }
   .main__wrapper {
     width: 100%;
@@ -198,49 +170,44 @@
   }
   .main__header {
     padding: 50px 0 0 0;
-    font-size: 40px;
+    font-size: 35px;
     width: 90%;
     margin: 0 auto;
   }
-  .main__container {
-    width: 100%;
-    padding-top: 100px;
+  .main__block-inner {
+    left: 220px;
   }
-  .main__image {
-    display: none;
-  }
-  .main__button {
-    width: 85%;
+}
+@media (max-width: 450px) {
+  .main {
+    height: 1720px;
   }
 }
 
 @media (max-width: 400px) {
   .main {
-    height: 980px;
+    height: 1330px;
   }
-  .main__container {
-    width: 100%;
-    padding-top: 80px;
+  .main__header {
+    padding: 0;
+    font-size: 32px;
   }
   .main__item {
     width: 85%;
     min-width: 200px;
-    min-height: 67px;
+    height: 75px;
   }
   .main__text {
     font-size: 19px;
+    margin: 0;
   }
   .main__text-long {
     font-size: 17px;
   }
-  .main__button {
-    width: 80%;
-    font-size: 18px;
+  .main__container {
+    margin-top: 10px;
   }
-}
-
-@media (max-width: 350px) {
-  .main__button {
-    font-size: 18px;
+  .main__block-inner {
+    left: 190px;
   }
 }

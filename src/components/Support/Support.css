@@ -68,16 +68,32 @@
   height: 70px;
 }
 
-.support__image {
-  width: 400px;
-  height: 400px;
+.support__image_squads {
+  width: 270px;
+  height: 270px;
   position: absolute;
-  right: 140px;
-  top: 50px;
-  z-index: 2;
-  transform: scale(1, 1) rotate(15deg);
+  right: 326px;
+  top: 157px;
+  z-index: 3;
+  transform: scale(1, 1) rotate(30deg);
   filter: drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.5));
-  opacity: 0.7;
+  opacity: 0.8;
+  pointer-events: none;
+  user-select: none;
+}
+
+.support__image_letter {
+  top: 62px;
+  right: 110px;
+  position: absolute;
+  width: 330px;
+  height: 330px;
+  z-index: 3;
+  transform: scale(1, 1) rotate(7deg);
+  filter: drop-shadow(0px 9px 5px rgba(0, 0, 0, 0.5));
+  opacity: 0.9;
+  pointer-events: none;
+  user-select: none;
 }
 
 .support__button:hover {
@@ -112,4 +128,214 @@
   font-weight: 300;
   padding-top: 10px;
   color: black;
+}
+
+@media (max-width: 1180px) {
+  .support__wrapper {
+    width: 100vw;
+  }
+  .support__block {
+    margin: 0 auto;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .support__wrapper {
+    width: 85vw;
+  }
+  .support__image_squads {
+    width: 250px;
+    height: 250px;
+    top: 150px;
+    right: 400px;
+  }
+
+  .support__image_letter {
+    width: 290px;
+    height: 290px;
+    top: 100px;
+    right: 230px;
+  }
+}
+
+@media (max-width: 850px) {
+  .support__wrapper {
+    width: 86%;
+  }
+  .support__block {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .support__header {
+    width: 70%;
+  }
+  .support__image_squads {
+    width: 210px;
+    height: 210px;
+    top: 210px;
+    right: 300px;
+  }
+
+  .support__image_letter {
+    width: 270px;
+    height: 270px;
+    top: 140px;
+    right: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .support__block {
+    margin: 0 auto;
+    padding-left: 0;
+    width: 90%;
+  }
+  .support__header {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .support__text {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .support__inner-block {
+    position: static;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  .support__header {
+    margin: 0 auto;
+  }
+  .support__text {
+    margin: 0 auto;
+  }
+  .support__image_squads {
+    width: 210px;
+    height: 210px;
+    top: 440px;
+    right: 280px;
+  }
+
+  .support__image_letter {
+    width: 240px;
+    height: 240px;
+    top: 400px;
+    right: 110px;
+  }
+  .support__wrapper {
+    height: 450px;
+  }
+}
+
+@media (max-width: 750px) {
+  .support__image_squads {
+    width: 210px;
+    height: 210px;
+    top: 440px;
+    right: 220px;
+  }
+
+  .support__image_letter {
+    width: 240px;
+    height: 240px;
+    top: 400px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .support__image_squads {
+    width: 210px;
+    height: 210px;
+    top: 440px;
+    right: 200px;
+  }
+
+  .support__image_letter {
+    width: 240px;
+    height: 240px;
+    top: 400px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .support__header {
+    width: 90%;
+  }
+  .support__text {
+    width: 90%;
+  }
+
+  .support__wrapper {
+    height: 520px;
+  }
+  .support__image_squads {
+    width: 190px;
+    height: 190px;
+    top: 480px;
+    right: 160px;
+  }
+
+  .support__image_letter {
+    width: 220px;
+    height: 220px;
+    top: 440px;
+    right: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .support__wrapper {
+    height: 500px;
+  }
+  .support__image_squads {
+    width: 150px;
+    height: 150px;
+    top: 480px;
+    right: 140px;
+  }
+
+  .support__image_letter {
+    width: 200px;
+    height: 200px;
+    top: 440px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .support__image_squads {
+    width: 150px;
+    height: 150px;
+    top: 500px;
+    right: 130px;
+  }
+
+  .support__image_letter {
+    width: 200px;
+    height: 200px;
+    top: 460px;
+    right: -10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .support__image_squads {
+    width: 130px;
+    height: 130px;
+    top: 510px;
+    right: 110px;
+  }
+
+  .support__image_letter {
+    width: 180px;
+    height: 180px;
+    top: 470px;
+    right: -20px;
+  }
 }

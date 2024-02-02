@@ -17,11 +17,12 @@
   font-weight: 600;
   padding-top: 100px;
   color: #1c1c1c;
+  width: 58%;
   position: relative;
   z-index: 3;
 }
 
-.startbow__paragraph {
+.startnow__paragraph {
   width: 500px;
   margin: 0;
   padding: 0;
@@ -43,7 +44,7 @@
   overflow: hidden;
 }
 
-.stranow__block-inner {
+.startnow__block-inner {
   position: absolute;
   background-color: #eaecee;
   width: 1500px;
@@ -68,34 +69,230 @@
   text-decoration: none;
   background-color: #ff83dc;
   color: #fff;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.4s ease-in-out;
   border-radius: 20px;
   filter: drop-shadow(1px 5px 5px rgba(243, 95, 233, 0.7));
 }
 
 .startnow__button:hover {
   opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .startnow__image_smartphone {
   position: absolute;
   top: 36px;
-  right: -65px;
-  width: 450px;
+  right: -35px;
+  width: 350px;
   height: 350px;
   z-index: 6;
   filter: drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.5));
   opacity: 0.7;
+  pointer-events: none;
+  user-select: none;
 }
 
 .startnow__image_hourglass {
   position: absolute;
-  top: 182px;
-  right: 117px;
-  width: 394px;
-  height: 272px;
+  top: 122px;
+  right: 125px;
+  width: 330px;
+  height: 330px;
   z-index: 7;
   transform: rotate(-20deg);
   filter: drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.5));
   opacity: 0.7;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 1180px) {
+  .startnow__wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .startnow__wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .startnow__image_smartphone {
+    top: 36px;
+    right: -45px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .startnow__image_hourglass {
+    top: 122px;
+    right: 115px;
+    width: 310px;
+    height: 310px;
+  }
+}
+
+@media (max-width: 950px) {
+  .startnow__header {
+    font-size: 37px;
+    width: 60%;
+    margin-left: 70px;
+  }
+
+  .startnow__paragraph {
+    width: 500px;
+    width: 40%;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .startnow__header {
+    font-size: 37px;
+    width: 60%;
+    margin-left: 70px;
+  }
+
+  .startnow__paragraph {
+    width: 500px;
+    width: 40%;
+    font-size: 20px;
+  }
+  .startnow__image_smartphone {
+    top: 66px;
+    right: -45px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .startnow__image_hourglass {
+    top: 152px;
+    right: 115px;
+    width: 290px;
+    height: 290px;
+  }
+}
+
+@media (max-width: 800px) {
+  .startnow__wrapper {
+  }
+  .startnow__block {
+    height: 700px;
+  }
+
+  .startnow__header {
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+  }
+
+  .startnow__paragraph {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  .startnow__image_smartphone {
+    top: 346px;
+    right: 105px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .startnow__image_hourglass {
+    top: 430px;
+    right: 275px;
+    width: 270px;
+    height: 270px;
+  }
+  .startnow__button {
+    margin: 0 auto;
+    left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .startnow__image_smartphone {
+    top: 346px;
+    right: 55px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .startnow__image_hourglass {
+    top: 430px;
+    right: 175px;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 570px) {
+  .startnow__header {
+    font-size: 34px;
+  }
+
+  .startnow__paragraph {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 500px) {
+  .startnow__block {
+    height: 800px;
+  }
+  .startnow__image_smartphone {
+    top: 406px;
+    right: 15px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .startnow__image_hourglass {
+    top: 490px;
+    right: 135px;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 500px) {
+  .startnow__block {
+    height: 820px;
+  }
+  .startnow__image_smartphone {
+    top: 406px;
+    right: -30px;
+    width: 320px;
+    height: 320px;
+  }
+
+  .startnow__image_hourglass {
+    top: 490px;
+    right: 125px;
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media (max-width: 400px) {
+  .startnow__image_smartphone {
+    top: 466px;
+    right: -60px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .startnow__image_hourglass {
+    top: 560px;
+    right: 95px;
+    width: 250px;
+    height: 250px;
+  }
+  .startnow__button {
+    width: 75%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }

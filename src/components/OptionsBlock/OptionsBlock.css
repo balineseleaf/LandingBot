@@ -13,16 +13,27 @@
   text-transform: uppercase;
   margin: 0;
   padding: 40px 0 0 0;
-  font-size: 33px;
-  text-align: center;
+  font-size: 37px;
+  text-align: left;
   font-weight: 600;
   color: #1c1c1c;
   /* height: 90px; */
 }
 
+.options__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  font-size: 22px;
+  width: 570px;
+  font-weight: 300;
+  text-align: left;
+  color: #1c1c1c;
+}
+
 .options__letter {
   text-transform: none;
-  font-size: 40px;
+  font-size: 44px;
 }
 
 .options__letter span {
@@ -30,7 +41,7 @@
 }
 
 .options__container {
-  margin-top: 35px;
+  margin-top: 55px;
   width: 1180px;
   height: 870px;
   display: flex;
@@ -118,13 +129,15 @@
 
 .options__image {
   position: absolute;
+  pointer-events: none;
+  user-select: none;
 }
 
 .options__image-clients {
-  top: 220px;
-  right: 147px;
-  width: 194px;
-  height: 172px;
+  top: 240px;
+  right: 137px;
+  width: 170px;
+  height: 170px;
   z-index: 5;
   transform: rotate(10deg);
   filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
@@ -132,21 +145,43 @@
 }
 
 .options__image-growths {
-  top: 175px;
+  top: 195px;
   right: 22px;
-  width: 194px;
-  height: 172px;
+  width: 170px;
+  height: 170px;
   z-index: 4;
   transform: rotate(-10deg);
   filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.5));
   opacity: 0.7;
 }
 
+.options__image-notebook {
+  top: 229px;
+  left: 48px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+  transform: scale(1, 1) rotate(62deg) skew(-9deg);
+  filter: drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.5));
+  opacity: 0.7;
+}
+
+.options__image-notification {
+  top: 156px;
+  right: -24px;
+  width: 259px;
+  height: 259px;
+  z-index: 3;
+  transform: scale(1, 1) rotate(-6deg);
+  filter: drop-shadow(0px 9px 5px rgba(0, 0, 0, 0.5));
+  opacity: 0.85;
+}
+
 .options__image-planet {
-  top: 231px;
-  right: 187px;
-  width: 154px;
-  height: 172px;
+  top: 251px;
+  right: 177px;
+  width: 170px;
+  height: 170px;
   z-index: 4;
   transform: rotate(-10deg);
   filter: drop-shadow(0px 9px 6px rgba(0, 0, 0, 0.5));
@@ -154,32 +189,21 @@
 }
 
 .options__image-calendar {
-  top: 166px;
+  top: 186px;
   right: 47px;
-  width: 224px;
-  height: 222px;
+  width: 210px;
+  height: 210px;
   z-index: 4;
   transform: scale(1, 1) rotate(10deg);
   filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
   opacity: 0.7;
 }
 
-.options__image-notebook {
-  top: 209px;
-  left: 48px;
-  width: 180px;
-  height: 214px;
-  z-index: 2;
-  transform: scale(1, 1) rotate(62deg) skew(-9deg);
-  filter: drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.5));
-  opacity: 0.7;
-}
-
 .options__image-laptop {
   top: 84px;
   right: 28px;
-  width: 350px;
-  height: 350px;
+  width: 340px;
+  height: 340px;
   z-index: 5;
   transform: rotate(10deg);
   filter: drop-shadow(0px 11px 6px rgba(0, 0, 0, 0.5));
@@ -189,8 +213,8 @@
 .options__image-analytics {
   top: 181px;
   right: 204px;
-  width: 244px;
-  height: 220px;
+  width: 210px;
+  height: 210px;
   z-index: 5;
   transform: rotateX(20deg);
   filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
@@ -200,7 +224,7 @@
 .options__image-stats {
   top: 172px;
   right: 311px;
-  width: 244px;
+  width: 220px;
   height: 220px;
   z-index: 3;
   transform: rotate(-24deg);
@@ -208,46 +232,35 @@
   opacity: 0.85;
 }
 
-.options__image-notification {
-  top: 136px;
-  right: -24px;
-  width: 279px;
-  height: 265px;
+.options__image-award {
+  top: 128px;
+  left: 55px;
+  width: 240px;
+  height: 240px;
   z-index: 3;
-  transform: scale(1, 1) rotate(-6deg);
-  filter: drop-shadow(0px 9px 5px rgba(0, 0, 0, 0.5));
-  opacity: 0.85;
-}
-
-.options__image-safe {
-  top: 91px;
-  right: 16px;
-  width: 298px;
-  height: 310px;
-  z-index: 6;
-  transform: rotate(10deg);
+  transform: scale(-1, 1) rotate(0deg);
   filter: drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.5));
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .options__image-calc {
   top: 221px;
   left: 200px;
   width: 170px;
-  height: 160px;
+  height: 170px;
   z-index: 5;
   transform: scale(-1, 1) rotate(22deg);
   filter: drop-shadow(0px 8px 7px rgba(0, 0, 0, 0.5));
   opacity: 0.75;
 }
 
-.options__image-award {
-  top: 128px;
-  left: 55px;
-  width: 259px;
-  height: 251px;
-  z-index: 3;
-  transform: scale(-1, 1) rotate(0deg);
+.options__image-safe {
+  top: 111px;
+  right: 26px;
+  width: 275px;
+  height: 275px;
+  z-index: 6;
+  transform: rotate(10deg);
   filter: drop-shadow(0px 11px 7px rgba(0, 0, 0, 0.5));
-  opacity: 0.75;
+  opacity: 0.85;
 }

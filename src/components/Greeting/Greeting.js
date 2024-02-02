@@ -8,20 +8,20 @@ import Typed from 'typed.js';
 const Greeting = () => {
   const { t, i18n } = useTranslation();
 
-  const elRu = useRef(null);
-  const elEn = useRef(null);
+  const elementRu = useRef(null);
+  const elementEn = useRef(null);
   const isVisible = i18n.language === "ru";
   const [currentDay, setCurrentDay] = useState(new Date().getDate());
 
 
   useEffect(() => {
-    const typedRu = new Typed(elRu.current, {
-      strings: ["МАНИКЮР", "ПЕДИКЮР", "ШУГАРИНГ", "СТРИЖКУ", "БРОВКИ", "РЕСНИЧКИ"],
+    const typedRu = new Typed(elementRu.current, {
+      strings: ["МАНИКЮР", "ПЕДИКЮР", "ШУГАРИНГ", "СТРИЖКУ", "БРОВИ", "РЕСНИЦЫ"],
       typeSpeed: 120,
       loop: true,
     });
 
-    const typedEn = new Typed(elEn.current, {
+    const typedEn = new Typed(elementEn.current, {
       strings: ["MANICURE", "PEDICURE", "SUGARING", "HAIRCUT", "BROWS", "EYELASHES"],
       typeSpeed: 120,
       loop: true,
@@ -35,7 +35,7 @@ const Greeting = () => {
   }, []);
 
   return (
-    <section className="greeting">
+    <section id="greeting" className="greeting">
       <div className="greeting__wrapper">
         <div className="greeting__image_block">
           <img className="greeting__image_logo" src={logoO} alt="логотип" ></img>
@@ -49,10 +49,10 @@ const Greeting = () => {
         <div className="greeting__container">
           <div className="greeting__text-container">
             <h2 id="ru" className={`greeting__text ${isVisible ? 'visible' : 'hidden'}`}>
-              {t("Greeting3")} < br /><span ref={elRu} className="text"></span><br /> {t("Greeting4")}
+              {t("Greeting3")} <br /><span ref={elementRu} className="text"></span><br /> {t("Greeting4")}
             </h2>
             <h2 id="en" className={`greeting__text ${!isVisible ? 'visible' : 'hidden'}`}>
-              {t("Greeting3")} < br /><span ref={elEn} className="text"></span><br /> {t("Greeting4")}
+              {t("Greeting3")} <br /><span ref={elementEn} className="text"></span><br /> {t("Greeting4")}
             </h2>
           </div>
           <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="greeting__button">

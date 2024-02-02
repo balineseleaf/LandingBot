@@ -16,6 +16,8 @@
   width: 400px;
   top: 100px;
   opacity: 0.85;
+  pointer-events: none;
+  user-select: none;
 }
 
 .greeting__header {
@@ -163,8 +165,8 @@
     margin-left: 415px;
   }
   .greeting__button {
-    margin-left: 591px;
-    top: 165px;
+    margin-left: 147px;
+    top: 175px;
   }
 }
 
@@ -201,7 +203,7 @@
   }
 
   .greeting__button {
-    margin-left: 490px;
+    margin-left: 50px;
     top: 110px;
   }
 }
@@ -220,7 +222,9 @@
   }
 
   .greeting__button {
-    margin-left: 300px;
+    display: block;
+    margin: 0 auto;
+    left: 0;
     top: 100px;
   }
 
@@ -304,18 +308,6 @@
   .greeting__image_block {
     position: relative;
   }
-
-  .greeting__button {
-    margin-left: 260px;
-    top: 100px;
-  }
-}
-
-@media (max-width: 510px) {
-  .greeting__button {
-    margin-left: 232px;
-    top: 100px;
-  }
 }
 
 @media (max-width: 450px) {
@@ -337,10 +329,6 @@
     width: 80px;
     font-size: 41px;
     height: 110px;
-  }
-  .greeting__button {
-    margin-left: 214px;
-    top: 150px;
   }
 }
 
@@ -371,9 +359,12 @@
   }
 
   .greeting__button {
-    width: 75%;
-    margin-left: 193px;
-    font-size: 20px;
-    top: 82px;
+    top: 52px;
+  }
+}
+
+@media (max-width: 400px) {
+  .greeting__button {
+    top: 75px;
   }
 }

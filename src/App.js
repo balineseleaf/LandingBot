@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
-// import { Routes, Route } from 'react-router-dom';
 import Main from "./components/Main/Main";
 import Steps from "./components/Steps/Steps";
 import Rates from "./components/Rates/Rates";
@@ -15,23 +14,12 @@ import Support from "./components/Support/Support";
 function App() {
   return (
     <div className="page">
-      {/* <Routes>
-        <Route path="/main"
-          element={<Main />}
-        />
-        <Route path="/steps"
-          element={<Steps />}
-        />
-        <Route path="/support"
-          element={<Support />}
-        />
-      </Routes> */}
       <Header />
       <Greeting />
       <Main />
       <Steps />
       <Support />
-      <OptionsBlock />
+      {/* <OptionsBlock /> */}
       <Rates />
       <StartNow />
       <Selection />

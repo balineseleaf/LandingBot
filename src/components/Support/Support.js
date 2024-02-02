@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import social from '../../images/social.svg';
+import social from '../../images/SquadsPNG.png';
+import letters from '../../images/LetterPNG.png';
 import { useTranslation } from "react-i18next";
 import "./Support.css";
 
@@ -25,9 +26,9 @@ const Support = () => {
               </Link>
             </div>
           </div>
-          <img src={social} alt="картинка саппорт" className="support__image" />
+          <img src={social} alt="squads" className="support__image_squads" />
+          <img src={letters} alt="letters" className="support__image_letter" />
         </div>
-        {/* <img src={support} alt="саппорт" className="support__image"></img> */}
       </div>
 
     </section>);

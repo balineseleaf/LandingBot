@@ -28,9 +28,7 @@ const Steps = () => {
             <div className="steps__text steps__text_fourth">{t("Steps2")}</div>
             <img className="steps__image" src={arrow} alt="стрелка" />
           </div>
-
         </div>
-
       </div>
     </section>
   );
