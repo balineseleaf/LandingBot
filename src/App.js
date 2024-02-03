@@ -19,7 +19,7 @@ function App() {
       <Main />
       <Steps />
       <Support />
-      {/* <OptionsBlock /> */}
+      <OptionsBlock />
       <Rates />
       <StartNow />
       <Selection />

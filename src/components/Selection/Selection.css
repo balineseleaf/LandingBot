@@ -140,7 +140,7 @@
     margin-left: 60px;
   }
   .selection__container-left {
-    margin-right: 60px;
+    margin-right: 143px;
   }
 }
 
@@ -319,5 +319,14 @@
   }
   .selection__button {
     font-size: 17px;
+  }
+}
+
+@media (max-width: 370px) {
+  .selection__card-left {
+    width: 220px;
+  }
+  .selection__card-right {
+    width: 220px;
   }
 }

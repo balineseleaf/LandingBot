@@ -167,7 +167,6 @@
 .rates__list {
   margin: 0;
   padding: 0;
-  /* margin-left: 55px; */
   margin-top: 100px;
   z-index: 2;
   list-style: none;
@@ -191,9 +190,29 @@
   .rates__wrapper {
     width: 90%;
   }
+  .rates__block-inner {
+    height: 110px;
+  }
+  .rates__list {
+    margin-top: 70px;
+  }
+  .card {
+    height: 520px;
+  }
+  .card__price-additional {
+    margin-top: 25px;
+  }
   .rates__header {
     padding-top: 50px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .rates__paragraph {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
   }
   .rates__heading {
     font-size: 40px;
@@ -205,8 +224,12 @@
     font-size: 19px;
   }
   .rates__button-text {
-    left: 50px;
+    margin: 0 auto;
     font-size: 25px;
+    top: 450px;
+  }
+  .card-grid {
+    grid-column-gap: 15px;
   }
 }
 
@@ -214,12 +237,15 @@
   .rates__header {
     margin: 0 auto;
     text-align: center;
+    font-size: 37px;
   }
 
   .rates__paragraph {
     margin: 0 auto;
+    margin-top: 20px;
     text-align: center;
   }
+
   .card-grid {
     margin: 50px auto 0;
     display: flex;
@@ -237,11 +263,13 @@
 
 @media (max-width: 800px) {
   .rates__button-text {
-    left: 70px;
+    left: 50%;
+    transform: translate(-50%);
     font-size: 25px;
   }
   .rates__header {
-    font-size: 40px;
+    font-size: 37px;
+    width: 90%;
   }
 
   .rates__paragraph {
@@ -264,6 +292,7 @@
 
 @media (max-width: 500px) {
   .rates__header {
+    padding: 0;
     font-size: 32px;
     width: 90%;
   }
@@ -275,6 +304,18 @@
   .rates {
     padding-bottom: 0px;
   }
+  .rates__block-inner {
+    height: 100px;
+  }
+  .rates__heading {
+    margin-top: 5px;
+  }
+  .card__price-additional {
+    margin-top: 40px;
+  }
+  .rates__button-text {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -283,12 +324,12 @@
     width: 90%;
   }
   .rates__paragraph {
-    font-size: 17px;
+    font-size: 22px;
     margin-top: 20px;
-    width: 90%;
+    width: 100%;
   }
   .card-grid {
-    width: 100%;
+    width: 90%;
     margin: 30px auto;
   }
   .card {
@@ -298,12 +339,11 @@
 
 @media (max-width: 400px) {
   .rates__header {
-    font-size: 30px;
+    font-size: 32px;
     width: 100%;
   }
   .rates__paragraph {
-    font-size: 17px;
-    margin-top: 20px;
+    margin-top: 22px;
     width: 100%;
   }
 }

@@ -320,10 +320,10 @@
 
 @media (max-width: 480px) {
   .header__wrapper {
-    flex-direction: column;
+    justify-content: space-around;
   }
   .header__lang-links {
-    margin: 0 auto;
+    margin: 0;
     margin-top: 10px;
   }
 }

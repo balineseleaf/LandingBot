@@ -181,6 +181,7 @@
 
   .greeting__text {
     font-size: 19px;
+    width: 80%;
   }
   .text {
     font-size: 25px;
@@ -203,8 +204,8 @@
   }
 
   .greeting__button {
-    margin-left: 50px;
-    top: 110px;
+    margin-left: 45px;
+    top: 130px;
   }
 }
 
@@ -237,7 +238,7 @@
 
   .greeting__text {
     font-size: 21px;
-    margin-left: 37px;
+    /* margin-left: 37px; */
   }
 
   .greeting__text-container {
@@ -256,6 +257,8 @@
   }
 }
 
+/* @media (min-width: 551px) and (max-width: 700px) { */
+
 @media (max-width: 550px) {
   .greeting__current-day {
     padding-top: 2px;
@@ -268,14 +271,17 @@
     font-size: 42px;
     height: 110px;
   }
+
   .greeting__image_logo {
     display: block;
     position: relative;
     margin: 0 auto;
     top: 65px;
   }
+
   .greeting {
-    height: 520px;
+    height: 700px;
+    padding-bottom: 0;
   }
 
   .greeting__wrapper {
@@ -287,16 +293,17 @@
     padding-top: 65px;
     width: 90%;
     font-size: 38px;
+    text-align: center;
   }
 
   .greeting__text-container {
-    width: 95%;
-    margin: 20px 25px 0px;
+    width: 100%;
+    margin: 0 auto;
     height: 50px;
+    padding-top: 20px;
   }
 
   .greeting__text {
-    margin: 0 auto;
     width: 90%;
     font-size: 22px;
   }
@@ -330,6 +337,9 @@
     font-size: 41px;
     height: 110px;
   }
+  .greeting__text {
+    margin-left: 37px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -342,10 +352,11 @@
   .greeting__header {
     padding-top: 42px;
     font-size: 35px;
-    margin-left: 27px;
+    /* margin-left: 27px; */
   }
   .greeting__text {
     font-size: 16px;
+    margin-left: 0;
   }
   .text {
     font-size: 21px;
@@ -365,6 +376,26 @@
 
 @media (max-width: 400px) {
   .greeting__button {
-    top: 75px;
+    top: 65px;
+  }
+  .greeting {
+    padding-top: 125px;
+  }
+  .greeting__container {
+    margin: 12px auto;
+    width: 90%;
+  }
+  .greeting__text-container {
+    margin: 0 auto;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 365px) {
+  /* .greeting__container {
+    margin: 12px auto;
+  } */
+  .greeting__text-container {
+    margin-left: 15px;
   }
 }

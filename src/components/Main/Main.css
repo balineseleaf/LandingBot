@@ -25,7 +25,6 @@
 
 .main__container {
   display: flex;
-  height: 550px;
   flex-direction: row;
   justify-content: center;
   border-radius: 30px;
@@ -125,11 +124,15 @@
   }
 
   .main__container {
+    width: 85%;
+    margin: 0 auto;
   }
 
   .main__header {
     padding: 50px 0 0 0;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -147,7 +150,7 @@
 @media (max-width: 700px) {
   .main {
     padding-top: 70px;
-    height: 1780px;
+    height: auto;
   }
   .main__image {
     display: none;
@@ -170,7 +173,7 @@
   }
   .main__header {
     padding: 50px 0 0 0;
-    font-size: 35px;
+    font-size: 32px;
     width: 90%;
     margin: 0 auto;
   }
@@ -178,16 +181,8 @@
     left: 220px;
   }
 }
-@media (max-width: 450px) {
-  .main {
-    height: 1720px;
-  }
-}
 
 @media (max-width: 400px) {
-  .main {
-    height: 1330px;
-  }
   .main__header {
     padding: 0;
     font-size: 32px;

@@ -132,11 +132,24 @@
 
 @media (max-width: 1180px) {
   .support__wrapper {
-    width: 100vw;
+    width: 90%;
   }
   .support__block {
     margin: 0 auto;
-    width: 100vw;
+    width: 90%;
+  }
+  .support__header {
+    width: 80%;
+  }
+  .support__text {
+    width: 80%;
+  }
+  .support__image_letter {
+    top: 88px;
+    right: 30px;
+  }
+  .support__image_squads {
+    right: 250px;
   }
 }
 
@@ -148,14 +161,12 @@
     width: 250px;
     height: 250px;
     top: 150px;
-    right: 400px;
   }
 
   .support__image_letter {
     width: 290px;
     height: 290px;
     top: 100px;
-    right: 230px;
   }
 }
 
