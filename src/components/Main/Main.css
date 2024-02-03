@@ -12,6 +12,7 @@
 .main__header {
   margin: 0;
   padding: 0;
+  height: 134px;
   padding-left: 13px;
   text-transform: uppercase;
   padding-top: 80px;
@@ -20,7 +21,7 @@
   font-weight: 600;
   text-align: left;
   color: #1c1c1c;
-  width: 50%;
+  width: 41%;
 }
 
 .main__container {
