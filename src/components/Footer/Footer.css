@@ -198,7 +198,7 @@
 
 @media (max-width: 650px) {
   .footer {
-    height: 480px;
+    height: auto;
   }
   .footer__content {
     width: 90%;
@@ -258,6 +258,6 @@
 }
 @media (max-width: 400px) {
   .footer {
-    height: 490px;
+    height: auto;
   }
 }

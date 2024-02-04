@@ -18,7 +18,7 @@ const SliderComponent = () => {
           modules={[Navigation, Pagination, A11y, Autoplay]}
           slidesPerView={1}
           navigation
-          autoplay={{ delay: 4000 }}
+          autoplay={{ delay: 3200 }}
           pagination={{ clickable: true }}
         >
           <SwiperSlide>

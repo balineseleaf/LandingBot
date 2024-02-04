@@ -274,6 +274,12 @@
   }
 }
 
+@media (max-width: 550px) {
+  .support {
+    padding-top: 0px;
+  }
+}
+
 @media (max-width: 520px) {
   .support__header {
     width: 90%;
