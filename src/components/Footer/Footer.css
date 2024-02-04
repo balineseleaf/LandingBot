@@ -19,7 +19,7 @@
 }
 
 .footer__content {
-  padding: 50px 0;
+  padding: 45px 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -38,7 +38,7 @@
 }
 
 .footer__platforms {
-  width: 380px;
+  width: 500px;
   display: flex;
   justify-content: space-between;
   align-items: center;

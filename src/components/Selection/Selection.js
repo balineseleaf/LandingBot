@@ -11,7 +11,7 @@ const Selection = () => {
     <section id="selection" className="selection">
       <div className="selection__wrapper">
         <div className='selection__container selection__container-left'>
-          <img className='selection__image selection__image-left' src={phoneLeft} alt="телефон" />
+          <img className='selection__image selection__image-left' src={phoneLeft} alt={t("Smartphone")} />
           <div className="selection__card-left">
             <p className='selection__text'><span className='selection__text_bold'><span>O</span>koshko</span> <br></br>{t("Selection1")}</p>
             <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="selection__button">
@@ -20,7 +20,7 @@ const Selection = () => {
           </div>
         </div>
         <div className='selection__container selection__container-right'>
-          <img className='selection__image selection__image-right' src={phoneRight} alt="телефон" />
+          <img className='selection__image selection__image-right' src={phoneRight} alt={t("Smartphone")} />
           <div className="selection__card-right">
             <p className='selection__text'><span className='selection__text_bold'><span>O</span>koshko</span> <br></br>{t("Selection2")}</p>
             <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="selection__button">

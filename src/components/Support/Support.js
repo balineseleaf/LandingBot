@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import social from '../../images/SquadsPNG.png';
+import squads from '../../images/SquadsPNG.png';
 import letters from '../../images/LetterPNG.png';
 import { useTranslation } from "react-i18next";
 import "./Support.css";
@@ -26,8 +26,8 @@ const Support = () => {
               </Link>
             </div>
           </div>
-          <img src={social} alt="squads" className="support__image_squads" />
-          <img src={letters} alt="letters" className="support__image_letter" />
+          <img src={squads} alt={t("Squads")} className="support__image_squads" />
+          <img src={letters} alt={t("Letters")} className="support__image_letter" />
         </div>
       </div>
 

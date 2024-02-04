@@ -17,8 +17,8 @@ const StartNow = () => {
           <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="startnow__button">
             {t("Main10")}
           </Link>
-          <img className="startnow__image_smartphone" src={smartphone} alt="smartphone"></img>
-          <img className="startnow__image_hourglass" src={hourglass} alt="hourglass"></img>
+          <img className="startnow__image_smartphone" src={smartphone} alt={("Smartphone")}></img>
+          <img className="startnow__image_hourglass" src={hourglass} alt={t("Hourglass")}></img>
 
         </div>
 

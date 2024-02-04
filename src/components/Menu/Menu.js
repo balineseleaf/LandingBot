@@ -8,7 +8,6 @@ const Menu = ({ active, setActive }) => {
       <button className="menu__button" onClick={() => setActive(false)}>
       </button>
       <div className="menu__content">
-        {/* <div className="menu-header">Окошко</div> */}
         <div className="menu__list">
           <Link className="menu__item" to="main" spy={true} smooth={true} offset={-100} duration={500}>Наш функционал</Link>
           <Link className="menu__item" to="steps" spy={true} smooth={true} offset={-100} duration={500}>Шаги</Link>

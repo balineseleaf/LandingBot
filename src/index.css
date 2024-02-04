@@ -6,19 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
-  --swiper-navigation-size: 45px;
-  --swiper-theme-color: #ff43a4;
+  --swiper-theme-color: #1c1c1c;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   body {
-    --swiper-navigation-size: 35px;
+    --swiper-navigation-size: 50px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 445px) {
   body {
-    --swiper-navigation-size: 30px;
+    --swiper-navigation-size: 1px;
   }
 }
 

@@ -150,7 +150,6 @@
 
 @media (max-width: 700px) {
   .main {
-    padding-top: 70px;
     height: auto;
   }
   .main__image {
@@ -166,14 +165,14 @@
 
 @media (max-width: 500px) {
   .main {
-    padding-top: 90px;
+    padding-top: 80px;
   }
   .main__wrapper {
     width: 100%;
     margin: 0;
   }
   .main__header {
-    padding: 50px 0 0 0;
+    padding: 0;
     font-size: 32px;
     width: 90%;
     margin: 0 auto;

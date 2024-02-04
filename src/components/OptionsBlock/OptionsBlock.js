@@ -9,7 +9,7 @@ import planet from '../../images/PlanetPNG.png';
 import calendar from '../../images/calendarPNG.png';
 import calc from '../../images/calcPNG.png';
 import safe from '../../images/SafePNG.png';
-import award from '../../images/AwardPNG.png';
+import cup from '../../images/cupPNG.png';
 import notebook from '../../images/notebookpenPNG.png';
 import stats from '../../images/statsPNG.png';
 
@@ -25,34 +25,34 @@ const OptionsBlock = () => {
           <div className="options__block3 first-block">
             <p className="options__paragraph">{t("Options2")}
             </p>
-            <img className="options__image options__image-clients" src={clients} alt="clients"></img>
-            <img className="options__image options__image-growths" src={growth} alt="growth"></img>
+            <img className="options__image options__image-clients" src={clients} alt={t("Clients")}></img>
+            <img className="options__image options__image-growths" src={growth} alt={t("Growth")}></img>
           </div>
           <div className="options__block3 second-block">
             <p className="options__paragraph">{t("Options3")}
             </p>
-            <img className="options__image options__image-notification" src={notification} alt="notificaition"></img>
-            <img className="options__image options__image-notebook" src={notebook} alt="notebook"></img>
+            <img className="options__image options__image-notification" src={notification} alt={t("Notif")}></img>
+            <img className="options__image options__image-notebook" src={notebook} alt={t("Notebook")}></img>
           </div>
           <div className="options__block3 third-block">
             <p className="options__paragraph options__paragraph-calendar">{t("Options9")}
             </p>
-            <img className="options__image options__image-calendar" src={calendar} alt="calendar"></img>
-            <img className="options__image options__image-planet" src={planet} alt="planet"></img>
+            <img className="options__image options__image-calendar" src={calendar} alt={t("Calendar")}></img>
+            <img className="options__image options__image-planet" src={planet} alt={t("Planet")}></img>
           </div>
           <div className="options__block2 fourth-block">
             <p className="options__paragraph">{t("Options5")}
             </p>
-            <img className="options__image options__image-laptop" src={laptop} alt="laptop"></img>
-            <img className="options__image options__image-analytics" src={analytics} alt="analytics"></img>
-            <img className="options__image options__image-stats" src={stats} alt="stats"></img>
+            <img className="options__image options__image-laptop" src={laptop} alt={t("Laptop")}></img>
+            <img className="options__image options__image-analytics" src={analytics} alt={t("Analytics")}></img>
+            <img className="options__image options__image-stats" src={stats} alt={t("Stats")}></img>
           </div>
           <div className="options__block2 fifth-block">
             <p className="options__paragraph options__paragraph-safe">{t("Options6")}
             </p>
-            <img className="options__image options__image-safe" src={safe} alt="safe"></img>
-            <img className="options__image options__image-calc" src={calc} alt="calc"></img>
-            <img className="options__image options__image-award" src={award} alt="award"></img>
+            <img className="options__image options__image-safe" src={safe} alt={t("Safe")}></img>
+            <img className="options__image options__image-calc" src={calc} alt={t("Calc")}></img>
+            <img className="options__image options__image-award" src={cup} alt={t("Cup")}></img>
           </div>
         </div>
       </div>

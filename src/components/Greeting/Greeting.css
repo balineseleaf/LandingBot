@@ -184,7 +184,7 @@
     width: 80%;
   }
   .text {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .greeting__text-container {
@@ -211,11 +211,13 @@
 
 @media (max-width: 700px) {
   .greeting {
-    height: 500px;
+    height: 750px;
+    padding-top: 120px;
+    padding-bottom: 0px;
   }
 
   .greeting__image_block {
-    height: 320px;
+    height: 430px;
   }
 
   .greeting__image_third {
@@ -223,22 +225,30 @@
   }
 
   .greeting__button {
-    display: block;
-    margin: 0 auto;
-    left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     top: 100px;
+    margin-left: 0;
   }
 
   .greeting__header {
     font-size: 33px;
-    text-align: left;
-    width: 90%;
-    margin-left: 100px;
+    text-align: center;
+    width: 80%;
+    margin-left: 67px;
+    padding-top: 40px;
+  }
+
+  .greeting__container {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .greeting__text {
-    font-size: 21px;
-    /* margin-left: 37px; */
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
   }
 
   .greeting__text-container {
@@ -248,8 +258,9 @@
   }
 
   .greeting__image_logo {
-    width: 290px;
-    margin-left: 130px;
+    left: 50%;
+    margin-left: 0;
+    transform: translateX(-50%);
   }
 
   .greeting__current-day {
@@ -257,8 +268,14 @@
   }
 }
 
-/* @media (min-width: 551px) and (max-width: 700px) { */
-
+@media (max-width: 620px) {
+  .greeting__button {
+    margin-top: 20px;
+  }
+  .greeting__container {
+    width: 90%;
+  }
+}
 @media (max-width: 550px) {
   .greeting__current-day {
     padding-top: 2px;
@@ -272,15 +289,12 @@
     height: 110px;
   }
 
-  .greeting__image_logo {
-    display: block;
-    position: relative;
-    margin: 0 auto;
+  /* .greeting__image_logo {
     top: 65px;
-  }
+  } */
 
   .greeting {
-    height: 700px;
+    height: 790px;
     padding-bottom: 0;
   }
 
@@ -296,20 +310,20 @@
     text-align: center;
   }
 
-  .greeting__text-container {
+  .greeting__container {
     width: 100%;
+  }
+
+  .greeting__text-container {
+    width: 85%;
     margin: 0 auto;
     height: 50px;
     padding-top: 20px;
   }
 
   .greeting__text {
-    width: 90%;
-    font-size: 22px;
-  }
-
-  .greeting__container {
     width: 100%;
+    font-size: 22px;
   }
 
   .greeting__image_block {
@@ -317,18 +331,25 @@
   }
 }
 
+@media (max-width: 500px) {
+  .greeting__text-container {
+    width: 100%;
+  }
+  .greeting {
+    height: 820px;
+  }
+}
+
 @media (max-width: 450px) {
   .greeting {
-    padding-top: 150px;
+    padding-top: 70px;
   }
-  .greeting__image_logo {
-    width: 250px;
-    margin: 0 auto;
-  }
+
   .greeting__header {
     padding-top: 19px;
     font-size: 39px;
   }
+
   .greeting__current-day {
     padding-top: 0px;
     top: 26px;
@@ -338,31 +359,29 @@
     height: 110px;
   }
   .greeting__text {
-    margin-left: 37px;
+    font-size: 21px;
+    width: 100%;
+  }
+  .greeting__button {
+    margin-top: 35px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .greeting__current-day {
-    left: 230px;
+    left: 260px;
   }
-  .greeting {
-    padding-top: 175px;
-  }
+
   .greeting__header {
     padding-top: 42px;
     font-size: 35px;
-    /* margin-left: 27px; */
   }
   .greeting__text {
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 0;
   }
   .text {
-    font-size: 21px;
-  }
-  .greeting__text-container {
-    margin: 12px 28px 0px;
+    font-size: 20px;
   }
 
   .greeting__image_block {
@@ -370,32 +389,26 @@
   }
 
   .greeting__button {
-    top: 52px;
+    margin-top: 30px;
   }
 }
 
-@media (max-width: 400px) {
-  .greeting__button {
-    top: 65px;
-  }
+@media (max-width: 413px) {
   .greeting {
     padding-top: 125px;
   }
-  .greeting__container {
-    margin: 12px auto;
-    width: 90%;
-  }
-  .greeting__text-container {
-    margin: 0 auto;
-    margin-left: 25px;
+  .greeting__text {
+    font-size: 19px;
   }
 }
 
-@media (max-width: 365px) {
-  /* .greeting__container {
-    margin: 12px auto;
-  } */
-  .greeting__text-container {
-    margin-left: 15px;
+@media (max-width: 395px) {
+  .greeting__current-day {
+    left: 230px;
+  }
+}
+@media (max-width: 370px) {
+  .greeting__button {
+    margin-top: 40px;
   }
 }
