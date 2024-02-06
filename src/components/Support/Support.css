@@ -13,6 +13,7 @@
   width: 1180px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .support__block {
@@ -20,7 +21,7 @@
   width: 100%;
   padding-left: 80px;
   padding-top: 60px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .support__header {
@@ -128,6 +129,17 @@
   font-weight: 300;
   padding-top: 10px;
   color: black;
+}
+
+.support__block-inner {
+  position: absolute;
+  background-color: #eaecee;
+  width: 1500px;
+  height: 1500px;
+  z-index: 3;
+  top: 100px;
+  left: 410px;
+  transform: rotate(35deg);
 }
 
 @media (max-width: 1180px) {
@@ -255,6 +267,10 @@
     height: 240px;
     top: 400px;
     right: 50px;
+  }
+  .support__block-inner {
+    top: 252px;
+    left: 100px;
   }
 }
 

@@ -175,8 +175,6 @@
 }
 
 @media (max-width: 800px) {
-  .startnow__wrapper {
-  }
   .startnow__block {
     height: 700px;
     width: 90%;

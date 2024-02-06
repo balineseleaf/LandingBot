@@ -3,7 +3,8 @@ import { useTranslation } from "react-i18next";
 import logoO from '../../images/logoO.png';
 import { Link } from "react-scroll";
 import "./Header.css";
-import Menu from '../../components/Menu/Menu';
+// import Menu from '../../components/Menu/Menu';
+import { ReactComponent as Logo } from '../../images/O-logo.svg';
 
 const Header = () => {
 
@@ -34,7 +35,8 @@ const Header = () => {
 
         <div className="header__block">
           <Link className="pointer" to="greeting" spy={true} smooth={true} duration={500}>
-            <img className="header__logo" src={logoO} alt="Logo" />
+            <Logo className="header__logo" alt={t("Logo")} />
+            {/* <img className="header__logo" src={logoO} alt="Logo" /> */}
             <h1 className="header__text">koshko</h1>
           </Link>
         </div>

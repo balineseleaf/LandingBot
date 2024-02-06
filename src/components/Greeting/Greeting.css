@@ -1,6 +1,6 @@
 .greeting {
   background: #f8f8f8;
-  padding-top: 150px;
+  padding-top: 130px;
   padding-bottom: 290px;
 }
 
@@ -14,7 +14,7 @@
   position: absolute;
   transform: rotateZ(10deg);
   width: 400px;
-  top: 100px;
+  top: 60px;
   opacity: 0.85;
   pointer-events: none;
   user-select: none;
@@ -28,7 +28,7 @@
   font-weight: 600;
   text-transform: uppercase;
   z-index: 4;
-  padding-top: 100px;
+  padding-top: 115px;
   margin-left: 430px;
 }
 
@@ -260,7 +260,7 @@
   .greeting__image_logo {
     left: 50%;
     margin-left: 0;
-    transform: translateX(-50%);
+    transform: translateX(-50%) rotateZ(10deg);
   }
 
   .greeting__current-day {
@@ -282,7 +282,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 40px;
+    top: 45px;
     left: 293px;
     width: 82px;
     font-size: 42px;
@@ -352,7 +352,7 @@
 
   .greeting__current-day {
     padding-top: 0px;
-    top: 26px;
+    top: 50px;
     left: 273px;
     width: 80px;
     font-size: 41px;
@@ -393,7 +393,7 @@
   }
 }
 
-@media (max-width: 413px) {
+@media (max-width: 411px) {
   .greeting {
     padding-top: 125px;
   }

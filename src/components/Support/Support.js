@@ -10,11 +10,12 @@ const Support = () => {
     <section id="support" className="support">
       <div className="support__wrapper">
         <div className="support__block">
+          <div className="support__block-inner"></div>
           <h2 className="support__header">{t("Support1")}</h2>
           <p className="support__text">{t("Support2")}</p>
           <div className="support__inner-block">
             <div className="support__left-container">
-              <Link to="" className="support__button support__button_tg">
+              <Link to="https://web.telegram.org/a/#6051858053" className="support__button support__button_tg">
               </Link>
               <Link to="" className="support__button support__button_facebook">
               </Link>

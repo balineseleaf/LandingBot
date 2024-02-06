@@ -1,6 +1,7 @@
 import "./Greeting.css";
 import React, { useEffect, useState, useRef } from "react";
-import logoO from '../../images/logoO.png';
+import logoO from '../../images/O-logo.svg';
+import { ReactComponent as Logo } from '../../images/O-logo.svg';
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Typed from 'typed.js';
@@ -38,7 +39,8 @@ const Greeting = () => {
     <section id="greeting" className="greeting">
       <div className="greeting__wrapper">
         <div className="greeting__image_block">
-          <img className="greeting__image_logo" src={logoO} alt={t("Logo")}></img>
+          {/* <img className="greeting__image_logo" src={logoO} alt={t("Logo")}></img> */}
+          <Logo className="greeting__image_logo" alt={t("Logo")} />
           <div className="greeting__current-day">
             {currentDay}
           </div>
