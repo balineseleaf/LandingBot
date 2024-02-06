@@ -19,9 +19,7 @@ const StartNow = () => {
           </Link>
           <img className="startnow__image_smartphone" src={smartphone} alt={("Smartphone")}></img>
           <img className="startnow__image_hourglass" src={hourglass} alt={t("Hourglass")}></img>
-
         </div>
-
       </div>
     </section>);
 }

@@ -469,3 +469,53 @@
     top: 175px;
   }
 }
+
+@media (max-width: 400px) {
+  .options__paragraph-little {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 390px) {
+  .options__paragraph {
+    font-size: 28px;
+    text-align: center;
+  }
+  .options__image-clients {
+    top: 300px;
+  }
+  .options__image-growths {
+    top: 230px;
+  }
+  .options__image-notification {
+    top: 170px;
+  }
+  .options__image-notebook {
+    top: 340px;
+  }
+  .options__image-calendar {
+    top: 250px;
+  }
+  .options__image-planet {
+    top: 290px;
+  }
+  .options__image-stats {
+    top: 180px;
+  }
+  .options__image-analytics {
+    top: 240px;
+  }
+  .options__image-laptop {
+    top: 180px;
+  }
+  .options__image-safe {
+    top: 150px;
+  }
+  .options__image-calc {
+    top: 275px;
+  }
+  .options__image-award {
+    top: 175px;
+  }
+}
