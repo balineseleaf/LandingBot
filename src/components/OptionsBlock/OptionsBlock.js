@@ -25,28 +25,28 @@ const OptionsBlock = () => {
           <div className="options__block3 first-block">
             <p className="options__paragraph">{t("Options2")}
             </p>
-            <p className="options__paragraph-little">Занимайтесь своими делами и получайте заказы</p>
+            <p className="options__paragraph-little">{t("Options15")}</p>
             <img className="options__image options__image-clients" src={clients} alt={t("Clients")}></img>
             <img className="options__image options__image-growths" src={growth} alt={t("Growth")}></img>
           </div>
           <div className="options__block3 second-block">
             <p className="options__paragraph">{t("Options3")}
             </p>
-            <p className="options__paragraph-little">Получайте оповещения о новых записях и клиентах</p>
+            <p className="options__paragraph-little">{t("Options16")}</p>
             <img className="options__image options__image-notification" src={notification} alt={t("Notif")}></img>
             <img className="options__image options__image-notebook" src={notebook} alt={t("Notebook")}></img>
           </div>
           <div className="options__block3 third-block">
             <p className="options__paragraph options__paragraph-calendar">{t("Options9")}
             </p>
-            <p className="options__paragraph-little">Эффективно управляйте своим временем и ресурсами</p>
+            <p className="options__paragraph-little">{t("Options17")}</p>
             <img className="options__image options__image-calendar" src={calendar} alt={t("Calendar")}></img>
             <img className="options__image options__image-planet" src={planet} alt={t("Planet")}></img>
           </div>
           <div className="options__block2 fourth-block">
             <p className="options__paragraph">{t("Options5")}
             </p>
-            <p className="options__paragraph-little">Следите за своими показателями и оценивайте их</p>
+            <p className="options__paragraph-little">{t("Options18")}</p>
             <img className="options__image options__image-laptop" src={laptop} alt={t("Laptop")}></img>
             <img className="options__image options__image-analytics" src={analytics} alt={t("Analytics")}></img>
             <img className="options__image options__image-stats" src={stats} alt={t("Stats")}></img>
@@ -54,7 +54,7 @@ const OptionsBlock = () => {
           <div className="options__block2 fifth-block">
             <p className="options__paragraph options__paragraph-safe">{t("Options6")}
             </p>
-            <p className="options__paragraph-little">Смело развивайте собственный бизнес</p>
+            <p className="options__paragraph-little">{t("Options19")}</p>
             <img className="options__image options__image-safe" src={safe} alt={t("Safe")}></img>
             <img className="options__image options__image-calc" src={calc} alt={t("Calc")}></img>
             <img className="options__image options__image-award" src={cup} alt={t("Cup")}></img>

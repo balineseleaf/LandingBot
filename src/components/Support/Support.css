@@ -102,6 +102,10 @@
   transform: scale(1.04);
 }
 
+.disable:hover {
+  cursor: not-allowed;
+}
+
 .support__button_mail {
   background-image: url('../../images/mailBlack.png');
   background-size: contain;

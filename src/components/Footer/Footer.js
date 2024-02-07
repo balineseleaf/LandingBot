@@ -19,31 +19,33 @@ function Footer() {
           <nav className="footer__platforms">
             <div className="footer__info-block">
               <ul className="footer__info-items">
-                <li className="footer__info-item">
-                  <Link className="footer__info-link" target="_blank" to="/knowledgebase">{t("Footer1")}</Link>
+                <li >
+                  <Link className="footer__info-item" target="_blank" to="/knowledgebase">{t("Footer1")}</Link>
                 </li>
-                <li className="footer__info-item">
-                  <Link className="footer__info-link" target="_blank" to="/knowledgebase">{t("Footer0")}</Link>
+                <li>
+                  <Link className="footer__info-item" target="_blank" to="/knowledgebase">{t("Footer0")}</Link>
                 </li>
-                <li className="footer__info-item">
-                  <Link className="footer__info-link" target="_blank" to="/partners">{t("Footer3")}</Link>
+                <li >
+                  <Link className="footer__info-item" target="_blank" to="/partners">{t("Footer3")}</Link>
                 </li>
               </ul>
             </div>
-            <div className="header__links">
-              <Link target="_blank" to="https://www.instagram.com/okoshko.pro?igsh=aG1lZjB6OW5tZzVx">
-                <Instagram className="footer__link-svg-instagram" />
-              </Link>
-            </div>
-            <div className="header__links">
-              <Link target="_blank" to="https://t.me/maniProMaster_bot" className="footer__link-svg-telegram">
-                <Telegram className="footer__link-svg-telegram" />
-              </Link>
-            </div>
-            <div className="header__links">
-              <Link target="_blank" to="https://t.me/maniProMaster_bot" className="footer__link-svg-facebook">
-                <Facebook className="footer__link-svg-facebook" />
-              </Link>
+            <div className="footer__links">
+              <div className="footer__link">
+                <Link target="_blank" to="https://www.instagram.com/okoshko.pro?igsh=aG1lZjB6OW5tZzVx">
+                  <Instagram className="footer__link-svg-instagram" />
+                </Link>
+              </div>
+              <div className="footer__link">
+                <Link target="_blank" to="https://t.me/maniProMaster_bot" className="footer__link-svg-telegram">
+                  <Telegram className="footer__link-svg-telegram" />
+                </Link>
+              </div>
+              <div className="footer__link">
+                <Link onClick={(e) => e.preventDefault()} target="_blank" to="https://t.me/maniProMaster_bot" className="footer__link-svg-facebook disable">
+                  <Facebook className="footer__link-svg-facebook" />
+                </Link>
+              </div>
             </div>
           </nav>
         </div>

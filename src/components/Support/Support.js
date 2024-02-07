@@ -17,13 +17,13 @@ const Support = () => {
             <div className="support__left-container">
               <Link to="https://web.telegram.org/a/#6051858053" className="support__button support__button_tg">
               </Link>
-              <Link to="" className="support__button support__button_facebook">
+              <Link onClick={(e) => e.preventDefault()} to="" className="support__button disable support__button_facebook">
               </Link>
             </div>
             <div className="support__right-container">
-              <Link to="" className="support__button support__button_mail">
+              <Link onClick={(e) => e.preventDefault()} to="" className="support__button disable support__button_mail">
               </Link>
-              <Link to="" className="support__button support__button_vk">
+              <Link onClick={(e) => e.preventDefault()} to="" className="support__button support__button_vk disable">
               </Link>
             </div>
           </div>

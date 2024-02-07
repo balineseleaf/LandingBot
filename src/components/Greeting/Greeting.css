@@ -270,7 +270,7 @@
 
 @media (max-width: 620px) {
   .greeting__button {
-    margin-top: 20px;
+    margin-top: 35px;
   }
   .greeting__container {
     width: 90%;
@@ -288,10 +288,6 @@
     font-size: 42px;
     height: 110px;
   }
-
-  /* .greeting__image_logo {
-    top: 65px;
-  } */
 
   .greeting {
     height: 790px;
