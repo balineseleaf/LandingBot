@@ -57,7 +57,7 @@ const Greeting = () => {
               {t("Greeting3")} <br /><span ref={elementEn} className="text"></span><br /> {t("Greeting4")}
             </h2>
           </div>
-          <Link to="https://telegra.ph/Telegram-bot-dlya-mastera-beauty-sfery-10-23" className="greeting__button">
+          <Link to="https://web.telegram.org/a/#6051858053" className="greeting__button">
             {t("Main10")}
           </Link>
         </div>

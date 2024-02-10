@@ -26,7 +26,7 @@ function Footer() {
                   <Link className="footer__info-item" target="_blank" to="/knowledgebase">{t("Footer0")}</Link>
                 </li>
                 <li >
-                  <Link className="footer__info-item" target="_blank" to="/partners">{t("Footer3")}</Link>
+                  <Link onClick={(e) => e.preventDefault()} className="footer__info-item disable" target="_blank" to="/partners">{t("Footer3")}</Link>
                 </li>
               </ul>
             </div>

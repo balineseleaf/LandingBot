@@ -13,11 +13,10 @@
   text-transform: uppercase;
   margin: 0;
   padding: 40px 0 0 0;
-  font-size: 37px;
+  font-size: 25px;
   text-align: left;
-  font-weight: 600;
+  font-weight: 300;
   color: #1c1c1c;
-  /* height: 90px; */
 }
 
 .options__text {
@@ -33,7 +32,8 @@
 
 .options__letter {
   text-transform: none;
-  font-size: 44px;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 .options__letter span {

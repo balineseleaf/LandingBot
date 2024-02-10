@@ -43,18 +43,13 @@
   gap: 20px;
   color: #1c1c1c;
 }
+.disable:hover {
+  cursor: not-allowed;
+}
 
 .footer__copyright {
   color: #f8f8f8;
   font-size: 20px;
-}
-
-.footer__lang-button_ru:hover {
-  cursor: pointer;
-}
-
-.lang__button {
-  cursor: pointer;
 }
 
 .footer__icon-link {
@@ -234,9 +229,6 @@
     justify-content: center;
     align-items: center;
     font-size: 21px;
-  }
-  .disable:hover {
-    cursor: not-allowed;
   }
 
   .footer__clients-block {
