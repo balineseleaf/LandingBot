@@ -1,6 +1,6 @@
 
 # Landing page for startup Okoshko.
-React, Css3, HTML5, JS
+React, CSS3, HTML5, JS
 
 
 
