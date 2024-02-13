@@ -21,7 +21,7 @@ const Rates = () => {
                 <li className="rates__item">{t("Rates4")}</li>
               </ul>
               <p className="card__price card__price-additional">{t("Rates8")}</p>
-              <p className="rates__button-text">{t("Rates7")}</p>
+              <button className="rates__button">{t("Rates7")}</button>
             </div>
           </div>
           <div className="card">
@@ -37,7 +37,7 @@ const Rates = () => {
                 <li className="rates__item">{t("Rates6")}</li>
               </ul>
               <p className="card__price card__price-additional">{t("Rates9")}</p>
-              <p className="rates__button-text">{t("Rates7")}</p>
+              <button className="rates__button">{t("Rates7")}</button>
             </div>
           </div>
           <div className="card">
@@ -53,7 +53,7 @@ const Rates = () => {
                 <li className="rates__item">{t("Rates6")}</li>
               </ul>
               <p className="card__price card__price-additional">{t("Rates10")}</p>
-              <p className="rates__button-text">{t("Rates7")}</p>
+              <button className="rates__button">{t("Rates7")}</button>
             </div>
           </div>
         </div>

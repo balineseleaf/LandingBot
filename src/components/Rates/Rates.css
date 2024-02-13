@@ -38,7 +38,7 @@
 .card {
   position: relative;
   width: 365px;
-  height: 570px;
+  height: 580px;
   transition: 0.5s ease-in-out;
   border-radius: 20px;
   cursor: pointer;
@@ -145,29 +145,32 @@
   margin-top: 75px;
 }
 
-.rates__button-text {
-  margin: 20px auto;
+.rates__button {
   position: absolute;
+  margin-top: 20px;
   top: 480px;
+  padding: 7px 20px 7px 20px;
   color: #1c1c1c;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 600;
-  text-transform: uppercase;
   text-align: center;
   opacity: 1;
-  transition: color 0.4s ease-in-out;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+  background-color: rgba(255, 131, 220, 0.8);
+  border: none;
 }
 
-.rates__button-text:hover {
-  color: #f8f8f8;
-  cursor: pointer;
-  transition: color 0.4s ease-in-out;
+.rates__button:hover {
+  background-color: #f8f8f8;
+  transition: background-color 0.4s ease-in-out;
 }
 
 .rates__list {
   margin: 0;
   padding: 0;
-  margin-top: 100px;
+  margin-top: 80px;
   z-index: 2;
   list-style: none;
 }
@@ -223,7 +226,7 @@
   .card-price {
     font-size: 19px;
   }
-  .rates__button-text {
+  .rates__button {
     margin: 0 auto;
     font-size: 25px;
     top: 450px;
@@ -262,7 +265,7 @@
 }
 
 @media (max-width: 800px) {
-  .rates__button-text {
+  .rates__button {
     left: 50%;
     transform: translate(-50%);
     font-size: 25px;
@@ -313,7 +316,7 @@
   .card__price-additional {
     margin-top: 40px;
   }
-  .rates__button-text {
+  .rates__button {
     margin-top: 5px;
   }
 }

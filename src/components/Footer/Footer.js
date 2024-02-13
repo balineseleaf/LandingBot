@@ -6,7 +6,6 @@ import { ReactComponent as Instagram } from '../../images/instSVG.svg';
 import { ReactComponent as Telegram } from '../../images/telegramSVG.svg';
 import { ReactComponent as Facebook } from '../../images/facebookSVG.svg';
 
-
 function Footer() {
   const { t } = useTranslation();
 
